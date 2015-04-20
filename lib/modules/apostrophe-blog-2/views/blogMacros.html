@@ -38,7 +38,7 @@
       <div class="blog-card-head">
         {{ aposSingleton(piece, 'image', 'slideshow', { limit: 1, aspectRatio: [324, 162], noHeight: true, edit: false, size: 'one-third' }) }}
         <div class="blog-card-title-container">
-          <a href="{{ piece.url }}"><h6 class="blog-card-title">{{ piece.title }}</h6></a>
+          <a href="{{ piece.url }}"><h3 class="blog-card-title">{{ piece.title }}</h3></a>
           {% if piece.authorId %}
             <span class="blog-card-author">by {{ piece._author.title }}</span>
           {% endif %}
@@ -46,9 +46,9 @@
       </div>
       <div class="blog-card-excerpt-container">
         <p class="blog-card-excerpt">{{ aposAreaPlaintext(piece, 'body', { truncate: 300 }) }}</p>
-        <a href="{{ piece.url }}">Read More</a>
+        <a href="{{ piece.url }}">Leer más</a>
       </div>
     </div>
-    <span class="sticker sticker--overlap">{{ piece.publishedAt | date('MMM Do, YYYY') }}</span>
+    <span class="fecha">{{ piece.publishedAt | date('MMM Do, YYYY') }}</span>
   </div>
 {%- endmacro -%}

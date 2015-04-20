@@ -1,8 +1,10 @@
+//contenedor
+
 .demo-blog-card
 {
   position: relative;
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
   text-align: left;
 
@@ -38,10 +40,10 @@
 
   .blog-card-excerpt-container
   {
-    padding: 1rem;
-    background-color: @white;
+    padding: 0.5rem;
+    background-color: @orange;
     border-radius: 0 0 2px 2px;
-
+    text-align: right;
     @media screen and @narrow
     {
       width: 50%;
@@ -53,26 +55,28 @@
   {
     position: relative;
     overflow: hidden;
+    
+    height: 3.5em;
+    //margin-bottom: 1rem;
 
-    height: 6em;
-    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    // line-height: 1.2em;
 
-    .font-size(@text-tiny);
-    line-height: 1.2em;
 
     @media screen and @narrow
     {
-      height: 6rem;
+      //height: 6rem;
     }
     &::after
     {
       position: absolute;
       top: 0; right: 0; bottom: 0; left: 0;
-
       display: block;
       content: '';
 
-      .gradient(70%);
+      .gradient{
+        background-color: @orange;
+      }
     }
   }
 
@@ -134,6 +138,25 @@
   }
 }
 
+//clase para la fecha
+
+.fecha {
+    display     : block;
+    position    : absolute;
+    z-index     : 9;
+    background  : #fda13d;
+    padding     : 0.5rem 1rem;
+    display     : block;
+    top         : 0;
+    left        : 50%;
+    transform   : translate(-50%, -50%);
+    color       : white;
+    font-weight : bold;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.75);
+    font-size: 1rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
 .sticker
 {
   .inline-block(middle);
@@ -166,3 +189,23 @@
     padding-top: 0.5rem;
   }
 }
+a {
+  
+  color: white;
+  font-size: 1rem;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h3 {
+  color      : white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5625rem;
+}
+
+p {
+    padding: 0.5rem 1rem;
+    padding-bottom: 2rem;
+    position:relative;
+    color   :@white;
+    font-family: 'Roboto', sans-serif
+  }

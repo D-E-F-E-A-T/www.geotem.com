@@ -1,3 +1,5 @@
+// @import url('http://fonts.googleapis.com/css?family=Roboto:400,300|Fjalla+One');
+
 header { position: relative; }
 .demo-inner
 {
@@ -34,7 +36,7 @@ header { position: relative; }
 
   &:hover
   {
-    background-color: darken(@red, 10%);
+    background-color: blue;
     cursor: pointer;
   }
 
@@ -49,8 +51,7 @@ header { position: relative; }
     width: 0.75rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid @white;
-
-    .KarlaBold(@text-medium);
+    font-family: 'Roboto', sans-serif;
     text-align: center;
   }
 
@@ -58,7 +59,7 @@ header { position: relative; }
   {
     &:before
     {
-      font-family: FontAwesome;
+      font-family: 'Roboto', sans-serif;
       content: "";
       font-size: 13px;
     }
@@ -84,7 +85,7 @@ header { position: relative; }
   &:hover:before
   {
     content: "!";
-    .KarlaBold(@text-medium);
+    font-family: 'Roboto', sans-serif;
   }
   p { display: none; }
 
@@ -98,6 +99,7 @@ header { position: relative; }
     {
       font-size: 1rem;
       line-height: 1.1rem;
+      font-family: 'Fjalla One', sans-serif;
     }
   }
 }
@@ -117,8 +119,6 @@ header { position: relative; }
     display: block;
     content: '';
     height: 8px;
-
-    background-color: fade(@dark, 20%);
   }
 
   .nav-item
@@ -130,8 +130,8 @@ header { position: relative; }
     {
       .inline-block(top);
       padding: 0.075em 0;
-      .KarlaBold(@text-small);
-      color: @red;
+      font-family:'Roboto', sans-serif;
+      color: @blue;
 
       &.active
       {
