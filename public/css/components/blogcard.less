@@ -7,22 +7,27 @@
   margin-bottom: 2rem;
 
   text-align: left;
-
+  height: 16em;
   border-radius: 2px;
   overflow: hidden;
 
-  @media screen and @narrow
+  @media screen and @small
   {
     background: @white;
     margin-bottom: 2rem;
+    margin-left: 1rem;
+    width: 53rem;
+
     // border-bottom: 1px solid @gray;
   }
+
+
 
   .blog-card-title-container
   {
     position: absolute;
     bottom: 0;
-    padding: 1rem;
+    // padding: 1rem;
     z-index: 2;
   }
 
@@ -36,18 +41,24 @@
     margin-bottom: 0.5rem;
     line-height: 1.2em;
     color: @white;
+    margin-left: 1rem;
+
   }
 
   .blog-card-excerpt-container
   {
-    padding: 0.5rem;
-    background-color: @orange;
+
     border-radius: 0 0 2px 2px;
     text-align: right;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 5;
+    position:relative;
+    padding-right: 1rem;
     @media screen and @narrow
-    {
-      width: 50%;
-      margin-left: 50%;
+        {
+      width: 100%;
+
     }
   }
 
@@ -55,8 +66,7 @@
   {
     position: relative;
     overflow: hidden;
-    
-    height: 3.5em;
+    height: 5.3rem;
     //margin-bottom: 1rem;
 
     font-family: 'Roboto', sans-serif;
@@ -73,10 +83,9 @@
       top: 0; right: 0; bottom: 0; left: 0;
       display: block;
       content: '';
+      opacity: 0.5;
+      background-color: @white;
 
-      .gradient{
-        background-color: @orange;
-      }
     }
   }
 
@@ -85,11 +94,12 @@
 .blog-card-head
 {
   position: relative;
-  height: 162px;
+  height: 16em;
   color: @white;
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   .apos-slideshow-items,
   .apos-slideshow,
@@ -97,6 +107,7 @@
   .apos-normal-view
   {
     height: 100%;
+
   }
   img
   {
@@ -106,9 +117,10 @@
   }
   .apos-slideshow-item
   {
-    height: 162px;
+    height: 16em;
     background-size: cover;
     background-position: center;
+   
   }
 
   &::after
@@ -120,6 +132,7 @@
     right: 0;
     background-color: fade(@dark, 20%);
     content: '';
+    background-repeat: no-repeat;
   }
 
   @media screen and @narrow
@@ -136,6 +149,7 @@
     .apos-slideshow-item {background-size: cover; background-position: center; }
     img{ opacity: 0; height: 162px;}
   }
+
 }
 
 //clase para la fecha
@@ -190,10 +204,12 @@
   }
 }
 a {
-  
-  color: white;
+  position:relative;
+  color: red;
   font-size: 1rem;
   font-family: 'Fjalla One', sans-serif;
+  margin-left: 1rem;
+  z-index: 20;
 }
 
 h3 {
@@ -206,6 +222,5 @@ p {
     padding: 0.5rem 1rem;
     padding-bottom: 2rem;
     position:relative;
-    color   :@white;
     font-family: 'Roboto', sans-serif
   }

@@ -354,8 +354,7 @@ html:after {
   min-height: 100%;
 }
  footer {
-  border-top: 0.25rem solid #519435;
-  background-color: #6fbf4d;
+  background-color: white;
   padding-bottom: 3rem;
   *zoom: 1;
   *zoom: 1;
@@ -368,22 +367,7 @@ html:after {
   padding-left: 1rem;
   padding-right: 1rem;
 }
- footer:before,
- footer:after {
-  content: '';
-  display: table;
-}
- footer:after {
-  clear: both;
-}
- footer:before,
- footer:after {
-  content: '';
-  display: table;
-}
- footer:after {
-  clear: both;
-}
+ 
  footer header {
   *zoom: 1;
 }
