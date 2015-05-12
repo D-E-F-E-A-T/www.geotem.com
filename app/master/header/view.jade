@@ -1,16 +1,22 @@
 section.header-logo
-	img(src='/static/geotem.svg')
+	a(href="/")
+		img(src='/static/geotem.svg')
 
 nav.header-menu
 
 	.menu
 		ul
 			li: a(href="/") Inicio
+			
 			li: a(href="acerca-de") Acerca de
-			li: a(href="#") Servicios
-			li: a(href="#") Métodos 
-			li: a(href="#") Aplicaciones
-			li: a(href="#") Presencia Internacional
+				//- ul.submenu	
+				//- 	li: a(href="#") Perfil de la compañia
+				//- 	li: a(href="#") Administración
+
+			li: a(href="servicios") Servicios
+			li: a(href="metodos") Métodos 
+			li: a(href="aplicaciones") Aplicaciones
+			li: a(href="presencia-internacional") Presencia Internacional
 
 	.menu-button
 			input.menu-button(type='checkbox' id='header-menu-button')

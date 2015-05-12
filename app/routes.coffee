@@ -1,2 +1,6 @@
-ﬁ.routes.get '/', 'root'
-ﬁ.routes.get '/acerca-de', 'somos'
+ﬁ.routes.get '/'                           , 'root'
+ﬁ.routes.get '/acerca-de'                  , 'somos'
+ﬁ.routes.get '/servicios'                  , 'servicios'
+ﬁ.routes.get '/metodos'                    , 'metodos'
+ﬁ.routes.get '/aplicaciones'               , 'aplicaciones'
+ﬁ.routes.get '/presencia-internacional'    , 'presencia'

@@ -52,6 +52,10 @@
 			+from-width('large')
 				display : block
 		
+			.sub-menu
+				background-color : blue
+
+
 		.menu-button
 		.menu-content 	
 			position : relative
@@ -59,49 +63,49 @@
 			text-align   : right
 			
 			
-		label.menu-button
-			width 		: 20rem
-			overflow    :hidden
-			text-indent      : -22em
+			label.menu-button
+				width 		: 20rem
+				overflow    :hidden
+				text-indent      : -22em
 
-			&:after
-				display    : block
-				position   : absolute
-				content    : ""
-				width      : 50%
-				height     : 50%
-				top        : 25%
-				left       : 25%
-				background-image: url('/static/menu.png')
-			
-			
-			input.menu-button
-				position : absolute
-				opacity  : 0
+				&:after
+					display    : block
+					position   : absolute
+					content    : ""
+					width      : 50%
+					height     : 50%
+					top        : 25%
+					left       : 25%
+					background-image: url('/static/menu.png')
 				
-
-				&:checked ~ label.menu-button
-					background: $color-1st-darker
-					
-				&:checked ~ .menu-content
-					width      : auto
-					overflow   : visible
 				
-			.menu-content
-				display         : flex
-				flex-grow       : 0
-				flex-flow       : column nowrap
-				justify-content : space-between
-				width      : 0
-				overflow   : hidden
-				background-color : blue
-
-				ul
-					background-color :blue
-					padding-left: 6rem
+				input.menu-button
+					position : absolute
+					opacity  : 0
 					
-					li, a
-						position    : relative
+
+					&:checked ~ label.menu-button
+						background: $color-1st-darker
+						
+					&:checked ~ .menu-content
+						width      : auto
+						overflow   : visible
+					
+				.menu-content
+					display         : flex
+					flex-grow       : 0
+					flex-flow       : column nowrap
+					justify-content : space-between
+					width      : 0
+					overflow   : hidden
+					background-color : blue
+
+					ul
+						background-color :blue
+						padding-left: 6rem
+						
+						li, a
+							position    : relative
 						
 
 					li
