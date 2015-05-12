@@ -1,0 +1,116 @@
+&
+	// Jeet (https://github.com/mojotech/jeet/tree/master/stylus)
+	// edit()
+	center(100%, 1rem)
+
+	background-color : $white
+	padding          : 0.5rem
+	display          : flex
+
+	.header-logo
+		span(1/2)
+		text-align  : right
+		width       : 50%
+	
+		img
+			height      : 4em
+			margin-right: 3em
+			width       : 90%
+			margin-top  : 0.5rem
+			
+			+from-width('medium')
+				width   : 70%
+			+from-width('large')
+				width   : 60%
+
+	.header-menu
+		span(1/2)
+		position   : relative
+		top 	   : 1em
+		
+		+from-width('large')
+			margin-left: -8rem
+					
+			
+		.menu
+			display:none
+			ul
+				center(100%, 0)
+				list-style: none
+
+			li
+				display : inline-block
+				margin-left: 1.8em
+				
+			a
+				color       	: $color-3rd
+				hover-color 	: $color-1st-brighter // Axis
+				text-decoration : none
+			
+			+from-width('medium')
+				display : none
+			+from-width('large')
+				display : block
+		
+		.menu-button
+		.menu-content 	
+			position : relative
+			display  : block
+			text-align   : right
+			
+			
+		label.menu-button
+			width 		: 20rem
+			overflow    :hidden
+			text-indent      : -22em
+
+			&:after
+				display    : block
+				position   : absolute
+				content    : ""
+				width      : 50%
+				height     : 50%
+				top        : 25%
+				left       : 25%
+				background-image: url('/static/menu.png')
+			
+			
+			input.menu-button
+				position : absolute
+				opacity  : 0
+				
+
+				&:checked ~ label.menu-button
+					background: $color-1st-darker
+					
+				&:checked ~ .menu-content
+					width      : auto
+					overflow   : visible
+				
+			.menu-content
+				display         : flex
+				flex-grow       : 0
+				flex-flow       : column nowrap
+				justify-content : space-between
+				width      : 0
+				overflow   : hidden
+				background-color : blue
+
+				ul
+					background-color :blue
+					padding-left: 6rem
+					
+					li, a
+						position    : relative
+						
+
+					li
+						display          : block
+						flex-grow        : 0
+					
+		
+			+from-width('medium')
+				display: block
+			+from-width('large')
+				display: none
+			

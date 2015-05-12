@@ -1,0 +1,16 @@
+{
+  "name": "geotem-prueba",
+  "version": "0.0.1",
+  "authors": ["GiK <gik@gik.mx>"],
+  "description": "",
+  "license": "All rights reserved",
+  "moduleType": ["globals"],
+  "homepage": "gik.mx",
+  "main": "app.coffee",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "dependencies": {}
+}
