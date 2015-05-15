@@ -1,6 +1,6 @@
 &
 	// Jeet (https://github.com/mojotech/jeet/tree/master/stylus)
-	// edit()
+	edit()
 	center(100%, 1rem)
 
 	background-color : $white
@@ -11,6 +11,12 @@
 		span(1/2)
 		text-align  : right
 		width       : 50%
+
+		+from-width('medium')
+			text-align  : left
+		+from-width('normal')
+			text-align  : left
+			width       : 53%
 	
 		img
 			height      : 4em
@@ -20,8 +26,11 @@
 			
 			+from-width('medium')
 				width   : 70%
+			+from-width('normal')
+				text-align  : left
+				width       : 53%
 			+from-width('large')
-				width   : 60%
+				float   : left
 
 	.header-menu
 		span(1/2)
@@ -29,28 +38,41 @@
 		top 	   : 1em
 		
 		+from-width('large')
-			margin-left: -8rem
+			margin-left: -17rem
+			width      :69%
 					
 			
 		.menu
 			display:none
+			width : 100%
 			ul
 				center(100%, 0)
 				list-style: none
 
 			li
 				display : inline-block
-				margin-left: 1.8em
+				margin-left: 2.8em
 				
 			a
 				color       	: $color-1st
 				hover-color 	: $color-2nd-brighter // Axis
 				text-decoration : none
+				margin-right    : 1rem
+				font-size       : 1.2rem
 			
+
 			+from-width('medium')
 				display : none
 			+from-width('large')
 				display : block
+				li
+					margin-left   : 2.8em
+				a
+					margin-right   : -1.4rem
+					font-size       : 1.1rem
+			+from-width('extra')
+				a
+					font-size       : 1.4rem	
 		
 			.sub-menu
 				background-color : blue
@@ -59,7 +81,7 @@
 		.menu-button
 		.menu-content 	
 			position : relative
-			display  : block
+			display  : none
 			text-align   : right
 			
 			
@@ -71,7 +93,7 @@
 				&:after
 					display    : block
 					position   : absolute
-					content    : ""
+					content    : "" 
 					width      : 50%
 					height     : 50%
 					top        : 25%
@@ -114,7 +136,7 @@
 					
 		
 			+from-width('medium')
-				display: block
+				display: none
 			+from-width('large')
 				display: none
 			
