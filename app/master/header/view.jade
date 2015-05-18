@@ -6,21 +6,32 @@ nav.header-menu
 
 	.menu
 		ul
-			li: a(href="/") Inicio
-			
-			li: a(href="acerca-de") Acerca de
-				//- ul.submenu	
-				//- 	li: a(href="#") Perfil de la compañia
-				//- 	li: a(href="#") Administración
+			li: a(href='/') Inicio
+			li: a(href='acerca-de') Acerca de
+				ul.submenu.m1
+					li: a(href='metodos') Perfil de la compañia
+					li: a(href='metodos') Administración
+					li: a(href='metodos') Historia
+					li: a(href='metodos') Clientes
+					li: a(href='metodos') Privacidad
+			li: a(href='servicios') Servicios
+				ul.submenu.m2
+					li: a(href='metodos') Adquisición de datos
+					li: a(href='metodos') Procesamiento
+					li: a(href='metodos') Modelado e inversión
+					li: a(href='metodos') Integración e interpretación
+					li: a(href='metodos') Entrenamiento
 
-			li: a(href="servicios") Servicios
-			li: a(href="metodos") Métodos 
-			li: a(href="aplicaciones") Aplicaciones
-			li: a(href="presencia-internacional") Presencia Internacional
+			li: a(href='metodos') Métodos 
+			li: a(href='aplicaciones') Aplicaciones
+			li: a(href='presencia-internacional') Presencia Internacional
+				ul.submenu.m3
+					li: a(href='metodos') Proyectos en el extranjero
+					li: a(href='metodos') Alianza Comercial
 
-	.menu-button
-			input.menu-button(type='checkbox' id='header-menu-button')
-			label.menu-button(for='header-menu-button' role='button' aria-labelledby="menu") MENU
-			.menu-content
+	//- .menu-button
+	//- 		input.menu-button(type='checkbox' id='header-menu-button')
+	//- 		label.menu-button(for='header-menu-button' role='button' aria-labelledby="menu") MENU
+	//- 		.menu-content
 				
 					

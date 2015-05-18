@@ -1,11 +1,11 @@
 &
 	// Jeet (https://github.com/mojotech/jeet/tree/master/stylus)
-	edit()
+	
 	center(100%, 1rem)
 
 	background-color : $white
-	padding          : 0.5rem
 	display          : flex
+	padding          : 0.5rem
 
 	.header-logo
 		span(1/2)
@@ -21,8 +21,10 @@
 		img
 			height      : 4em
 			margin-right: 3em
-			width       : 90%
 			margin-top  : 0.5rem
+			position 	: relative
+			width       : 90%
+			z-index 	: 0
 			
 			+from-width('medium')
 				width   : 70%
@@ -43,22 +45,27 @@
 					
 			
 		.menu
-			display:none
-			width : 100%
+			display 				: 	none
+			width 					: 	100%
+			
+			
+			
 			ul
 				center(100%, 0)
-				list-style: none
+				list-style 			: 	none
+				margin 				:   0
 
 			li
-				display : inline-block
-				margin-left: 2.8em
-				
+				display 			: 	inline-block
+				margin-left 		: 	2.8em
+				padding 			:   1em 1em 1em 1em
 			a
-				color       	: $color-1st
-				hover-color 	: $color-2nd-brighter // Axis
-				text-decoration : none
-				margin-right    : 1rem
-				font-size       : 1.2rem
+				// hover-color 	: $color-2nd-brighter // Axis
+				// margin-right : 1rem
+				color       		: 	$color-1st
+				font-size       	: 	1.2rem
+				text-decoration 	: 	none
+				hover-underline 	: 	3px solid red
 			
 
 			+from-width('medium')
@@ -66,77 +73,115 @@
 			+from-width('large')
 				display : block
 				li
-					margin-left   : 2.8em
+					margin-left   	: 	2.8em
 				a
-					margin-right   : -1.4rem
-					font-size       : 1.1rem
+					
+					font-size       : 	1.1rem
 			+from-width('extra')
 				a
-					font-size       : 1.4rem	
+					font-size       : 	1.4rem	
 		
-			.sub-menu
-				background-color : blue
-
-
-		.menu-button
-		.menu-content 	
-			position : relative
-			display  : none
-			text-align   : right
+			.submenu
+				background-color 	: 	rgba(255,255,255,0.9)
+				box-shadow 			: 	10px 10px 5px 0px rgba(0,0,0,0.15)
+				display 			: 	none
+				opacity 			: 	0
+				padding  			: 	0
+				position  			: 	absolute
+				top  				: 	3.5rem
+				visibility 			: 	hidden
+				width 				: 	17em
+				z-index 			: 	10
+			
+				
+			
+			.submenu li 
+				color 				: 	#fff
+				display 			: 	block;
+				margin 				: 	0
+				padding 			: 	0.8rem	
+				
+			
+			.m1
+				left  				: 	11.3rem		
+			.m2
+				
+				left  				: 	23rem
+			.m3
+				
+				left  				: 	57.5rem
+				
+			.submenu li a:hover 
+				color 		  		:  red !important
+			
+			ul li:hover .submenu 
+					display 		: 	block;
+					opacity 		: 	1;
+					visibility 		: 	visible;
 			
 			
-			label.menu-button
-				width 		: 20rem
-				overflow    :hidden
-				text-indent      : -22em
 
-				&:after
-					display    : block
-					position   : absolute
-					content    : "" 
-					width      : 50%
-					height     : 50%
-					top        : 25%
-					left       : 25%
-					background-image: url('/static/menu.png')
+
+
+		// .menu-button
+		// .menu-content 	
+		// 	position : relative
+		// 	display  : none
+		// 	text-align   : right
+			
+			
+		// 	label.menu-button
+		// 		width 		: 20rem
+		// 		overflow    :hidden
+		// 		text-indent      : -22em
+
+		// 		&:after
+		// 			display    : block
+		// 			position   : absolute
+		// 			content    : "" 
+		// 			width      : 50%
+		// 			height     : 50%
+		// 			top        : 25%
+		// 			left       : 25%
+		// 			background-image: url('/static/menu.png')
 				
 				
-				input.menu-button
-					position : absolute
-					opacity  : 0
+		// 		// input.menu-button
+		// 		// 	position : absolute
+		// 		// 	opacity  : 0
 					
 
-					&:checked ~ label.menu-button
-						background: $color-1st-darker
+		// 		// 	&:checked ~ label.menu-button
+		// 		// 		background: $color-1st-darker
 						
-					&:checked ~ .menu-content
-						width      : auto
-						overflow   : visible
+		// 		// 	&:checked ~ .menu-content
+		// 		// 		width      : auto
+		// 		// 		overflow   : visible
 					
-				.menu-content
-					display         : flex
-					flex-grow       : 0
-					flex-flow       : column nowrap
-					justify-content : space-between
-					width      : 0
-					overflow   : hidden
-					background-color : blue
+		// 		// .menu-content
+		// 		// 	display         : flex
+		// 		// 	flex-grow       : 0
+		// 		// 	flex-flow       : column nowrap
+		// 		// 	justify-content : space-between
+		// 		// 	width      : 0
+		// 		// 	overflow   : hidden
+		// 		// 	background-color : blue
 
-					ul
-						background-color :blue
-						padding-left: 6rem
+		// 		// 	ul
+		// 		// 		background-color :blue
+		// 		// 		padding-left: 6rem
 						
-						li, a
-							position    : relative
+		// 		// 		li, a
+		// 		// 			position    : relative
 						
 
-					li
-						display          : block
-						flex-grow        : 0
+		// 		// 	li
+		// 		// 		display          : block
+		// 		// 		flex-grow        : 0
 					
 		
-			+from-width('medium')
-				display: none
-			+from-width('large')
-				display: none
-			
+		// 	+from-width('medium')
+		// 		display: none
+		// 	+from-width('large')
+		// 		display: none
+		// 	
