@@ -1,3 +1,3 @@
 module.exports = (request, response, next)->
 
-	response.render foo:'prueba'
+	response.render foo:'services'
