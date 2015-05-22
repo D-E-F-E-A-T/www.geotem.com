@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Aplicaciones" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 64.1 64.1" enable-background="new 0 0 64.1 64.1" xml:space="preserve">
+<g id="Arqueologia">
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="32" cy="32" r="32"/>
+		</defs>
+		<use xlink:href="#SVGID_1_"  overflow="visible" fill="#A1398D"/>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+	</g>
+	<g>
+		<rect x="25.1" y="9.7" fill="#FFFFFF" width="15" height="2"/>
+		<polygon fill="#FFFFFF" points="8.1,45.7 26.5,45.7 26.9,41.7 8.1,41.7 		"/>
+		<polygon fill="#FFFFFF" points="12.1,39.7 27.1,39.7 27.5,34.7 12.1,34.7 		"/>
+		<polygon fill="#FFFFFF" points="16.1,27.7 16.1,32.7 27.7,32.7 28.1,27.7 		"/>
+		<polygon fill="#FFFFFF" points="28.7,20.7 20.1,20.7 20.1,25.7 28.2,25.7 		"/>
+		<polygon fill="#FFFFFF" points="29.3,13.7 24.1,13.7 24.1,18.7 28.8,18.7 		"/>
+		<polygon fill="#FFFFFF" points="56.1,45.7 38.9,45.7 38.5,41.7 56.1,41.7 		"/>
+		<polygon fill="#FFFFFF" points="52.1,39.7 38.4,39.7 37.9,34.7 52.1,34.7 		"/>
+		<polygon fill="#FFFFFF" points="48.1,27.7 48.1,32.7 37.8,32.7 37.4,27.7 		"/>
+		<polygon fill="#FFFFFF" points="36.8,20.7 45.1,20.7 45.1,25.7 37.2,25.7 		"/>
+		<polygon fill="#FFFFFF" points="36.2,13.7 41.1,13.7 41.1,18.7 36.6,18.7 		"/>
+		<polygon fill="#FFFFFF" points="35.8,18.7 38.2,45.7 27.3,45.7 29.6,18.7 		"/>
+	</g>
+</g>
+<g id="Geotermia" display="none">
+	<g display="inline">
+		<defs>
+			<circle id="SVGID_3_" cx="32.1" cy="32.1" r="32.1"/>
+		</defs>
+		<use xlink:href="#SVGID_3_"  overflow="visible" fill="#E86311"/>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<path clip-path="url(#SVGID_4_)" fill="#FFFFFF" d="M25.7,5.7c0,0,15.6,3.9,12.7,12.2c-3,8.3-8.5,7-4.1,16.2c0,0-10.1-2.8-5.4-14
+			C33.6,9,27.6,7.9,25.7,5.7z"/>
+		<path clip-path="url(#SVGID_4_)" fill="#FFFFFF" d="M40.1,12.8c0,0,11.6,8.4,5.9,12.4c-5.7,4-9.8,1-9.7,8.4c0,0-6.4-5.3,1.9-10.4
+			C46.5,18.2,40.8,14.9,40.1,12.8z"/>
+		<g clip-path="url(#SVGID_4_)">
+			<path fill="#FFFFFF" d="M65.4,66.7H0.5l1.8-1.9c1-1.4,5.4-4,7.7-5.4C23,33.2,23.3,33,23.4,32.8c0.6-0.8,18.5-0.9,19.1,0
+				c0.1,0.2,0.4,0.5,13.3,27.3c2.3,1.4,6.7,3.3,7.7,4.7L65.4,66.7z M8.6,64.7h48.4c-1.1,0-2.3-1.4-3.4-2l-0.5-0.2L53,62
+				C48.4,52.4,42,39.1,40.4,35.9c-0.5,0-14.1-0.2-14.8-0.1c-1.5,2.9-8.1,16.4-12.7,25.8l-0.2,0.5l-0.4,0.3
+				C11.1,63.1,9.8,64.7,8.6,64.7z"/>
+			<path fill="#FFFFFF" d="M43.8,39.4l-1.1,3.3L38,39.4c0,0,1.3,7.7,0,8.7c-1.3,1-4.3-4.8-4.3-4.8s-9.9,7.9-17.4,9.4L9.2,63.4
+				c0,0-1.7,2.4-1.2,2.5c0.4,0.1,22.2,1.2,22.7,1.2c0.5,0,28.8-1.5,28.8-1.5L57,63.2L43.8,39.4z"/>
+		</g>
+	</g>
+</g>
+<g id="Geohidrologia" display="none">
+	<g display="inline">
+		<g>
+			<defs>
+				<circle id="SVGID_5_" cx="32.1" cy="32.1" r="32.1"/>
+			</defs>
+			<use xlink:href="#SVGID_5_"  overflow="visible" fill="#0089C3"/>
+			<clipPath id="SVGID_6_">
+				<use xlink:href="#SVGID_5_"  overflow="visible"/>
+			</clipPath>
+		</g>
+	</g>
+	<path display="inline" fill="#FFFFFF" d="M43.8,35.5C40.4,25.6,31.2,15.8,32.1,8c0,0-11,14.1-12.9,27.3c-1.2,8.4,1.3,18.1,13,17.8
+		C45.5,52.7,46.6,43.6,43.8,35.5z M39.5,48.5c-3.6-0.1-3.9-2.7-3.2-5c0.9-2.9,3.4-5.7,3.2-7.9c0,0,3,4.1,3.5,7.8
+		C43.4,45.8,42.7,48.6,39.5,48.5z"/>
+</g>
+<g id="Geotecnia" display="none">
+	<g display="inline">
+		<defs>
+			<circle id="SVGID_7_" cx="32.2" cy="32.2" r="32.1"/>
+		</defs>
+		<use xlink:href="#SVGID_7_"  overflow="visible" fill="#A59E9E"/>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_8_)">
+			<rect x="0.1" y="34.7" fill="#FFFFFF" width="64" height="3"/>
+			<g>
+				<path fill="#FFFFFF" d="M17.5,11.7h-3.1l0,13.4l0,11.6h1.7V18.5c3,13.7,15.6,18.6,15.7,18.6l1.2-1.8
+					C32.8,35.3,18.3,29.7,17.5,11.7z"/>
+			</g>
+			<g>
+				<rect x="11.1" y="37.7" fill="#FFFFFF" width="4" height="13"/>
+				<rect x="47.1" y="37.7" fill="#FFFFFF" width="4" height="13"/>
+			</g>
+			<g>
+				<path fill="#FFFFFF" d="M13.2,11.7h3.1l0,13.4l0,11.6h-2.1V18.5c-2.4,10.8-11,16.1-14,17.9V34C4.1,31.6,12.6,25.1,13.2,11.7z"/>
+			</g>
+			<g>
+				<path fill="#FFFFFF" d="M50.1,11.7H47l0,13.4l0,11.6h1.1V18.5c2.8,12.7,14,17.8,15.8,18.5c0.1,0.1,0,0,0,0l0.3-2.2c0,0,0,0,0,0
+					C60.7,33,50.8,26.6,50.1,11.7z"/>
+			</g>
+			<g>
+				<path fill="#FFFFFF" d="M45.8,11.7h3.1l0,13.4l0,11.6h-2.8V18.5c-3,13.7-15,18.6-15.2,18.6L30,35.3C30.2,35.3,45,29.7,45.8,11.7
+					z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Mineria" display="none">
+	<g display="inline">
+		<defs>
+			<circle id="SVGID_9_" cx="32.4" cy="32.4" r="32.4"/>
+		</defs>
+		<use xlink:href="#SVGID_9_"  overflow="visible" fill="#EBAE00"/>
+		<clipPath id="SVGID_10_">
+			<use xlink:href="#SVGID_9_"  overflow="visible"/>
+		</clipPath>
+	</g>
+	<path display="inline" fill="#FFFFFF" d="M29.4,22.2l6.8,6l1.8-2.6l9.8,8.3c0,0-3.2-18.3-17.3-26.2l-5,6.9l6.2,4.6L29.4,22.2z"/>
+	<path display="inline" fill="#FFFFFF" d="M12.1,49c-1.4-1.2-1.6-3.3-0.4-4.8l16.5-19.4c0.1-0.1,0.1-0.2,0.2-0.2l5.2,4.3
+		c-0.1,0.1-0.2,0.2-0.3,0.3L16.9,48.7C15.7,50.1,13.5,50.3,12.1,49z"/>
+	<polygon display="inline" fill="#FFFFFF" points="53.5,38.1 52.5,21.5 54.5,20.7 	"/>
+	<polygon display="inline" fill="#FFFFFF" points="51.4,41.5 40.4,53.9 38.4,53.1 	"/>
+	<polygon display="inline" fill="#FFFFFF" points="52.1,39.7 34.4,39.7 32.2,41.6 	"/>
+	<path display="inline" fill="#FFFFFF" d="M44.9,41l-0.7,1.7h-2.1v1.1l2.8,1.9l2.7-2.4C47.6,43.4,47.3,41,44.9,41z"/>
+	<path display="inline" fill="#FFFFFF" d="M50,28.2l-0.6,1.5h-1.3v0.7l2.1,1.6l2.1-1.9C52.3,30.1,51.9,28.3,50,28.2z"/>
+	<path display="inline" fill="#FFFFFF" d="M41.9,34l-1.1-0.7l0.2-1.6l-1.5-0.2l-1.9,2l1.8,2.6C39.4,36.1,41.6,36.1,41.9,34z"/>
+</g>
+<g id="Nombres" display="none">
+	
+		<text transform="matrix(1 0 0 1 460.9214 82.6992)" display="inline" fill="#A69F9F" font-family="'CenturyGothic'" font-size="15">GEOTERMIA</text>
+	<text transform="matrix(1 0 0 1 353.5881 82.7)" display="inline" fill="#A59E9E" font-family="'CenturyGothic'" font-size="15">AMBIENTAL</text>
+	<text transform="matrix(1 0 0 1 86.3198 82.6992)" display="inline" fill="#0089C3" font-family="'CenturyGothic'" font-size="15">GEOHIDROLOGÍA</text>
+	
+		<text transform="matrix(1 0 0 1 564.5881 82.6992)" display="inline" fill="#A59E9E" font-family="'CenturyGothic'" font-size="15">ARQUEOLOGÍA</text>
+	
+		<text transform="matrix(1 0 0 1 677.9216 81.6992)" display="inline" fill="#A59E9E" font-family="'CenturyGothic'" font-size="15">GEOTECNIA</text>
+	<text transform="matrix(1 0 0 1 1.5881 81.6997)" display="inline" fill="#A59E9E" font-family="'CenturyGothic'" font-size="15">MINERÍA</text>
+	
+		<text transform="matrix(1 0 0 1 218.5881 82.6997)" display="inline" fill="#A59E9E" font-family="'CenturyGothic'" font-size="15">HIDROCARBUROS</text>
+</g>
+<g id="Hidrocarburos" display="none">
+	<g display="inline">
+		<defs>
+			<circle id="SVGID_11_" cx="281.4" cy="30.4" r="32.4"/>
+		</defs>
+		<use xlink:href="#SVGID_11_"  overflow="visible" fill="#5D5957"/>
+		<clipPath id="SVGID_12_">
+			<use xlink:href="#SVGID_11_"  overflow="visible"/>
+		</clipPath>
+	</g>
+	<path display="inline" fill="#FFFFFF" d="M292.8,35.4c-3.4-10-12.7-19.9-11.8-27.8c0,0-11.1,14.3-13,27.5
+		c-1.2,8.5,1.3,18.3,13.1,18C294.4,52.7,295.5,43.6,292.8,35.4z"/>
+</g>
+<g id="Ambiental" display="none">
+	<g display="inline">
+		<defs>
+			<circle id="SVGID_13_" cx="392.4" cy="32.4" r="32.4"/>
+		</defs>
+		<use xlink:href="#SVGID_13_"  overflow="visible" fill="#59AF31"/>
+		<clipPath id="SVGID_14_">
+			<use xlink:href="#SVGID_13_"  overflow="visible"/>
+		</clipPath>
+	</g>
+	<path display="inline" fill="#FFFFFF" d="M397.3,19c0,0-8.6,7.4-13.3,22.4c0,0-9.1-8.5,0.5-17.9c9.6-9.4,16.9-11.1,19.9-11.5
+		c0,0-1.6,3.2-1.4,9.9c0.2,6.7,0.3,13.7-4.2,17.9c-4.6,4.2-9.9,3.3-9.9,3.3s-1.5,3.4-1.8,8.9c0,0-2.4,0.5-3.4-0.4
+		C382.6,50.7,387.4,30.1,397.3,19z"/>
+</g>
+</svg>

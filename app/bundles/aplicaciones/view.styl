@@ -1,105 +1,114 @@
-edit()
-.box-icons 
-	col(7/7)
-	position : relative
-	padding-top: 3em
-	text-align: center
+&
+	edit()
+	.box-icons 
+		col(7/7)
+		position : relative
+		padding-top: 1em
+		text-align: center
 
-.cover 
-		position : relative
-	.cover-img
-		position : relative
+	.cover 
+			position : relative
+		.cover-img
+			position : relative
+			
+		.cover-img	img
+			height :  auto
+			width  : 100%
+			position : relative
 		
-	.cover-img	img
-		height :  auto
-		width  : 100%
-		position : relative
-	
-	.cover-caption
-		background : black
-		opacity : 0.5
+		.cover-caption
+			background : black
+			opacity : 0.5
+			position: absolute
+			bottom: 0;
+			width: 100%;
+			color: white;
+			padding: 0.5rem
+	  
+	.item
+		col(1/7)
+		
+		
+	.item img
+		width :100%
+		height :auto
+		hover-pop ()
+		
+	.imagen
+		position: relative	
+
+	.imagen img 
+		
 		position: absolute
-		bottom: 0;
-		width: 100%;
-		color: white;
-		padding: 0.5rem
-  
-.item
-	col(1/7)
-	
-	
-.item img
-	width :100%
-	height :auto
-	hover-pop ()
-	
-.imagen
-	position: relative	
+		width: 100%
+		height: auto
+		top: 0
 
-.imagen img 
-	
-	position: absolute
-	width: 100%
-	height: auto
-	top: 0
+	.lab 
+		position : absolute
+		width 	 : 30%
+		right 	 : 0
+		font-size : 3vw	
 
-.lab 
-	position : absolute
-	width 	 : 30%
-	right 	 : 0
-	font-size : 3vw	
-
-.lab h3
-	position : relative
-	color: white
-	font-size: 1em
-	text-align: center
-	font-weight: bold
-	
-
-.label1
-	background-color: #994092
-	top: 10%
+	.lab h3
+		position : relative
+		color: white
+		font-size: 1em
+		text-align: center
+		font-weight: bold
 		
-.label2
-	background-color: #996440
-	top: 25%	
-	
-.label3
-	background-color: #407799
-	top:40%
+
+	.label1
+		background-color: #994092
+		top: 10%
+			
+	.label2
+		background-color: #996440
+		top: 25%	
 		
-.label4
-	background-color: #ded831
-	top: 55%
-	
-.label5
-	background-color: #e83c3c
-	top: 70%
-	
-
-
-span
-	p
-		text-align : center
-		font-weight : 800
-		font-size : 1.5vw
-
+	.label3
+		background-color: #407799
+		top:40%
+			
+	.label4
+		background-color: #ded831
+		top: 55%
 		
-	
-
+	.label5
+		background-color: #e83c3c
+		top: 70%
 		
-.categoriax3
-	col(3/3)
-	
+
+
 	span
-		col(1/3)
+		p
+			text-align : center
+			font-weight : 800
+			font-size : 3vw
+			background-color : green
 
-.categoriax2
-	col(2/2)
-	span
-		col(1/2)
+			+from-width('medium')
+				font-size : 3vw
+				background-color :red
+			+from-width('normal')
+				font-size : 3vw
+				background-color : blue
+			+from-width('large')
+				font-size : 1.5vw
+				background-color : yellow
 		
+
+			
+	.categoriax3
+		col(3/3)
+		span
+			col(1/3)
+
+	.categoriax2
+		col(2/2)
+		span
+			col(1/2)
+			
 
 
 	
