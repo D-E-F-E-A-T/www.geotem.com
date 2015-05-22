@@ -1,11 +1,10 @@
-
 edit()
 
 .box-icons 
 	col(7/7)
-	position : relative
-	padding-top: 1em
-	text-align: center
+	position 	: relative
+	padding-top : 1em
+	text-align 	: center
 
 .cover 
 		position : relative
@@ -13,79 +12,93 @@ edit()
 		position : relative
 		
 	.cover-img	img
-		height :  auto
-		width  : 100%
-		position : relative
+		height 		:  auto
+		position 	: relative
+		width  		: 100%
 	
 	.cover-caption
-		background : black
-		opacity : 0.5
-		position: absolute
-		bottom: 0;
-		width: 100%;
-		color: white;
-		padding: 0.5rem
+		background 	: black
+		bottom 		: 0
+		color 		: white
+		opacity 	: 0.5
+		padding 	: 0.5rem
+		position 	: absolute
+		width 		: 100%
   
 .item
 	col(1/7)
 	
 	
 .item img
-	width :100%
-	height :auto
+	height 			:auto
 	hover-pop ()
+	width 			:100%
+	+from-width('m')
+		width 		: 100%
+	+from-width('l')
+		width 		: 60%
+	+from-width('xl')
+		widows 		: 60%
 	
 .imagen
-	position: relative	
+	position 		: relative	
 
 .imagen img 
 	
-	position: absolute
-	width: 100%
-	height: auto
-	top: 0
+		height 		: auto
+		position 	: absolute
+		top 		: 0
+		width 		: 100%
+		
+
 
 .lab 
-	position : absolute
-	width 	 : 30%
-	right 	 : 0
-	font-size : 3vw	
+	font-size 	: 2vw	
+	position 	: absolute
+	right 	 	: 0
+	width 	 	: 20%
 
 .lab h3
-	position : relative
-	color: white
-	font-size: 1em
-	text-align: center
-	font-weight: bold
+	color 		: white
+	font-size 	: 1em
+	font-weight : bold
+	position 	: relative
+	text-align 	: center
 	
 
 .label1
-	background-color: #994092
-	top: 10%
+	background-color 	: #994092
+	top 				: 10%
 		
 .label2
-	background-color: #996440
-	top: 25%	
+	background-color 	: #996440
+	top 				: 25%	
 	
 .label3
-	background-color: #407799
-	top:40%
+	background-color 	: #407799
+	top 				: 40%
 		
 .label4
-	background-color: #ded831
-	top: 55%
+	background-color 	: #ded831
+	top 				: 55%
 	
 .label5
-	background-color: #e83c3c
-	top: 70%
+	background-color 	: #e83c3c
+	top 				: 70%
 	
 
 
 span
 	p
-		text-align : center
-		font-weight : 800
-		font-size : 1.8vw
+		font-size 			: 2.5vw
+		font-weight 		: 800
+		text-align 			: center
+		+from-width('m')
+			font-size 		 : 1.8vw
+		+from-width('l')
+			font-size 		 : 1.8vw
+		+from-width('xl')
+			font-size 		 : 1.8vw
 	
 
 		
