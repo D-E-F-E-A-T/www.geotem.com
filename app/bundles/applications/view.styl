@@ -5,65 +5,30 @@ edit()
 	position 	: relative
 	padding-top : 1em
 	text-align 	: center
-
-.cover 
-		position : relative
-	.cover-img
-		position : relative
-		
-	.cover-img	img
-		height 		:  auto
-		position 	: relative
-		width  		: 100%
-	
-	.cover-caption
-		background 	: black
-		bottom 		: 0
-		color 		: white
-		opacity 	: 0.5
-		padding 	: 0.5rem
-		position 	: absolute
-		width 		: 100%
-  
-.item
-	col(1/7)
-	
-	
-.item img
-	height 			:auto
-	hover-pop ()
-	width 			:100%
-	+from-width('m')
-		width 		: 100%
-	+from-width('l')
-		width 		: 60%
-	+from-width('xl')
-		widows 		: 60%
-	
-.imagen
-	position 		: relative	
-
-.imagen img 
-	
-		height 		: auto
-		position 	: absolute
-		top 		: 0
-		width 		: 100%
-		
-
+	.item
+		col(1/7)
+		img
+			height 			:auto
+			hover-pop ()
+			width 			:100%
+			+from-width('m')
+				width 		: 100%
+			+from-width('l')
+				width 		: 60%
+			+from-width('xl')
+				widows 		: 60%
 
 .lab 
 	font-size 	: 2vw	
 	position 	: absolute
 	right 	 	: 0
 	width 	 	: 20%
-
-.lab h3
-	color 		: white
-	font-size 	: 1em
-	font-weight : bold
-	position 	: relative
-	text-align 	: center
+	h3
+		color 		: white
+		font-size 	: 1em
+		font-weight : bold
+		position 	: relative
+		text-align 	: center
 	
 
 .label1
@@ -87,6 +52,16 @@ edit()
 	top 				: 70%
 	
 
+.categoriax3
+	col(3/3)
+	span
+		col(1/3)
+
+.categoriax2
+	col(2/2)
+	span
+		col(1/2)
+
 span
 	p
 		font-size 			: 2.5vw
@@ -98,18 +73,6 @@ span
 			font-size 		 : 1.8vw
 		+from-width('xl')
 			font-size 		 : 1.8vw
-	
-		
-.categoriax3
-	col(3/3)
-	span
-		col(1/3)
-
-.categoriax2
-	col(2/2)
-	span
-		col(1/2)
-		
 
 
 	

@@ -1,41 +1,59 @@
-img
-	position:relative
 
-p 
-	display: inline-block
-
-.paises 
-	padding-left: 15%
-	font-size   : 1.4rem
 	
-	span
-		col(1/3)
-		margin : 5px
-		background-color: yellow
+.box-method
+	col(1/3)
+	margin-right 		: 0
+	margin-left 		: 0
+	width 				: 33.333%
+	overflow 			: auto;
 	
-		margin-left: 7%
-		padding-left:3%
 
+	img 
+		width : 100%
+		height : auto
+		transition: all .2s ease-in-out
+	img:hover
+		transform: scale(1.1)
 		
-	+from-width('m')
-		span
-			col(1/6)
-			background-color: aqua
-			text-align: center
-			
-	// +from-width('n')
-	// 	span
-	// 		col(1/6)
-	// 		background-color: orange
-			
-	+from-width('l')
-		span
-			col(1/10)
-			background-color: pink
-			text-align: center
+
+.content-method-1, .content-method-2, .content-method-3
+	col(3/3)
+	background-color : blue
+	color : white
+	hover-lighten()
+	p
+		text-align : center
+	
+	 
 		
-	// +from-width('xl')
-	// 	col(10/10)
-	// 		span 
-	// 			col(1/10)
-	// 			background-color:black
+
+// .box-1
+// 	width : 50%
+
+// .box-2
+// 	width : 25%
+	
+// .box-3
+// 	width : 25%
+
+// .box-4
+// 	width : 25%
+
+// .box-5
+// 	width : 25%
+	
+// .box-6
+// 	width : 50%
+	
+// .box-7
+// 	width : 10%
+
+// .box-8
+// 	width : 30%
+	
+// .box-9
+// 	width : 60%
+
+	
+
+
