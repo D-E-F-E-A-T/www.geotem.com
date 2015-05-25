@@ -19,6 +19,13 @@
 
 
 ﬁ.routes.get '/metodos'                    		 							, 'metodos'
-ﬁ.routes.get '/aplicaciones'               		 							, 'applications'
+ﬁ.routes.get '/aplicaciones' 												, 'applications'
+ﬁ.routes.get '/aplicaciones/ambiental' 										, 'applications/ambiental' 
+ﬁ.routes.get '/aplicaciones/arqueologia'               		 				, 'applications/arqueologia'
+ﬁ.routes.get '/aplicaciones/geohidrologia' 									, 'applications/geohidrologia'
+ﬁ.routes.get '/aplicaciones/geotecnia' 										, 'applications/geotecnia'
+ﬁ.routes.get '/aplicaciones/geotermia' 										, 'applications/geotermia'
+ﬁ.routes.get '/aplicaciones/hidrocarburos' 									, 'applications/hidrocarburos'
+ﬁ.routes.get '/aplicaciones/mineria'	 									, 'applications/mineria'
 ﬁ.routes.get '/presencia-internacional'    		 							, 'presencia'
 ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero'   		, 'presencia/projects'
