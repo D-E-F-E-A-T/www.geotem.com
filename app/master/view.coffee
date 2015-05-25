@@ -10,3 +10,7 @@ onReady = ->
 	# Insert your master client-side javascript here.
 
 document.addEventListener 'DOMContentLoaded', onReady, false
+
+$(document).ready ->
+  $('#fullpage').fullpage()
+  return

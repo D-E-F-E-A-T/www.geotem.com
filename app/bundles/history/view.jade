@@ -1,41 +1,66 @@
-.accordian
-      ul
-        li
-          .image_title
-            a(href='#') Pequenas especies
-          a(href='#')
-            img(src="/static/jl.jpg")
-        li
-          .image_title
-            a(href='#') Equinos
-          a(href='#')
-            img(src="/static/jl.jpg")
-        li
-          .image_title
-            a(href='#') Fauna Silvestre
-          a(href='#')
-            img(src="/static/jl.jpg")
+#fullpage
+	.section
+		.slide
+			h1 slide 1
+		.slide
+			h1 slide 2	 
+		.slide
+			h1 slide 3	 
+		.slide 
+			h1 slide 4	 
+	.section 
+		h1 holaa
+	.section
+		h1 holaa
+	.section
+		h1 holaa
 
-        li
-          .image_title
-            a(href='#') Fauna Silvestre
-          a(href='#')
-            img(src="/static/jl.jpg")
+//- script(type='text/javascript').
+//- 	$(document).ready ->
+//- 	  $('#fullpage').fullpage()
+//- 	  return
 
-        li
-          .image_title
-            a(href='#') Fauna Silvestre
-          a(href='#')
-            img(src="/static/jl.jpg")
 
-        li
-          .image_title
-            a(href='#') Fauna Silvestre
-          a(href='#')
-            img(src="/static/jl.jpg")
-
-        li
-          .image_title
-            a(href='#') Fauna Silvestre
-          a(href='#')
-            img(src="/static/jl.jpg")
+//- #fullpage
+//- 	#section1.section
+//- 		#slide1.slide
+//- 			.content
+//- 				h1 No need for jQuery
+//- 				p:| 5 Kb gzipped!!
+//- 				p:| Improve the loading time of your site!
+//- 		#slide2.slide
+//- 			.content
+//- 				h1 Slides too!
+//- 		#slide2.slide
+//- 			.content
+//- 				h1 More slides!
+//- 	#section0.section
+//- 		#slide1.slide
+//- 			.content
+//- 				h1 No need for jQuery
+//- 				p:| 5 Kb gzipped!!
+//- 				p:| Improve the loading time of your site!
+//- 		#slide2.slide
+//- 			.content
+//- 				h1 Slides too!
+//- 		#slide2.slide
+//- 			.content
+//- 				h1 More slides!
+//- 	#section2.section
+//- 		#slide1.slide
+//- 			.content
+//- 				h1 No need for jQuery
+//- 				p:| 5 Kb gzipped!!
+//- 				p:| Improve the loading time of your site!
+//- 		#slide2.slide
+//- 			.content
+//- 				h1 Slides too!
+//- 		#slide2.slide
+//- 			.content
+//- 				h1 More slides!
+script(type='text/javascript').
+	fullpage.initialize('#fullpage', {
+	anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+	menu: '#menu',
+	css3:true
+	});

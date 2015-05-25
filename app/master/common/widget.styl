@@ -1,3 +1,5 @@
+edit()
+//------ imagenes portadas
 .cover 
 		position : relative
 	.cover-img
@@ -17,28 +19,68 @@
 		position 	: absolute
 		width 		: 100%
 
-.country
-	display : block
+//-------- seccion aplicaciones
+.country 
 	span
 		col(1/2)
 		margin-right 	: 0
 		margin-left 	: 1%
-		+from-width('m')
+		+from-width('medium')
 			col(1/5)
 			margin-right 	: 0
 			margin-left 	: 2%		 
-		+from-width('l')
+		+from-width('large')
 			col(1/10) 		
-		+from-width('xl')
+		+from-width('extra')
 			col(1/10)
 span
 	p
 		font-size 			: 4.5vw
 		font-weight 		: 800
 		text-align 			: center
-		+from-width('m')
+		+from-width('medium')
 			font-size 		 : 3vw
-		+from-width('l')
+		+from-width('large')
 			font-size 		 : 1.5vw
-		+from-width('xl')
+		+from-width('extra')
 			font-size 		 : 1.5vw
+
+//---------slider---------------
+			
+@keyframes slidy
+		0%
+			left 0%
+		20%
+			left 0%
+		25%
+			left -100%
+		45%
+			left -100%
+		50%
+			left -200%
+		70%
+			left -200%	
+		75%
+			left -300%
+		95%
+			left -300%	
+		100%
+			left -300%
+
+
+#slider
+	overflow 	   : 	hidden
+	.slider-box
+		position   : 	relative
+		width      : 	500%
+		margin     : 	0
+		left       : 	0
+		font-size  : 	0
+		animation  : 	10s slidy infinite
+		.slider-content
+			width   : 	20%
+			display : 	inline-block
+			img
+				width :100%
+
+			
