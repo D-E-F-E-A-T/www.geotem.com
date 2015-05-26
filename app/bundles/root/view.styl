@@ -1,3 +1,45 @@
+@keyframes slidy
+		0%
+			left 0%
+		12.5%
+			left 0%
+		25%
+			left -100%
+		37.5%
+			left -200%
+		50%
+			left -300%
+		62.5%
+			left -400%	
+		75%
+			left -500%
+		87.5%
+			left -600%	
+		100%
+			left -700%
+
+
+#slider
+	overflow 	   : 	hidden
+	.slider-box-home
+		position   : 	relative
+		width      : 	800%
+		margin     : 	0
+		left       : 	0
+		font-size  : 	0
+		animation  : 	40s slidy infinite
+		
+		.slider-content
+			width   : 	12.5%
+			display : 	inline-block
+			img
+				width :100%
+				
+
+
+
+
+
 .noticias
 	padding 	: 0 2rem
 
@@ -55,13 +97,13 @@
 			font-size  : 2em
 		
 h2
-	text-align    : center
-	padding-top   : 2rem
-	padding-bottom: 2rem
-	font-size     : 1.5em
+	text-align     		: center
+	padding-top    		: 2rem
+	padding-bottom 		: 2rem
+	font-size      		: 1.5em
 
 	+from-width('m')
-		font-size  : 2.5em
+		font-size  		: 2.5em
 	+from-width('l')
-		font-size  : 3.5em
+		font-size  		: 3.5em
 	

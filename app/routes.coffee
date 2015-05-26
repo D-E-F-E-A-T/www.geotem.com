@@ -27,5 +27,5 @@
 ﬁ.routes.get '/aplicaciones/geotermia' 										, 'applications/geotermia'
 ﬁ.routes.get '/aplicaciones/hidrocarburos' 									, 'applications/hidrocarburos'
 ﬁ.routes.get '/aplicaciones/mineria'	 									, 'applications/mineria'
-ﬁ.routes.get '/presencia-internacional'    		 							, 'presencia'
+ﬁ.routes.get '/presencia-internacional/alianza-comercial'    		 		, 'presencia/alliance'
 ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero'   		, 'presencia/projects'
