@@ -1,17 +1,23 @@
 .equipment-content
 	col(4/4)
+	margin-bottom : 1em
+
 	.equipment-image
-		padding 			: 1em
+		position : relative
+		padding 			: 1em 0 1em 0
 		col(1/4)
+		text-align 			: center
 		img
-			width 			: 100%
-			height 			: auto
-			margin-left 	: 1%
-			margin-right 	: 1%
-			border-right 	: solid 3px red
+			height 			: 23vh;
+			width 			: 14vw;
+
+
+			
 	.equipment-text
 		col(3/4)
-		 width: 71.25%
+		border-left 		: solid 3px red
+		padding 			: 0 2em 
+		
 		.equipment-title h2
 			text-align 		: left
 			font-size 		: 2em
@@ -24,3 +30,5 @@
 			color 			: blue
 			
 			
+.equipment-content:nth-child(odd)
+	background-color 		: #F8F8F8 
