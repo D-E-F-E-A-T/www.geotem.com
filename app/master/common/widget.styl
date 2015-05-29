@@ -17,13 +17,53 @@
 		width  		: 100%
 	
 	.cover-caption
-		background 	: black
+		background 	: rgba(34, 34, 34, 0)
 		bottom 		: 0
 		color 		: white
-		opacity 	: 0.5
 		padding 	: 0.5rem
 		position 	: absolute
 		width 		: 100%
+		height 		: 55%
+
+
+.countries
+	font-size	: 2vw
+	line-height : 1.125em
+	position	: relative
+	display		: inline-block
+	text-align	: left
+	bottom		: 70%
+	
+	+from-width('medium')
+			font-size 		: 1.5vw
+	+from-width('large')
+		font-size 		 	: 2vw
+	+from-width('extra')
+		font-size 		 	: 1.5vw
+
+.text
+	font-size	: 1.5vw
+	line-height : 1.125em
+	position	: relative
+	display		: inline-block
+	text-align	: justify
+	margin-left	: 50%
+	top			: 0
+	padding-right		: 1em
+	
+	
+	+from-width('medium')
+			font-size 		: 2vw
+			padding-right	: 1em
+	+from-width('large')
+		font-size 		 	: 1.8vw
+		padding-right		: 1em
+		height: -1.5em
+	+from-width('extra')
+		font-size 		 	: 1.5vw
+		padding-right		: 1em
+	
+
 
 //-------- seccion aplicaciones
 .country 

@@ -56,12 +56,6 @@
 ﬁ.routes.get '/metodos/sismicos/sismica-de-refraccion'                    		 				, 'metodos/sismicos/sismrefra'
 
 
-
-
-
-
-
-
 ﬁ.routes.get '/aplicaciones' 																	, 'applications'
 ﬁ.routes.get '/aplicaciones/ambiental' 															, 'applications/ambiental' 
 ﬁ.routes.get '/aplicaciones/arqueologia'               		 									, 'applications/arqueologia'
@@ -71,4 +65,16 @@
 ﬁ.routes.get '/aplicaciones/hidrocarburos' 														, 'applications/hidrocarburos'
 ﬁ.routes.get '/aplicaciones/mineria'	 														, 'applications/mineria'
 ﬁ.routes.get '/presencia-internacional/alianza-comercial'    		 							, 'presencia/alliance'
+
 ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero'   							, 'presencia/projects'
+ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/bolivia'   					, 'presencia/projects/bolivia'
+ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/canada'   					, 'presencia/projects/canada'
+ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/chile'   						, 'presencia/projects/chile'
+ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/colombia'   					, 'presencia/projects/colombia'
+ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/costa-rica'   				, 'presencia/projects/costa'
+ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/ecuador'   					, 'presencia/projects/ecuador'
+ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/india'   						, 'presencia/projects/india'
+ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/kirguistan'   				, 'presencia/projects/kirguistan'
+ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/nicaragua'   					, 'presencia/projects/nicaragua'
+ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/panama'   					, 'presencia/projects/panama'
+
