@@ -1,7 +1,6 @@
 // edit()
 //------ imagenes portadas
 
-
 *
 	box-sizing: border-box
 	
@@ -79,19 +78,61 @@
 			col(1/10) 		
 		+from-width('extra')
 			col(1/10)
+			
+
+.box-icons 
+	col(7/7)
+	position 	: relative
+	padding-top : 1em
+	text-align 	: center
+	.item
+		col(1/7)
+		img
+			height 			:auto
+			hover-pop ()
+			width 			:100%
+			+from-width('m')
+				width 		: 100%
+			+from-width('l')
+				width 		: 60%
+			+from-width('xl')
+				widows 		: 60%
+				
+.categoriax3
+	col(3/3)
+	span
+		col(1/3)
+
+.categoriax2
+	col(2/2)
+	span
+		col(1/2)
+						
 span
 	p
-		font-size 			: 4.5vw
+		font-size 			: 4vw
 		font-weight 		: 800
 		text-align 			: center
 		+from-width('medium')
-			font-size 		 : 3vw
+			font-size 		: 3vw
+			line-height		: 3.5vw
 		+from-width('large')
-			font-size 		 : 1.5vw
+			font-size 		 : 2vw
 		+from-width('extra')
-			font-size 		 : 1.5vw
+			font-size 		 : 2vw
 
-
+// seccion proyectos en el extranjero
+// span
+// 	p
+// 		font-size 			: 2.5vw
+// 		font-weight 		: 800
+// 		text-align 			: center
+// 		+from-width('m')
+// 			font-size 		 : 1.8vw
+// 		+from-width('l')
+// 			font-size 		 : 1.8vw
+// 		+from-width('xl')
+// 			font-size 		 : 1.8vw
 
 
 

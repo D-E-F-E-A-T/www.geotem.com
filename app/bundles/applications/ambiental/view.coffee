@@ -1,30 +1,19 @@
 ﬁ.readyStack.push ->
-	#comente las siguientes dos lineas porque marcaba error y 
-	#termina la ejecucion de este archivo y no se ejecuta lo que sigue debajo
-	console.log 'Bundle ambiental'
-	addClassByCat = (action, categoria)->
-		->
-			for tag in document.querySelectorAll('[id^='+categoria+'-tag]')
-				switch action
-					when 'add'
-						tag.classList.add(categoria+'-tag')
-					when 'remove'
-						tag.classList.remove(categoria+'-tag')
 
-	#Categoria gps
-	#Seleccionando el elemento html div de la categoria gps por id
-	divCatGPS = document.getElementById('catgps')
-	divCatGPS.onmouseover = addClassByCat('add','gps')
-	divCatGPS.onmouseout = addClassByCat('remove','gps')
+	addClassByCat = (e)->
+		eventType = e.originalEvent.type # Type of event = mouseover | mouseout
+		id = e.target.id.split('-')[1] # Get category from id
+		tag = id+'-tag'
+		if eventType == 'mouseover'
+			console.log 'mouseover', $(tag)
+			$('[id^='+tag).addClass(tag)
+		
+		if eventType == 'mouseout'
+			console.log 'mouseout', $(tag) 
+			$('[id^='+tag).removeClass(tag)
+		# Condiciones con operador ternario condicion ? valorSiVerdadero : valorSiFalso
+		# eventType == 'mouseover' ? $(id+'-tag').addClass(id+'-tag') : $(id+'-tag').removeClass(id+'-tag')
 
-	#Categoria electromagnéticos
-	#Seleccionando el elemento html div de la categoria electromagnéticos por id
-	divCatElectro = document.getElementById('catelectro')
-	divCatElectro.onmouseover = addClassByCat('add','electro')
-	divCatElectro.onmouseout = addClassByCat('remove','electro')
 
-	#Categoria eléctricos
-	#Seleccionando el elemento html div de la categoria eléctricos por id
-	divCatElectri = document.getElementById('catelectri')
-	divCatElectri.onmouseover = addClassByCat('add','electri')
-	divCatElectri.onmouseout = addClassByCat('remove','electri')
+	$('[id^=cat-]').hover addClassByCat, addClassByCat # Agregando funcion al evento mouseover a las categorias
+	$('[id^=cat-]').hover addClassByCat, addClassByCat # Agregando funcion al evento mouseout a las categorias	divCatElectri.onmouseout = addClassByCat('remove','electri')
