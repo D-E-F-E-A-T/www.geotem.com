@@ -1,96 +1,73 @@
 &
-	// center(100%, 2rem)
-
-	// background-color : $white
-	// background-color : green
-	display          : flex
-	padding          : 0.5rem
-	position		: relative	
+	display		: flex
+	padding		: 0.5rem
+	position	: relative
 
 	.header-master
 		col(12/12)
-		// background : blue
 
 		.header-logo
 			col(3/12)
-			// background : red 
-			text-align  : center
-			
-			// width       : 50%
-	
-
+			text-align	: center
 			img
-				
-				// background :  pink
 				margin : 0.8em 0.5em 0.7em 0.5em
 
 		.header-menu
 			col(9/12)
-			// background : yellow
-
-					
 			.menu
-				// background : purple
-				width 					: 	100%
-				
-				
+				width	: 100%
 				ul
-					inline-list: 3%
 					col(6/6)
 					padding : 1.5em
-					// background : peru
 					position : relative
 					right : 0
-					
-					
-					li
-						col(1/6)
-						// background : orange
-						text-align : center
-
-					a
+					list-style : none
+					li a
 						text-decoration : none
 						font-weight : 800
 						color : black
-						
-			
-			
-						.submenu
-							background-color 	: 	rgba(255,255,255,0.9)
-							box-shadow 			: 	10px 10px 5px 0px rgba(0,0,0,0.15)
-							display 			: 	none
-							opacity 			: 	0
-							padding  			: 	0
-							position  			: 	absolute
-							top  				: 	3rem
-							visibility 			: 	hidden
-							width 				: 	17em
-							z-index 			: 	10
+						hover-underline : 3px solid red
+						font-size : 1.2rem
+				.submenu
+					background-color:	rgba(255,255,255,0.9)
+					box-shadow		:	10px 10px 5px 0px rgba(0,0,0,0.15)
+					display			:	none
+					opacity			:	0
+					padding			:	0
+					position		:	absolute
+					top				:	2.8rem
+					visibility		:	hidden
+					width			:	17em
+					z-index			:	10
+					li 
+						color			:	#fff
+						display			:	block
+						margin			:	0
+						padding			:	0.8rem
+						text-align		: left
+				.m1
+					left	:	14.5vw
+				.m2
+					left	:	23rem
+				.m3
+					left	:	52.7vw
+.header-master .header-menu .menu ul li:hover .submenu 
+		display		:	block
+		opacity		:	1
+		visibility	:	visible
 
-	
+.submenu li a:hover
+	color	:	red !important
+.section
+	col(1/6)
+	text-align : center
 
-.submenu li 
-	color 				: 	#fff
-	display 			: 	block;
-	margin 				: 	0
-	padding 			: 	0.8rem	
-	
 
-.m1
-	left  				: 	11.3rem		
-.m2
-	
-	left  				: 	23rem
-.m3
-	
-	left  				: 	57.5rem
-	
-// .submenu li a:hover 
-// 	color 		  		:  red !important
++from-width('small')
+	.menu
+		display	: none
 
-// ul li:hover .submenu 
-// 		display 		: 	block;
-// 		opacity 		: 	1;
-// 		visibility 		: 	visible;
++from-width('medium')
+	.menu
+		display	: none
 
-					

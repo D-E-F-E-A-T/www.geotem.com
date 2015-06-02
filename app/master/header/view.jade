@@ -7,33 +7,31 @@
 	.header-menu
 		.menu
 			ul
-				li: a(href='/') Inicio
-				li: a(href='/acerca-de') Acerca de
+				li.section: a(href='/') Inicio
+				li.section
+					a(href='/acerca-de') Acerca de
 					ul.submenu.m1
-						//- li: a(href='/acerca-de/perfil-de-la-compania') Perfil de la compañia
-						//- li: a(href='/acerca-de/administracion') Administración
-						//- li: a(href='/acerca-de/historia') Historia
-						//- li: a(href='/acerca-de/clientes') Clientes
-						//- li: a(href='/acerca-de/privacidad') Privacidad
-				li: a(href='/servicios') Servicios
-					//- ul.submenu.m2
-					//- 	li: a(href='/servicios/adquisicion-de-datos') Adquisición de datos
-					//- 	li: a(href='/servicios/procesamiento') Procesamiento
-					//- 	li: a(href='/servicios/modelado-e-inversion') Modelado e inversión
-					//- 	li: a(href='/servicios/integracion-e-interpretacion') Integración e interpretación
-					//- 	li: a(href='/servicios/entrenamiento') Entrenamiento
-					//- 	li: a(href='/servicios/equipo') Equipo
+						li: a(href='/acerca-de/perfil-de-la-compania') Perfil de la compañia
+						li: a(href='/acerca-de/administracion') Administración
+						li: a(href='/acerca-de/historia') Historia
+						li: a(href='/acerca-de/clientes') Clientes
+						li: a(href='/acerca-de/privacidad') Privacidad
+				li.section
+					a(href='/servicios') Servicios
+					ul.submenu.m2
+						li: a(href='/servicios/adquisicion-de-datos') Adquisición de datos
+						li: a(href='/servicios/procesamiento') Procesamiento
+						li: a(href='/servicios/modelado-e-inversion') Modelado e inversión
+						li: a(href='/servicios/integracion-e-interpretacion') Integración e interpretación
+						li: a(href='/servicios/entrenamiento') Entrenamiento
+						li: a(href='/servicios/equipo') Equipo
 
-				li: a(href='/metodos') Métodos 
-				li: a(href='/aplicaciones') Aplicaciones
-				li: a(href='#') Presencia Internacional
+				li.section: a(href='/metodos') Métodos 
+				li.section: a(href='/aplicaciones') Aplicaciones
+				li.section
+					a(href='#') Presencia Internacional
 					ul.submenu.m3
 						li: a(href='/presencia-internacional/proyectos-en-el-extranjero') Proyectos en el extranjero
 						li: a(href='/presencia-internacional/alianza-comercial') Alianza Comercial
 
-		//- .menu-button
-		//- 		input.menu-button(type='checkbox' id='header-menu-button')
-		//- 		label.menu-button(for='header-menu-button' role='button' aria-labelledby="menu") MENU
-		//- 		.menu-content
-					
-						
+
