@@ -45,18 +45,29 @@
 						margin			:	0
 						padding			:	0.8rem
 						text-align		: left
-				.m1
-					left	:	14.5vw
-				.m2
-					left	:	27vw
-				.m3
-					left	:	40vw
-				.m4
-					left	: 	51.3vw
-				.m5
-					left	: 	58vw
+.m1
+	left	:	14.5vw
+//-.m2
+//-	left	:	27vw
+.m3
+	left	:	40vw
+.m4
+	left	: 	51.3vw
+.m5
+	left	: 	58vw
 
-
+@media (min-width:800px)
+	.m2
+		left	:	36%
+@media (min-width:1366px)
+	.m2
+		left	:	36.5%
+//-+to-width(1280px)
+//-	.m2
+//-		left : 36%
+// +from-width(1300px)
+// 	.m2
+// 		left: 36.5%
 .header-master .header-menu .menu ul li:hover .submenu 
 		display		:	block
 		opacity		:	1
@@ -68,13 +79,3 @@
 	col(1/6)
 	text-align 	: center
 	display		: inline
-
-
-// +from-width('small')
-// 	.menu
-// 		display	: none
-
-// +from-width('medium')
-// 	.menu
-// 		display	: none
-
