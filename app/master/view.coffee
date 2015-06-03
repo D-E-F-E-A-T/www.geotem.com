@@ -12,5 +12,6 @@ onReady = ->
 document.addEventListener 'DOMContentLoaded', onReady, false
 
 $(document).ready ->
-  $('#fullpage').fullpage()
+  $('.slicknav').slicknav()
+  #$('#fullpage').fullpage()
   return
