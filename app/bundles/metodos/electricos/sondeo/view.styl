@@ -1,6 +1,65 @@
+edit()	
+
 .portada
 	width	: 100%
 	heigth	: 100%
 
 	img
 		width	: 100%
+		
+@keyframes slidy
+		0%
+			left 0%
+		
+		50%
+			left 0%
+	
+		
+		100%
+			left -100%	
+				
+.content
+	col(2/2)
+	.content-title
+		col(1/2)
+	#content-slide
+		col(1/2)	
+
+#content-slide
+	overflow 	   : 	hidden
+	.slider-box
+		position   : 	relative
+		width      : 	200%
+		margin     : 	0
+		left       : 	0
+		font-size  : 	0
+		animation  : 	10s slidy infinite
+		
+		.slider-content
+			width   : 	50%
+			display : 	inline-block
+			img
+				width :100%
+				
+.content2
+	col(2/2)
+	.content2-title
+		col(1/2)
+	#content2-slide
+		col(1/2)	
+
+#content2-slide
+	overflow 	   : 	hidden
+	.slider2-box
+		position   : 	relative
+		width      : 	200%
+		margin     : 	0
+		left       : 	0
+		font-size  : 	0
+		animation  : 	10s slidy infinite
+		
+		.slider2-content
+			width   : 	50%
+			display : 	inline-block
+			img
+				width :100%
