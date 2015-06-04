@@ -69,8 +69,8 @@
 .slicknav_menu {
   font-size: 16px;
   box-sizing: border-box;
-  background: #494946;
-  padding: 5px; }
+  background: white;
+  /*padding: 5px;*/}
   .slicknav_menu * {
     box-sizing: border-box; }
   .slicknav_menu .slicknav_menutxt {
@@ -114,7 +114,7 @@
     padding: 5px 10px;
     margin: 2px 5px;
     text-decoration: none;
-    color: #fff; 
+    color: black; 
     font-size: 1.2em}
     .slicknav_nav a:hover {
       -webkit-border-radius: 6px;
