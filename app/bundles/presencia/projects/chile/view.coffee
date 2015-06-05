@@ -1,2 +1,2 @@
-window.readyStack.push ->
+ﬁ.readyStack.push ->
 	console.log 'Bundle chile'
