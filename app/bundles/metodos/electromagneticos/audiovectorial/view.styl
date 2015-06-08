@@ -1,6 +1,77 @@
-#bundle-audiovectorial
-	backround-color: tomato
+edit()
 
-	p
-		background-color : lightgreen
-		color            : deepskblue
+.content
+	col(2/2)
+	.content-title
+		col(1/2)
+	#content-slide
+		col(1/2)
+
+.content2
+	col(2/2)
+	.content2-title
+		col(1/2)
+	#content2-slide
+		col(1/2)
+
+@keyframes slidy3
+		0%
+			left 0%
+		33%
+			left 0%
+		66%
+			left -100%
+		100%
+			left -200%
+
+#content-slide
+	overflow 	   : 	hidden
+	.slider-box
+		position   : 	relative
+		width      : 	300%
+		margin     : 	0
+		left       : 	0
+		font-size  : 	0
+		animation  : 	10s slidy3 infinite
+		
+		.slider-content
+			width   : 	33%
+			display : 	inline-block
+			img
+				width :100%
+
+@keyframes slidy8
+		0%
+			left 0%
+		12.5%
+			left 0%
+		25%
+			left -100%
+		37.5%
+			left -200%
+		50%
+			left -300%
+		62.5%
+			left -400%
+		75%
+			left -500%
+		87.5%
+			left -600%
+		100%
+			left -700%
+
+#content2-slide
+	overflow 	   :	hidden
+	.slider2-box
+		position   :	relative
+		width      :	800%
+		margin     :	0
+		left       :	0
+		font-size  :	0
+		animation  :	40s slidy8 infinite
+		
+		.slider2-content
+			width   :	12.5%
+			display :	inline-block
+			img
+				width :100%
