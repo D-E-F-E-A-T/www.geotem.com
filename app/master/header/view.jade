@@ -5,6 +5,9 @@
 			img(src='/static/geotem.svg')
 
 	.header-menu
+		.search
+			input(type='search', placeholder='Search')
+
 		.menu
 			ul.slicknav
 				li.section: a(href='/') Inicio
@@ -54,5 +57,21 @@
 					ul.submenu.m5
 						li: a(href='/presencia-internacional/proyectos-en-el-extranjero') Proyectos en el extranjero
 						li: a(href='/presencia-internacional/alianza-comercial') Alianza Comercial
+
+
+	//- form(method='GET', action='http://www.google.es/search')
+		
+	//- 	input(type='hidden', name='ie', value='UTF-8')
+	//- 	input(type='hidden', name='oe', value='UTF-8')
+
+	//- 	input#s(type='text', name='q', value='', size='50')
+	//- 	input(type='hidden', name='domains', value='http://www.geotem.com.mx')
+
+	//- 	input(type='radio', name='sitesearch', value='')
+	//- 	|  En todo Internet
+
+	//- 	input(type='radio', name='sitesearch', value='http://www.geotem.com.mx', checked='')
+	//- 	|  En geotem.com.mx
+	//- 	input#x(type='submit', name='btnG', value='Buscar')
 
 
