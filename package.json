@@ -1,7 +1,7 @@
 {
-  "name": "geotem-prueba",
-  "version": "0.0.1",
-  "description": "A Fai powered app.",
+  "name": "geotem",
+  "version": "0.0.2",
+  "description": "Website for geotem repository",
   "main": "app.coffee",
   "author": "GiK <gik@gik.mx>",
   "license": "All rights reserved",
@@ -9,7 +9,10 @@
     "fai": "^0.2.11",
     "fullpage.js": "^2.6.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.9.3",
+    "gulp": "^3.9.0"
+  },
   "scripts": {
     "install": ".fi/bin/install",
     "sync": "browser-sync start --config=browser-sync.json",

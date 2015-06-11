@@ -1,3 +1,5 @@
-node_modules/*
-app/static/*
-bower_components/*
+node_modules
+app/static
+*.log
+*.sublime-workspace
+*.DS_*

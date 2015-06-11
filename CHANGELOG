@@ -1,0 +1,15 @@
+[v0.0.2] Ajustes y corte a la versión 100% estática.
+
+*	Eliminado node_modules del repositorio.
+*	Arreglado bug en browser-sync.js que impedía detectar el .lastrun de fai.
+*	Usado gulp para el envío de mensaje post-instalación.
+*   Actualizada la verificación interna de dependencias en ".fi"
+*	Cambiado el nombre del proyecto de sublime-text
+*	Cambiada la dependencia de jQuery para que siempre utilice la útima versión disponible.
+*	Borrado directorio public, cuyo propósito ignoro.
+*	Agregados coffe-script y gulp como dependencias de desarrollo (para ser
+	consistente con otros proyectos fai)
+*	Modificado .gitignore agregando excepciones comunes.
+*	Agregado .bowerrc para que las librerías de bower se instalen en static/lib
+*	Eliminado e ignorados los archivos *.log de git.
+*	Agregado un changelog, para mantener un registro de los cambios.

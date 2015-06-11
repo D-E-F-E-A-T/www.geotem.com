@@ -1,0 +1,4 @@
+#!/bin/bash
+bash "$(dirname $0)/deps"
+bower install
+gulp

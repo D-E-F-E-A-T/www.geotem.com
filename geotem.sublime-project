@@ -1,0 +1,23 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.sublime-*",
+				".bowerrc",
+				".git*",
+				"*.json",
+				"*.log",
+				"gulpfile.js"
+			],
+			"folder_exclude_patterns":
+			[
+				"node_modules",
+				".fi"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}

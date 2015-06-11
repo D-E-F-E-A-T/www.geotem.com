@@ -3,10 +3,9 @@
     "restartable": "rs",
     "ext":"coffee styl jade",
     "ignore": [
-    	".git",
-    	"fi",
-    	"node_modules",
-    	"app/static/lib"
+      ".git",
+      "node_modules",
+      "app/static/lib"
     ],
     "execMap": {
       "coffee": "coffee"
