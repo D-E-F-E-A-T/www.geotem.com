@@ -1,41 +1,15 @@
-#main 
-	//edit()
-		
-	.cover 
-		position : relative
-	.cover-img
-		position : relative
-		
-	.cover-img	img
-		height :  auto
-		width  : 100%
-		position : relative
+.content
+	width : 100% 
+	margin-left : 0
 	
-	.cover-caption
-		background : black
-		opacity : 0.5
-		position: absolute
-		bottom: 0;
-		width: 100%;
-		color: white;
-		padding: 0.5rem
-			
-	
-	
+	+from-width('large')
+		width       : 92%
+	+from-width('extra')
+		width       : 88%
+		margin-left : 6vw
 
+	h1,h3
+		padding : 0 0 0 1rem
 		
-	.content
-		width       : 100% 
-		margin-left : 0
-		+from-width('large')
-			width       : 92%
-		+from-width('extra')
-			width       : 88%
-			margin-left : 7rem
-		
-		h1,h3
-			padding : 0 0 0 1rem
-			
-		p 
-			padding : 0 1rem 0 1rem	
-		
+	p 
+		padding : 0 1rem 0 1rem	
