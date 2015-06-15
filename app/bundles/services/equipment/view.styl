@@ -1,3 +1,4 @@
+edit()
 .equipment-content
 	col(4/4)
 	margin-bottom : 1em
@@ -10,25 +11,61 @@
 		img
 			height 			: 23vh;
 			width 			: 14vw;
-
-
 			
 	.equipment-text
 		col(3/4)
-		border-left 		: solid 3px red
 		padding 			: 0 2em 
 		
 		.equipment-title h2
-			text-align 		: left
 			font-size 		: 2em
-			color 			: red
 		.equipment-description
-			font-size 		: 1em
-			
+			font-size 		: 1em	
 		.equipment-url h5
 			font-size 		: 1em
-			color 			: blue
+			color 			: blue		
+
++to-width('s')
+	.equipment-content
+		col(4/4)
+		.company
+			col(1/4)
+			width : 100%
+		.equipment-image 
+			col(1/4)
+			width : 100%
+			img
+				height : 70%
+				width : 80%
+				margin : 0 2.5em	
+		.equipment-title
+			col(1/4)
 			
+			width : 100%
+			line-height : 1.4em	
+		.equipment-text
+			col(1/4)	
+			width : 100%
 			
-.equipment-content:nth-child(odd)
-	background-color 		: #F8F8F8 
++from-width('m')
+	.equipment-content
+		col(4/4)
+		.equipment-title
+			line-height : 1.4em	
+		.equipment-image
+			col(2/4)
+			width : 45%
+			margin: 13vw 3vh
+			img
+				height : 23vh
+				width : 38vw
+				margin-left : 5vw
+				top: 13vh
+		.equipment-text
+			col(2/4)
+			width : 45%
+			
+		
+
+
+
+		

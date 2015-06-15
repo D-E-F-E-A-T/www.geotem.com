@@ -1,3 +1,14 @@
+[v0.0.5] Cambios generales
+
+*  En sección servicios y acerca de,se ajustaron textos en móvil
+*  En animación de métodos se cambiaron colores y nomenclaturas
+*  En la animación de métodos se distribuyeron las imágenes
+*  Reemplazo de imágenes en métodos y aplicaciones
+*  Anchos y tamaños de letra de label's en aplicaciones en móvil
+*  Estilos en aplicaciones para los tags
+*  Reemplazo de información en la sección de equipos
+*  Ajuste de la sección de equipos en small y medium
+
 [v0.0.4] Ajustes en header
 
 *  Se ajusta logo en version movil y desktop
