@@ -1,0 +1,65 @@
+.container
+	center(max-width:1600px)
+	display : flex
+	margin-top : 1rem
+	flex-wrap : wrap
+	justify-content : center
+	flex-direction : column
+	
+	+from-width('large')
+		flex-direction : row
+
+	img	
+		width: 12rem
+		height: auto
+		margin: 0 2rem 0 2rem
+	h3,p
+		text-align : center
+	p 
+		margin-top : -1rem
+		
+
+.cust-box
+	display : inline-block
+	background: white
+	margin-bottom: 3px
+	text-align:center
+	margin : 0.5em 2em 0.5em 2em
+
+.content
+	h2
+		text-align    : center
+		padding-top   : 2rem
+		padding-bottom: 2rem
+		font-size     : 1.5em
+		text-transform : none
+	
+
+		+from-width('m')
+			font-size  : 2.5em
+		+from-width('l')
+			font-size  : 3.5em
+
+.container-customer
+	text-align : center
+	background: white !important
+	width: 100%
+	
+
+.content-p1
+	width       : 100% 
+	margin-left : 0
+	
+	+from-width('large')
+		width       : 92%
+	+from-width('extra')
+		width       : 88%
+		margin-left : 6vw
+	
+	
+	h1,h3
+		padding : 0 0 0 1rem
+		
+	p 
+		padding : 0 1rem 0 1rem	
+			

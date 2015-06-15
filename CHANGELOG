@@ -1,3 +1,10 @@
+[v0.0.3] Ajustes en en bundles
+
+*	Se crea carpeta de mixins para la creacion de elementos comunes
+*	Se establecen estilos en bundles maestro de cada categoria
+*	Se eliminan estilos repetidos en bundles hijos
+
+
 [v0.0.2] Ajustes y corte a la versión 100% estática.
 
 *	Eliminado node_modules del repositorio.
