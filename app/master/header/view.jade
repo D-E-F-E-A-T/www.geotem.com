@@ -2,15 +2,19 @@
 
 	.header-logo
 		a(href="/")
-			img(src='/static/geotem.svg')
+			img.logo-geo(src='/static/geotem.svg')
 
 	.header-menu
-		.search
-			input(type='search', placeholder='Search')
+		.menu-top
+			.material2
+				input(type='search', placeholder='Search')
+				//- li: a(href='/acerca-de/perfil-de-la-compania') Perfil de la compañia
+			.material
+				li: a(href='/static/revista/Catalogo.html') Material Técnico
 
 		.menu
 			ul.slicknav
-				li.section: a(href='/') Inicio
+				li.section.inicio: a(href='/') Inicio
 				li.section
 					a(href='#') Acerca de
 					ul.submenu.m1
