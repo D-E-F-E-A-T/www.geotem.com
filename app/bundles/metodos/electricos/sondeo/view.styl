@@ -1,61 +1,130 @@
 edit()
 
+color1 = #74c8ed
+color2 = #65a6b7
+color3 = #4a7984
+
+.cover
+	width : 100%
+	height : auto
 	img
-		width	: 100%
-		
-@keyframes slidy
-		0%
-			left 0%
-		
-		50%
-			left 0%
-	
-		
-		100%
-			left -100%	
-				
-.content
-	col(2/2)
-	.content-title
-		col(1/2)
-	#content-slide
-		col(1/2)	
+		width : 100%
+//_____________________________
 
-#content-slide
-	overflow 	   : 	hidden
-	.slider-box
-		position   : 	relative
-		width      : 	200%
-		margin     : 	0
-		left       : 	0
-		font-size  : 	0
-		animation  : 	10s slidy infinite
-		
-		.slider-content
-			width   : 	50%
-			display : 	inline-block
-			img
-				width :100%
-				
-.content2
-	col(2/2)
-	.content2-title
-		col(1/2)
-	#content2-slide
-		col(1/2)	
+.block1
+	col(3/12)
+	height : 20vw
+	background : color1
+	margin : 0 0 0 3vw
+	padding: 0 !important
+	box-sizing: border-box !important
 
-#content2-slide
-	overflow 	   : 	hidden
-	.slider2-box
-		position   : 	relative
-		width      : 	200%
-		margin     : 	0
-		left       : 	0
-		font-size  : 	0
-		animation  : 	10s slidy infinite
-		
-		.slider2-content
-			width   : 	50%
-			display : 	inline-block
-			img
-				width :100%
+.block2
+	col(5/12)
+	height : 20vw
+	background : green
+	margin : 0 !important
+	padding: 0 !important
+	box-sizing: border-box !important
+	img
+		width : 100%
+
+.block3
+	col(4/12)
+	height : 20vw
+	background : color2
+	margin : 0 !important
+	padding: 0 !important
+	box-sizing: border-box !important
+
+//_____________________________
+
+.block4
+	col(5/12)
+	background : yellow
+	box-sizing: border-box !important
+	height : 20vw
+	margin : 0 0 0 3vw
+	padding: 0 !important
+	img
+		width : 100%
+
+.block5
+	col(3/12)
+	background : color3
+	box-sizing: border-box !important
+	height : 20vw
+	margin : 0 !important
+	padding: 0 !important
+
+.block6
+	col(4/12)
+	background : silver
+	box-sizing: border-box !important
+	height : 20vw
+	margin : 0 !important
+	padding: 0 !important
+	img
+		width : 100%
+
+//___________________________
+
+.block7
+	col(5/12)
+	background : blue
+	box-sizing: border-box !important
+	height : 40vw
+	margin : 0 0 0 3vw
+	padding: 0 !important
+	.sub7
+		col(12/12)
+		background : pink
+		height : 25vw
+		img
+			width : 100%
+	.sub7-1
+		col(12/12)
+		background : color3
+		height : 15vw
+
+.block8
+	col(7/12)
+	background : red
+	box-sizing: border-box !important
+	height : 40vw
+	margin : 0 0 0 0 !important
+	padding: 0 !important
+	width: 54.083333%
+	.sub8
+		col(12/12)
+		background : color1
+		height : 15vw
+	.sub8-1
+		col(12/12)
+		background : peru
+		height : 25vw
+		img
+			width : 100%
+
+//___________________________________
+
+.block9
+	col(8/12)
+	background : black
+	box-sizing: border-box !important
+	height : 20vw
+	margin: 0 0 0 3vw !important
+	padding: 0 !important
+	img
+		width : 100%
+
+
+.block10
+	col(4/12)
+	background : color2
+	box-sizing: border-box !important
+	height : 20vw
+	margin : 0 0 0 0
+	padding: 0 !important
+	width : 28.333333%
+
