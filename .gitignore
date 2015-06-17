@@ -1,5 +1,4 @@
 node_modules
-app/static
 *.log
 *.sublime-workspace
 *.DS_*
