@@ -3,16 +3,21 @@ include /master/common/mixins/icons
 	.cover-img
 		img(src="/static/img/aplicaciones/Mineria.png")
 	
-	#cat-electro.lab.label3
-		span Electromagnéticos
-	#cat-poten.lab.label5
-		span Potenciales
-	#cat-gps.lab.label1
-		span GPS
-	#cat-electri.lab.label4
-		span Eléctricos
-	#cat-espec.lab.label8
-		span Espectrometría
+	#cat-electro
+		a.lab.label3(href='/metodos/electromagneticos')
+			span Electromagnéticos
+	#cat-poten
+		a.lab.label5(href='/metodos/potenciales')
+			span Potenciales
+	#cat-gps
+		a.lab.label1(href='/metodos/gps')
+			span GPS
+	#cat-electri
+		a.lab.label4(href='/metodos/electricos')
+			span Eléctricos
+	#cat-espec
+		a.lab.label8(href='/metodos/espectometria')
+			span Espectrometría
 
 .categoriax3
 	span: p#electro-tag Audio-Magnetotelúrico de Fuente Controlada *v

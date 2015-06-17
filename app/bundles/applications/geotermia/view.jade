@@ -3,16 +3,21 @@ include /master/common/mixins/icons
 	.cover-img
 		img(src="/static/img/aplicaciones/Geotermia.png")
 	
-	#cat-electro.lab.label3
-		span Electromagnéticos
-	#cat-sismicos.lab.label7
-		span Sísmicos
-	#cat-poten.lab.label5
-		span Potenciales
-	#cat-espec.lab.label8
-		span Espectrometría
-	#cat-gps.lab.label1
-		span GPS
+	#cat-electro
+		a.lab.label3(href='/metodos/electromagneticos')
+			span Electromagnéticos
+	#cat-sismicos
+		a.lab.label7(href='/metodos/sismicos')
+			span Sísmicos
+	#cat-poten
+		a.lab.label5(href='/metodos/potenciales')
+			span Potenciales
+	#cat-espec
+		a.lab.label8(href='/metodos/espectometria')
+			span Espectrometría
+	#cat-gps
+		a.lab.label1(href='/metodos/gps')
+			span GPS
 
 .categoriax3
 	span: p#sismicos-tag Sísmica de Cocientes Espectrales

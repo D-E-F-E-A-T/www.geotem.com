@@ -3,14 +3,18 @@ include /master/common/mixins/icons
 	.cover-img
 		img(src="/static/img/aplicaciones/Hidrocarburos.png")
 
-	#cat-electro.lab.label3
-		span Electromagnéticos
-	#cat-registro.lab.label6
-		span Registro Geofísico
-	#cat-poten.lab.label5
-		span Potenciales
-	#cat-gps.lab.label1
-		span GPS
+	#cat-electro
+		a.lab.label3(href='/metodos/electromagneticos')
+			span Electromagnéticos
+	#cat-registro
+		a.lab.label6(href='/metodos/registro')
+			span Registro Geofísico
+	#cat-poten
+		a.lab.label5(href='/metodos/potenciales')
+			span Potenciales
+	#cat-gps
+		a.lab.label1(href='/metodos/gps')
+			span GPS
 
 .categoriax3
 	span: p#electro-tag Magnetotelúrico/Auido-Magnetotelúrico
