@@ -1,17 +1,50 @@
-mixin mosaico-x3(txt1, img, title)
-	.nivel1
-		.item1
-			p #{txt1}
-		.item2
-			img(src='/static/img/Audio-magneto/#{img}.png')
-		.item3
-			p  #{txt2}
+mixin mosaico-x3-2-1(txt1, img, txt2)
+	.block1
+		p #{txt1}
+
+	.block2
+		img(src='/static/img/#{img}')
+
+	.block3
+		p  #{txt2}
 
 
-mixin mosaico-x2(txt1, img, title)
-	.nivel3
-		.item7
-			img(src='/static/img/Audio-magneto/#{img}.png')
-				
-		.item8
+mixin mosaico-x3-1-2(img, txt1, img2)
+	.block4
+		img(src='/static/img/#{img}')
+
+	.block5
+		p  #{txt1}
+
+	.block6
+		img(src='/static/img/#{img2}')
+
+
+
+
+
+mixin mosaico-x4-2-2(img, txt1, txt2, img2)
+
+	.block7
+		.sub7
+			img(src='/static/img/#{img}')
+
+		.sub7-1
 			p #{txt1}
+
+	.block8
+		.sub8
+			p #{txt2}
+
+		.sub8-1
+			img(src='/static/img/#{img2}')
+
+
+
+mixin mosaico-x2-1-1(img, txt1)
+
+	.block9
+		img(src='/static/img/#{img}')
+
+	.block10
+		p #{txt1}

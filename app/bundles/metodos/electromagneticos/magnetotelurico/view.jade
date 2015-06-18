@@ -1,40 +1,12 @@
+include /master/common/mixins/mosaico
+
 section.cover
 	section.cover1
 		img(src="/static/img/metodos/electromagneticos/magnetotelurico/Portada_MT-RMT.png")
 
-section.row1
-	.et2-tx1
-		p Series de tiempo
-
-	.et2-img
-		img.dos-a(src="/static/img/metodos/electromagneticos/magnetotelurico/Etapa2a.png")
-
-	.et2-tx2
-		p Curva de amplitud y fase
-
-section.row2
-	p
-
-	img.dos-b
-
-section.row3
-	img.dos-c
-
-	p
-
-	slide
-
-section.row4
-	p
-
-	img.tres-f
-
-	p
-
-section.row5
-
-	img.cuatro-a
-
-	p
++mosaico-x3-2-1("texto1", "", "texto2")
++mosaico-x3-1-2("", "texto3", "electricos/03.png")
++mosaico-x4-2-2("", "texto4", "texto5", "")
++mosaico-x2-1-1("", "texto5")
 
 
