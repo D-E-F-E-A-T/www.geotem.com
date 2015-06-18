@@ -15,6 +15,8 @@ $(document).ready ->
   $('.slicknav').slicknav()
   $('.slicknav_menu').append($('.header-logo').html())
   $('.bxslider').bxSlider()
-  #$('#fullpage').fullpage()
+  $().timelinr()
+  return
+
   return
 
