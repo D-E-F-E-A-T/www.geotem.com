@@ -1,0 +1,13 @@
+mixin timeline(year, desc, title, text, img)
+
+	.step.year
+			.dsk-titlenode  #{year} 
+			.dsk-content
+		.step
+			.dsk-circle 
+			h2.dsk-circle-title #{desc}
+			.dsk-content
+				.dsk-info
+					h2 #{title}
+					p : #{text}
+				img(src="/static/img/#{img}", alt="")

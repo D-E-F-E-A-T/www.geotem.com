@@ -16,6 +16,7 @@ $(document).ready ->
   $('.slicknav_menu').append($('.header-logo').html())
   $('.bxslider').bxSlider()
   $().timelinr()
+  $('#dasky').Dasky()
   return
 
   return
