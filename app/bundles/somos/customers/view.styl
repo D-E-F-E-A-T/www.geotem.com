@@ -1,2 +1,29 @@
+.line
+	text-align center
+	a
+		margin-left : 5% 
+	span
+		display inline-block
+		position relative
+		font-size : 1.8rem
+		&:before
+			right 100%
+			margin-right 15%
+			+to-width('s')
+				margin-right 4%
+		&:after
+			left 100%
+			margin-left 15%
+			+to-width('s')
+				margin-left 4%
 
-	
+.line span:before,
+.line span:after
+	content ""
+	position absolute
+	height 30%
+	border-bottom 2px solid black
+	top 0%
+	width 700%
+	+to-width('s')
+		width 50%
