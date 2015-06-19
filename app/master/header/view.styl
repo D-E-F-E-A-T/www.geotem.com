@@ -48,12 +48,14 @@
 					position 	: relative
 					right 		: 0
 					list-style 	: none
-					li a
-						text-decoration : none
-						font-weight 	: 800
-						color 			: black
-						hover-underline : 3px solid red
-						font-size : 1.2rem
+					li
+						width : 13.5 !important
+						a
+							text-decoration : none
+							font-weight 	: 800
+							color 			: black
+							hover-underline : 3px solid red
+							font-size : 1.2rem
 				.submenu
 					background-color:	rgba(255,255,255,0.9)
 					box-shadow		:	10px 10px 5px 0px rgba(0,0,0,0.15)
@@ -70,7 +72,18 @@
 						display			:	block
 						margin			:	0
 						padding			:	0.8rem
-						text-align		: left						
+						text-align		: left
+.material-m
+	display : block
+	input
+		margin-left: 13px !important
+		width: 92% !important
+	+from-width('x')
+		display : none !important
+		
+	
+
+		
 				
 .m1
 	left	:	14.5vw
