@@ -5,9 +5,22 @@ mixin cover(img, title)
 
 	.content
 		h1 #{title}
- 
-
 
 mixin cover-sc(img)
 	.cover
 		img(src='/static/img/#{img}')
+
+mixin cover-full(img, title, desc1, desc2)
+	.cover
+		.cover-img
+			img(src="/static/img/#{img}")
+				
+		.cover-caption
+
+			.title.countries
+				h1 #{title}
+
+			.text
+				span 
+					|#{desc1}
+					|#{desc2}
