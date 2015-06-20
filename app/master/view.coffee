@@ -14,6 +14,8 @@ document.addEventListener 'DOMContentLoaded', onReady, false
 $(document).ready ->
   $('.slicknav').slicknav()
   $('.slicknav_menu').append($('.header-logo').html())
+  $('.slicknav_menu').addClass('up')
+  $('#header').addClass('down')
   $('.bxslider').bxSlider()
   $().timelinr()
   $('#dasky').Dasky()
