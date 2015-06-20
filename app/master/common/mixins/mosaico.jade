@@ -1,4 +1,5 @@
 mixin mosaico-x3-2-1(txt1, img, txt2)
+
 	.block1
 		p #{txt1}
 
@@ -8,8 +9,10 @@ mixin mosaico-x3-2-1(txt1, img, txt2)
 	.block3
 		p  #{txt2}
 
+//-#####################################################
 
 mixin mosaico-x3-1-2(img, txt1, img2)
+
 	.block4
 		img(src='/static/img/#{img}')
 
@@ -19,9 +22,7 @@ mixin mosaico-x3-1-2(img, txt1, img2)
 	.block6
 		img(src='/static/img/#{img2}')
 
-
-
-
+//-#####################################################
 
 mixin mosaico-x4-2-2(img, txt1, txt2, img2)
 
@@ -39,7 +40,7 @@ mixin mosaico-x4-2-2(img, txt1, txt2, img2)
 		.sub8-1
 			img(src='/static/img/#{img2}')
 
-
+//-#####################################################
 
 mixin mosaico-x2-1-1(img, txt1)
 
@@ -48,6 +49,18 @@ mixin mosaico-x2-1-1(img, txt1)
 
 	.block10
 		p #{txt1}
+
+//-#####################################################
+
+mixin mosaico-x2-1-2(txt1, img)
+
+	.block11
+		p #{txt1}
+
+	.block12
+		img(src='/static/img/#{img}')
+
+//-#####################################################
 
 mixin country
 

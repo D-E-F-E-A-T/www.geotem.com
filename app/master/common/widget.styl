@@ -4,25 +4,24 @@
 *
 	box-sizing: border-box
 
-.cover 
+.cover
 		position : relative
 	.cover-img
 		position : relative
 		
 	.cover-img	img
-		height 		: auto
-		position 	: relative
-		width  		: 100%
-	
-	.cover-caption
-		background 	: rgba(34, 34, 34, 0)
-		bottom 		: 0
-		color 		: white
-		padding 	: 0.5rem
-		position 	: absolute
-		width 		: 100%
-		height 		: 55%
+		height		: auto
+		position	: relative
+		width		: 100%
 
+	.cover-caption
+		background	: rgba(34, 34, 34, 0)
+		bottom		: 0
+		color		: white
+		padding		: 0.5rem
+		position	: absolute
+		width		: 100%
+		height		: 55%
 
 .countries
 	font-size	: 2vw
@@ -51,9 +50,7 @@
 	top			: 0
 	padding-right		: 1em
 	background	: rgba(0,0,0,.2)
-	
-	
-	
+
 	+from-width('medium')
 			font-size 		: 2vw
 			padding-right	: 1em
@@ -64,43 +61,40 @@
 	+from-width('extra')
 		font-size 		 	: 1.5vw
 		padding-right		: 1em
-	
 
-
-//-------- seccion aplicaciones
-.country 
+//-#########################-seccion aplicaciones-##########
+.country
 	span
 		col(1/2)
-		margin-right 	: 0
-		margin-left 	: 1%
+		margin-right	: 0
+		margin-left		: 1%
 		+from-width('medium')
 			col(1/5)
-			margin-right 	: 0
-			margin-left 	: 2%		 
+			margin-right	: 0
+			margin-left		: 2%
 		+from-width('large')
-			col(1/10) 		
+			col(1/10)
 		+from-width('extra')
 			col(1/10)
-			
 
-.box-icons 
+.box-icons
 	col(7/7)
-	position 	: relative
+	position	: relative
 	padding-top : 1em
-	text-align 	: center
+	text-align	: center
 	.item
 		col(1/7)
 		img
-			height 			:auto
-			hover-pop ()
-			width 			:100%
+			height			:auto
+			hover-pop()
+			width			:100%
 			+from-width('m')
-				width 		: 100%
+				width		: 100%
 			+from-width('l')
-				width 		: 60%
+				width		: 60%
 			+from-width('xl')
-				widows 		: 60%
-				
+				widows		: 60%
+
 .categoriax3
 	col(3/3)
 	span
@@ -110,34 +104,22 @@
 	col(2/2)
 	span
 		col(1/2)
-						
+
 span
 	p
-		font-size 			: 4vw
-		font-weight 		: 800
-		text-align 			: center
+		font-size			: 4vw
+		font-weight			: 800
+		text-align			: center
 		+from-width('medium')
-			font-size 		: 3vw
+			font-size		: 3vw
 			line-height		: 3.5vw
 		+from-width('large')
-			font-size 		 : 2vw
+			font-size		: 2vw
 		+from-width('extra')
-			font-size 		 : 2vw
+			font-size		: 2vw
 
-// seccion proyectos en el extranjero
-// span
-// 	p
-// 		font-size 			: 2.5vw
-// 		font-weight 		: 800
-// 		text-align 			: center
-// 		+from-width('m')
-// 			font-size 		 : 1.8vw
-// 		+from-width('l')
-// 			font-size 		 : 1.8vw
-// 		+from-width('xl')
-// 			font-size 		 : 1.8vw
 
-//---------------------------
+//-#########################################################
 
 //edit()()
 
@@ -150,123 +132,3 @@ color3 = #79beea
 	height : auto
 	img
 		width : 100%
-//_____________________________
-
-.block1
-	col(3/12)
-	height : 20vw
-	background : color1
-	margin : 0 0 0 3vw
-	padding: 0 !important
-	box-sizing: border-box !important
-
-.block2
-	col(5/12)
-	height : 20vw
-	background : green
-	margin : 0 !important
-	padding: 0 !important
-	box-sizing: border-box !important
-	img
-		width : 100%
-
-.block3
-	col(4/12)
-	height : 20vw
-	background : color2
-	margin : 0 !important
-	padding: 0 !important
-	box-sizing: border-box !important
-
-//_____________________________
-
-.block4
-	col(5/12)
-	background : yellow
-	box-sizing: border-box !important
-	height : 20vw
-	margin : 0 0 0 3vw
-	padding: 0 !important
-	img
-		width : 100%
-
-.block5
-	col(3/12)
-	background : color3
-	box-sizing: border-box !important
-	height : 20vw
-	margin : 0 !important
-	padding: 0 !important
-
-.block6
-	col(4/12)
-	background : silver
-	box-sizing: border-box !important
-	height : 20vw
-	margin : 0 !important
-	padding: 0 !important
-	img
-		width : 100%
-
-//___________________________
-
-.block7
-	col(5/12)
-	background : blue
-	box-sizing: border-box !important
-	height : 40vw
-	margin : 0 0 0 3vw
-	padding: 0 !important
-	.sub7
-		col(12/12)
-		background : pink
-		height : 25vw
-		img
-			width : 100%
-	.sub7-1
-		col(12/12)
-		background : color3
-		height : 15vw
-
-.block8
-	col(7/12)
-	background : red
-	box-sizing: border-box !important
-	height : 40vw
-	margin : 0 0 0 0 !important
-	padding: 0 !important
-	width: 54.083333%
-	.sub8
-		col(12/12)
-		background : color1
-		height : 15vw
-	.sub8-1
-		col(12/12)
-		background : peru
-		height : 25vw
-		img
-			width : 100%
-
-//___________________________________
-
-.block9
-	col(8/12)
-	background : black
-	box-sizing: border-box !important
-	height : 20vw
-	margin: 0 0 0 3vw !important
-	padding: 0 !important
-	img
-		width : 100%
-
-
-.block10
-	col(4/12)
-	background : color2
-	box-sizing: border-box !important
-	height : 20vw
-	margin : 0 0 0 0
-	padding: 0 !important
-	width : 28.333333%
-
-
