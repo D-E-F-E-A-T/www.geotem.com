@@ -1,7 +1,15 @@
-[v0.0.9]
+[v0.0.11] Sección proyectos en el extranjero,todos los mosaicos
+*  Mosaicos en los 10 países con imágenes,textos y colores
+
+[v0.0.10] Correcciones 
+*  Vista de electromagneticos,primra seccion con slide
+*  Correción de menú
+*  Corrección de ruta en proyectos en el extranjero
+
+[v0.0.9] Estructuras a sección
 * Se agregaron estructuras a la seccion de proyectos en el extranjero
 
-[v0.0.8]
+[v0.0.8] Sección equipo
 * En móvil y desktop se agrego el separador de títulos en equipo 
 * En móvil y desktop se agrego el separador de títulos en clientes
 
