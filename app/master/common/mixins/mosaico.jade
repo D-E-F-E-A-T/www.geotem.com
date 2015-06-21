@@ -4,7 +4,10 @@ mixin mosaico-x3-2-1(txt1, img, txt2)
 		p #{txt1}
 
 	.block2
-		img(src='/static/img/#{img}')
+		if block
+			block
+		else
+			img(src='/static/img/#{img}')
 
 	.block3
 		p  #{txt2}
