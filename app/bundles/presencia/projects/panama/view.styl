@@ -1,12 +1,18 @@
 .block12 
-	img
-		transform translate(0px,-200px) !important
+	+from-width('m')
+		img
+			transform translate(0px,-200px) !important
+	+to-width('s')
+		img
+			height : 100%
 
 .block9
-	img
-		transform translate(0px,-130px) !important
-	p
-		padding : 10% 5% !important
+	+from-width('m')
+		img
+			transform translate(0px,-130px) !important
+	+to-width('s')
+		img
+			height : 100%
 
 .block5 p
 	padding : 18% 5% !important

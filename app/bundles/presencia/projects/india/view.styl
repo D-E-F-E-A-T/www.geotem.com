@@ -1,10 +1,13 @@
-.block12 
-	img
-		transform translate(0px,-110px) !important
-
+.block12
+	+from-width('m')
+		img
+			transform translate(0px,-110px) !important
+	+to-width('s')
+		img
+			height : 100%
 .block2 
 	img
-		transform translate(0px,-100px) !important
+		height : 100%
 
 .block1 
 	p

@@ -1,10 +1,19 @@
 .block9
-	img
-		transform translate(0px,-150px) !important
+	+from-width('m')
+		img
+			transform translate(0px,-150px) !important
 
+	+to-width('s')
+		img
+			height : 100%
 .block4
-	img
-		transform translate(0px,-130px) !important
+	+from-width('l')
+		img
+			transform translate(0px,-130px) !important
+
+	+to-width('m')
+		img
+			height : 100%
 		
 .block1
 	p
