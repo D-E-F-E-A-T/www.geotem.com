@@ -19,6 +19,7 @@ $(document).ready ->
   $('.bxslider').bxSlider()
   $().timelinr()
   $('#dasky').Dasky()
+  $("#owl-example").owlCarousel()
   return
 
   return
