@@ -87,13 +87,16 @@
 		img
 			height			:auto
 			hover-pop()
-			width			:100%
-			+from-width('m')
+			+from-width('mini')
+				width		:100%
+			+from-width('small')
+				width		:100%
+			+from-width('medium')
 				width		: 100%
-			+from-width('l')
-				width		: 60%
-			+from-width('xl')
-				widows		: 60%
+			+from-width('large')
+				width		: 80%
+			+from-width('extra')
+				width		: 80%
 
 .categoriax3
 	col(3/3)
