@@ -14,7 +14,7 @@ document.addEventListener 'DOMContentLoaded', onReady, false
 $(document).ready ->
   $('.slicknav').slicknav()
   $('.slicknav_menu').append($('.header-logo').html())
-  $('.bxslider').bxSlider()
+  $('#root').bxSlider()
   $().timelinr()
   $('#dasky').Dasky() 
   $("#owl-example").owlCarousel()
