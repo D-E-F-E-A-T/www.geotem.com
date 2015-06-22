@@ -7,12 +7,29 @@
 
 //Ajustando el estilo del bxslider
 .bx-wrapper, .bx-viewport
-	height: 18vw !important
 	width : 100% !important
 	margin-left : .5% !important
+	height : 89% !important
+
 .block2
 	background: #79beea !important
 
-div[class^='block']
-	img
-		height: 100% !important
+.block2 img
+	width : 39% !important
+	margin : 0 auto !important
+
+.bx-caption
+	+to-width('s')
+		height : 30% !important
+		span
+			font-size : .3rem !important
+			margin-top : -7%
+
+.bx-wrapper,.bx-pager
+	bottom : -2% !important
+	+to-width('s')
+		bottom : -9% !important
+
+.block1
+	p
+		background : #FFB600 !important
