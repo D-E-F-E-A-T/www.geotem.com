@@ -3,6 +3,9 @@
 	addClassByCat = (e)->
 		eventType = e.originalEvent.type # Type of event = mouseover | mouseout
 		id = e.target.id.split('-')[1] # Get category from id
+		console.log 'id:_',id
+		console.log 'e:_',e
+		console.log 'EventType:_',e.originalEvent.type
 		tag = id+'-tag'
 		if eventType == 'mouseover'
 			console.log 'mouseover', $(tag)
