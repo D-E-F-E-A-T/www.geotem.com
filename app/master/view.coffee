@@ -18,6 +18,15 @@ $(document).ready ->
   $().timelinr()
   $('#dasky').Dasky() 
   $("#owl-example").owlCarousel()
+  $('.googleMapPopUp').each ->
+  thisPopup = $(this)
+  thisPopup.colorbox
+    iframe: true
+    innerWidth: 400
+    innerHeight: 300
+    opacity: 0.7
+    href: thisPopup.attr('href') + '&ie=UTF8&t=h&output=embed'
+  return
   return
 
   return
