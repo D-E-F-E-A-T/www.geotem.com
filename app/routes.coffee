@@ -77,3 +77,5 @@
 ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/kirguistan'   				, 'presencia/projects/kirguistan'
 ﬁ.routes.get '/presencia-internacional/proyectos-en-el-extranjero/panama'   					, 'presencia/projects/panama'
 
+ﬁ.routes.get '/revista'   																		, 'revista'
+
