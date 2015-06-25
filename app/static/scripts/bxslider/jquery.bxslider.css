@@ -15,10 +15,14 @@
 ===================================*/
 
 .bx-wrapper {
-	position: relative;
+	/*position: relative;*/
 	margin: 0 auto 60px;
 	padding: 0;
 	*zoom: 1;
+	position : absolute  !important;
+	top : 0 !important;
+	z-index: 0 !important;
+	width : 100% !important
 }
 
 .bx-wrapper img {

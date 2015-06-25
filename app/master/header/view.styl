@@ -5,25 +5,52 @@
 
 	.header-master
 		col(12/12)
+		+from-width('mini')
+			max-width : 480px !important
+			margin : 0 auto 0 auto  !important
+		+from-width('small')
+			max-width : 480px !important
+			margin : 0 auto 0 auto  !important
+		+from-width('medium')
+			max-width : 768px !important
+			margin : 0 auto 0 auto  !important
+		+from-width('normal')
+			max-width : 768px !important
+			margin : 0 auto 0 auto  !important
+		+from-width('large')
+			max-width : 1024px !important
+			margin : 0 auto 0 auto  !important
+		+from-width('extra')
+			max-width : 1024px !important
+			margin : 0 auto 0 auto  !important
 
-		.header-logo
-			col(3/12)
-			text-align	: center
-			img
-				margin 	: 1em 0.5em 2em 0.5em
 
 		.header-menu
-			col(9/12)
+			col(12/12)
 			
 			.menu-top
 				col(12/12)
 				
+				.header-logo
+					col(3/12)
+					text-align	: center
+					img
+						margin 	: 0
+						position : relative
+						top : 3px
+				
 				.material2
-					col(10/12)
+					col(7/12)
 					text-align : right
 					input
-						border-radius 	: 5px
-						border 			: solid 1.5px black
+						position: relative;
+						top: 27px;
+						font-size: 13px;
+						color: #777;
+						padding: 6px 15px;
+						border: 1px solid silver;
+						border-radius: 15px;
+						box-shadow: 0 1px 2px rgba(0, 0, 0, .1)
 					
 					
 				.material
@@ -34,19 +61,44 @@
 							
 							text-align 		: left
 							text-decoration : none
-							color 			: #222
+							color 			: #000
 							font-size 		: 1.2em	
 							font-weight 	: 800
+							position 		: relative;
+							top 			: 33px;
 
 			.menu
 				col(12/12)
 				width	: 100%
+				top: 30px;
+				position : relative
+				+from-width('mini')
+					max-width : 480px !important
+					margin : 0 auto 0 auto  !important
+				+from-width('small')
+					max-width : 580px !important
+					margin : 0 auto 0 auto  !important
+				+from-width('normal')
+					max-width : 768px !important
+					margin : 0 auto 0 auto  !important
+				+from-width('large')
+					max-width : 1024px !important
+					margin : 0 auto 0 auto  !important
+				+from-width('extra')
+					max-width : 1024px !important
+					margin : 0 auto 0 auto  !important
 				ul
 					col(6/6)
-					padding 	: 1.5em
+					padding 	: 0
 					position 	: relative
 					right 		: 0
 					list-style 	: none
+					box-shadow: 0 1px 2px rgba(0, 42, 58, .4);
+					padding-top: 19px;
+					border-radius: 2px;
+					background-color : white
+					margin 0
+  					
 					li
 						width : 13.5 !important
 						a
@@ -56,6 +108,9 @@
 							hover-underline : 3px solid red
 					
 							font-size : 1.2rem
+						a.presencia
+							position : relative
+							top : -7px
 				.submenu
 					background-color:	rgba(255,255,255,0.9)
 					box-shadow		:	10px 10px 5px 0px rgba(0,0,0,0.15)
@@ -72,7 +127,7 @@
 						display			:	block
 						margin-left		:	0.5vw
 						padding			:	0.8rem
-						text-align		: left
+						text-align		: 	left
 .material-m
 	display : block
 	input
