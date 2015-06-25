@@ -3,19 +3,32 @@
 	position 	: fixed
 	top 		: 45%
 	background-color : transparent
-	width 		: 3rem
+	width 		: 5rem
 	z-index 	: 100
 	right		: -2.5rem
 	transition  : right 500ms ease-in-circ
 	// box-shadow  : -6px 4px 11px #888888
 
-	&:hover
-		right    : 0
-		
-	+from-width('medium')
-		display  : block
-	+from-width('large')
-		display  : block	
+	// &:hover
+	// 	right    : 0
+	+to-width('small')
+		position 	: fixed
+		top 		: 45%
+		background-color : transparent
+		width 		: 3rem
+		z-index 	: 100
+		right		: -2.5rem
+		transition  : right 500ms ease-in-circ
+		box-shadow  : -6px 4px 11px #888888
+
+		&:hover
+			right    : -2vw
+			
+		+from-width('medium')
+			display  : block
+			
+		+from-width('large')
+			display  : block	
 
 .menu img
 	margin : 0

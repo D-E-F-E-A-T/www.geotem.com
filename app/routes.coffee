@@ -1,5 +1,4 @@
-## url web                                         bundle
-
+## url web                                       												  bundle
 ﬁ.routes.get '/'                           		 												, 'root'
 
 ﬁ.routes.get '/acerca-de'                        												, 'somos'
@@ -9,13 +8,20 @@
 ﬁ.routes.get '/acerca-de/historia'               												, 'somos/history'
 ﬁ.routes.get '/acerca-de/privacidad'             												, 'somos/privacy'
 
+
 ﬁ.routes.get '/servicios'                  		 												, 'services'
 ﬁ.routes.get '/servicios/adquisicion-de-datos'   												, 'services/acquisition'
 ﬁ.routes.get '/servicios/procesamiento'          												, 'services/prosecution'
 ﬁ.routes.get '/servicios/modelado-e-inversion'   												, 'services/modeling'
 ﬁ.routes.get '/servicios/integracion-e-interpretacion'      									, 'services/integration'
 ﬁ.routes.get '/servicios/entrenamiento'             											, 'services/training'
-ﬁ.routes.get '/servicios/equipo'             													, 'services/equipment'
+ﬁ.routes.get '/servicios/equipo/gem-systems'             										, 'services/equipment'
+ﬁ.routes.get '/servicios/equipo/gf-instruments'             									, 'services/equipment/gf-instruments'
+ﬁ.routes.get '/servicios/equipo/metronix'             											, 'services/equipment/metronix'
+ﬁ.routes.get '/servicios/equipo/monex'             												, 'services/equipment/monex'
+ﬁ.routes.get '/servicios/equipo/radar'             												, 'services/equipment/radar'
+ﬁ.routes.get '/servicios/equipo/sara-instruments'             									, 'services/equipment/sara'
+
 
 
 ﬁ.routes.get '/metodos'                    		 												, 'metodos'
