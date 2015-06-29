@@ -97,7 +97,7 @@
 					padding-top: 19px;
 					border-radius: 2px;
 					background-color : white
-					margin 0
+					margin-top: -1%
   					
 					li
 						// width : 13.5 !important
@@ -106,12 +106,18 @@
 							font-weight 	: 800
 							color 			: black
 							hover-underline : 3px solid red
-					
+							
 							font-size : 1rem
 						a.presencia
 							position : relative
 							top : -7px
 							font-size : 1rem
+							
+						a:active
+							text-decoration:none
+							
+							
+							
 				.submenu
 					background-color:	rgba(255,255,255,0.9)
 					box-shadow		:	10px 10px 5px 0px rgba(0,0,0,0.15)
@@ -129,6 +135,10 @@
 						margin-left		:	0.5vw
 						padding			:	0.8rem
 						text-align		: 	left
+				
+						
+
+
 .material-m
 	display : block
 	input
@@ -140,20 +150,18 @@
 .menu.m
 	+from-width('xl')
 		display : none !important
-		
-
-		
+			
 				
 .m1
-	left	:	14.5vw
+	left	:	9.5vw
 //-.m2
 //-	left	:	27vw
 .m3
-	left	:	40vw
+	left	:	28.6vw
 .m4
-	left	: 	51.3vw
+	left	: 	37.3vw
 .m5
-	left	: 	58vw
+	left	: 	46.5vw
 
 @media (min-width:800px)
 	.m2
@@ -174,6 +182,7 @@
 
 .submenu li a:hover
 	color	:	red !important
+	
 .section
 	col(1/6)
 	text-align 	: center
