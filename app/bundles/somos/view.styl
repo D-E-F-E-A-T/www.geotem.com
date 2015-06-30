@@ -1,21 +1,61 @@
-.container
-	center(max-width:1600px)
-	display : flex
-	margin-top : 1rem
-	flex-wrap : wrap
-	justify-content : center
-	flex-direction : column
-	
-	+from-width('large')
-		flex-direction : row
 
-	img	
-		width: 12rem
-		margin: 0 2rem 0 2rem
-	h3,p
-		text-align : center
-	p 
-		margin-top : -1rem
+
+.ing
+
+	max-width :1024px
+	text-align : center
+	margin : 0 auto
+	width : 100%
+	height :auto
+
+
+
+.container1
+	
+	margin : 0 auto
+	margin-top : 2em
+	+from-width('s')
+		span(2/2)
+	+from-width('m')
+		span(3/3)
+	+from-width('l')
+		span(6/6)
+
+	.item
+		+from-width('s')
+			span(1/2)
+		+from-width('m')
+			span(1/3)
+		+from-width('l')
+			span(1/6)
+
+		img
+			+from-width('mini')
+				width : 60%
+			+from-width('s')
+				width : 60%
+			+from-width('m')
+				width : 80%
+			+from-width('l')
+				width : 80%
+			
+
+		h3,p
+			text-align : center 
+		p
+			margin-top : -1rem
+
+
+
+
+
+	// img	
+	// 	width: 12rem
+	// 	margin: 0 2rem 0 2rem
+	// h3,p
+	// 	text-align : center
+	// p 
+	// 	margin-top : -1rem
 		
 
 .cust-box
