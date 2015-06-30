@@ -20,44 +20,78 @@
 		padding		: 0.5rem
 		position	: absolute
 		width		: 100%
-.countries
-	font-size	: 2vw
-	line-height : 1.125em
-	position	: relative
-	display		: inline-block
-	text-align	: left
-	bottom		: 70%
-	text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.81);
-	h1
-		color :  white
-	+from-width('medium')
-		font-size 		: 1.5vw
-	+from-width('large')
-		font-size 		 	: 2vw
-	+from-width('extra')
-		font-size 		 	: 1.5vw
+		.title
+			+to-width('small')
+				
+				position	: absolute
+				color       : white
+				text-align	: left
+				width       : 100%
+				text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.81)
+				bottom : 0
+				h1
+					color :  white
+					font-size	: 4vw
+					margin-top: 7vw
+					
+			+from-width('medium')	
+				h1
+					position	: absolute
+					bottom  : 0
+					font-size	: 4vw
+					text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.81)
+			+from-width('normal')
+				h1
+					font-size: 3.5vw
+					text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.81)
+			+from-width('large')
+				h1
+					font-size 	: 3vw
+					text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.81)
+			+from-width('extra')
+				h1
+					font-size 		 	: 2.5vw
+					text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.81)
 
-.text
-	font-size	: 1.5vw
-	line-height : 1.125em
-	position	: relative
-	display		: inline-block
-	text-align	: justify
-	margin-left	: 50%
-	top			: 0
-	padding-right		: 1em
-	text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.81);
+		.text
+			background-color : rgba(0,0,0,0.30)
+			+to-width('small')
+				font-size: 3vw;
+				position: absolute
+				margin-left: 30vw;
+				text-align: justify
+				bottom : 3vw
+				line-height : 3vw
+				right : 3vw
+			background-color : rgba(0,0,0,0.30)	
+			+from-width('medium')
+				font-size 		: 2.5vw
+				line-height		: 3vw
+				margin-left		: 25vw
+				margin-bottom	: 1vw
+				text-align		: justify
+				text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.81)
+			+from-width('normal')
+				font-size	: 2vw
+				right : 4vw
+				position	: relative
+				margin-left	: 28vw
+				line-height : 1.125em
+				text-align	: justify
+				
+			+from-width('large')
+				font-size	: 2vw
+				line-height : 1.125em
+				position	: relative
+				text-align	: justify
+				margin-left	: 28vw
+				right		: 4vw
+				text-shadow : 4px 2px 10px rgba(0, 0, 0, 0.81);
 
-	+from-width('medium')
-			font-size 		: 2vw
-			padding-right	: 1em
-	+from-width('large')
-		font-size 		 	: 1.8vw
-		padding-right		: 1em
-		height: -1.5em
-	+from-width('extra')
-		font-size 		 	: 1.5vw
-		padding-right		: 1em
+			+from-width('extra')
+				font-size	: 1.5vw
+				rigth : 3vw
+				
 
 //-#########################-seccion aplicaciones-##########
 .country

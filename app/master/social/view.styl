@@ -1,7 +1,7 @@
 .menu
 	// display     : none
 	position 	: fixed
-	top 		: 45%
+	top 		: 30%
 	background-color : transparent
 	width 		: 5rem
 	z-index 	: 100
@@ -23,17 +23,18 @@
 
 		&:hover
 			right    : -2vw
-			
-		+from-width('medium')
-			display  : block
-			
-		+from-width('large')
-			display  : block
-			margin: 0 auto
- 			max-width: 1024px
-			width: 95%
-			margin-right: 4vw	
 
+			
+	+from-width('large')
+		position 	: fixed
+		top 		: 30%
+		background-color : transparent
+		width 		: 5rem
+		z-index 	: 100
+		right		: -2.5rem
+		transition  : right 500ms ease-in-circ
+
+		
 .menu img
 	margin : 0
 	padding : 0
