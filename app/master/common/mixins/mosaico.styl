@@ -5,16 +5,23 @@
 	span(3/12)
 	overflow: hidden
 	height : 20vw
-	background : color1
 	padding: 0 !important
 	box-sizing: border-box !important
+	position : relative
 	p
 		text-align : center
 		font-size : 1.5vw
-		line-height : 2.5vw
-		padding : 15% 5%
+		line-height : 1.5vw
+		top : 20%
 		color : white
-
+		position : absolute
+		
++to-width('small')
+	.block1
+		p 
+			font-size : 2.5vw
+			margin	  : 0 1vw	
+			line-height : 2vw
 .block2
 
 	span(5/12)
@@ -32,24 +39,27 @@
 	span(4/12)
 	overflow: hidden
 	height : 20vw
-	background : color2
-	margin : 0 !important
 	padding: 0 !important
 	box-sizing: border-box !important
 	p
 		text-align : center
 		font-size : 1.5vw
-		line-height : 2.5vw
+		line-height : 1.5vw
 		padding : 15% 5%
 		color : white
-
++to-width('small')
+	.block3
+		p 
+			font-size : 2.5vw
+			margin	  : 0 1vw	
+			line-height : 2vw
+			
 //-#########-mixin mosaico-x3-1-2(img, txt1, img2)-##########
 
 .block4
 
 	span(5/12)
 	overflow: hidden
-	background : #fff
 	box-sizing: border-box !important
 	height : 20vw
 	padding: 0 !important
@@ -60,26 +70,27 @@
 
 	span(3/12)
 	overflow: hidden
-	background : color3
-	box-sizing: border-box !important
 	height : 20vw
-	margin : 0 !important
 	padding: 0 !important
+	box-sizing: border-box !important
 	p
 		text-align : center
 		font-size : 1.5vw
-		line-height : 2.5vw
+		line-height : 1.5vw
 		padding : 15% 5%
 		color : white
-
++to-width('small')
+	.block5
+		p 
+			font-size : 2.5vw
+			margin	  : 0 1vw	
+			line-height : 2vw
 .block6
 
 	span(4/12)
 	overflow: hidden
-	background : #fff
 	box-sizing: border-box !important
 	height : 20vw
-	margin : 0 !important
 	padding: 0 !important
 	img
 		width : 100%
@@ -107,10 +118,16 @@
 		p
 			text-align : center
 			font-size : 1.5vw
-			line-height : 2.5vw
+			line-height : 1.5vw
 			padding : 15% 5%
 			color : white
-
++to-width('small')
+	.block7 .sub7-1
+		p 
+			font-size : 2.5vw
+			margin	  : 0 1vw	
+			line-height : 2vw
+				
 .block8
 
 	span(7/12)
@@ -126,9 +143,15 @@
 		p
 			text-align : center
 			font-size : 1.5vw
-			line-height : 2.5vw
-			padding : 15% 5%
+			line-height : 1.5vw
+			padding : 11%
 			color : white
++to-width('small')
+	.block8 .sub8
+		p 
+			font-size : 2vw
+			margin	  : 0 1vw	
+			line-height : 1.5vw	
 
 	.sub8-1
 		span(12/12)
@@ -137,62 +160,71 @@
 		img
 			width : 100%
 
++to-width('small')
+	.block8 .sub8-1
+		p 
+			font-size : 2.5vw
+			margin : 0 1vw	
+
 //-############-mixin mosaico-x2-1-1(img, txt1)-#############
 
 .block9
 
 	span(8/12)
 	overflow: hidden
-	background : #fff
 	box-sizing: border-box !important
 	height : 20vw
+	padding: 0 !important
 	img
 		width : 100%
-	+to-width('small')
-		img
-			height : 100% !important
 
 .block10
 
 	span(4/12)
 	overflow: hidden
-	background : color2
-	box-sizing: border-box !important
 	height : 20vw
+	padding: 0 !important
+	box-sizing: border-box !important
 	p
 		text-align : center
 		font-size : 1.5vw
-		line-height : 2.5vw
+		line-height : 1.5vw
 		padding : 15% 5%
 		color : white
-
++to-width('small')
+	.block10
+		p 
+			font-size : 2.5vw
+			margin : 0 1vw	
 //-############-mixin mosaico-x2-1-2(txt1, img)-#############
 
 .block11
 
 	span(4/12)
 	overflow: hidden
-	background : color2
-	box-sizing: border-box !important
 	height : 20vw
+	padding: 0 !important
+	box-sizing: border-box !important
 	p
 		text-align : center
 		font-size : 1.5vw
-		line-height : 2.5vw
+		line-height : 1.5vw
 		padding : 15% 5%
 		color : white
++to-width('small')
+	.block11
+		p 
+			font-size : 2.5vw
+			margin : 0 1vw	
 
 .block12
 	span(8/12)
 	overflow: hidden
-	background : #fff
 	box-sizing: border-box !important
 	height : 20vw
+	padding: 0 !important
 	img
 		width : 100%
-	+to-width('small')
-		img
-			heigth : 100% !important
 
 //-#########-mixin mosaico-x4-2-2(img, txt1, txt2, img2)-####
 
@@ -217,9 +249,14 @@
 		p
 			text-align : center
 			font-size : 1.5vw
-			line-height : 2.5vw
+			line-height : 1.5vw
 			padding : 15% 5%
 			color : white
++to-width('small')
+	.sub13
+		p 
+			font-size : 2.5vw
+			margin : 0 1vw	
 
 .block14
 	span(7/12)
@@ -235,9 +272,14 @@
 		p
 			text-align : center
 			font-size : 1.5vw
-			line-height : 2.5vw
+			line-height : 1.5vw
 			padding : 15% 5%
 			color : white
++to-width('small')
+	.sub14-1
+		p 
+			font-size : 2.5vw
+			margin : 0 1vw	
 	.sub14
 		span(12/12)
 		background : #fff
