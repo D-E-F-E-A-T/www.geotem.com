@@ -187,3 +187,42 @@ color3 = #79beea
 		max-width : 1024px !important
 		margin : 0 auto 
 
+
+.cover-caption-description
+	position: absolute;
+	width: 40%;
+	right: 0;
+	bottom: 12%;
+	z-index: 0;
+	color: white;
+	font-weight: 900;
+	font-size: 1.1em;
+	text-align: left;
+	line-height: 24px;
+	text-shadow: 4px 2px 10px rgba(0,0,0,0.8)
+	padding : 1em
+	background-color : rgba(0,0,0,0.7)
+	display : none
+	+from-width('small')
+		display : none
+	+from-width('medium')
+		display : none 
+	+from-width('large')
+		display : none
+		padding : 0.5em
+	+from-width('extra')
+		display : none
+		
+.cover-img
+	&:hover ~ .cover-caption-description
+		+from-width('small')
+			display : none
+		+from-width('medium')
+			display : none 
+		+from-width('large')
+			display : block
+			padding : 0.5em
+		+from-width('extra')
+			display : block
+		
+
