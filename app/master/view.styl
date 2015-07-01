@@ -28,6 +28,16 @@ body > main
 	position : absolute
 	top : 0
 	margin : 0 auto 0 auto
+	+from-width('mini')
+		position : relative
+	+from-width('small')
+		position : relative
+	+from-width('medium')
+		position : absolute
+	+from-width('large')
+		position : absolute
+	+from-width('extra')
+		position : absolute
 
 
 #fallback

@@ -170,3 +170,20 @@ color3 = #79beea
 .cover
 	width : 100%
 	height : auto
+	
+//----------  ajuste de contenido
+
+.content
+	+from-width('small')
+		max-width : 480px !important
+		margin : 0 auto 
+	+from-width('medium')
+		max-width : 768px !important
+		margin : 0 auto 
+	+from-width('large')
+		max-width : 1024px !important
+		margin : 0 auto 
+	+from-width('extra')
+		max-width : 1024px !important
+		margin : 0 auto 
+
