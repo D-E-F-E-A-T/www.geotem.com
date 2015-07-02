@@ -23,7 +23,6 @@
 ﬁ.routes.get '/servicios/equipo/sara-instruments'             									, 'services/equipment/sara'
 
 
-
 ﬁ.routes.get '/metodos'                    		 												, 'metodos'
 ﬁ.routes.get '/metodos/electricos'                    		 									, 'metodos/electricos'
 ﬁ.routes.get '/metodos/electricos/polarizacion-inducida'      		 							, 'metodos/electricos/polarizacionind'

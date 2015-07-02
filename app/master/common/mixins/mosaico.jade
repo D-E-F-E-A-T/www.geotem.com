@@ -44,7 +44,10 @@ mixin mosaico-x4-2-2(img, txt1, txt2, img2)
 			p #{txt2}
 
 		.sub8-1
-			img(src='/static/img/#{img2}')
+			if block
+				block
+			else
+				img(src='/static/img/#{img2}')
 
 mixin mosaico-x4-2-1(txt1, img, img2, txt2)
 
