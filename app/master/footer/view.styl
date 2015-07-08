@@ -1,16 +1,48 @@
-&
-	background-color : $white
-	padding          : 0.5rem
-	margin-top		 : 1rem
+.footer
 	border-top   	 : solid black 1px
 	border-bottom    : solid black 1px
-a
-	color           : $color-1st
-	text-decoration : none
-	font-size       : 0.8rem
+	max-width	: 	100%
 
-	strong
-		color : $color-1st
-	span
-		color           : $color-2nd-lighter
-		text-decoration : underline
+	.text
+		max-width : 1024px
+		margin          : 0 auto
+
+		a
+			color           : $color-1st
+			text-decoration : none
+			
++from-width('mini')
+	.text
+		max-width : 480px !important
+		margin : 0 auto 0 auto  !important
+		a
+			font-size: 0.6rem
++from-width('small')
+	.text
+		max-width : 480px !important
+		margin : 0 auto 0 auto  !important
+		a
+			font-size: 0.6rem
++from-width('medium')
+	.text
+		max-width : 768px !important
+		margin : 0 auto 0 auto  !important
+		a
+			font-size: 1rem
++from-width('normal')
+	.text
+		max-width : 768px !important
+		margin : 0 auto 0 auto  !important
++from-width('large')
+	.footer
+		border-top   	 : solid black 1px
+		border-bottom    : solid black 1px
+		max-width	: 	100%
+		
+	.text
+		max-width : 1024px !important
+		margin : 0 auto 0 auto  !important
++from-width('extra')
+	.text
+		max-width : 1024px !important
+		margin : 0 auto 0 auto  !important
