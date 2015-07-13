@@ -15,3 +15,27 @@
 
 .electri-tag
 	color #aa5b26
+
+.box-icons
+	col(4/4)
+	position	: relative
+	padding-top : 1em
+	max-width : 1024px
+	text-align	: center
+	margin : 0 auto
+	.item
+		col(1/4)
+		
+		img
+			height			:auto
+			hover-pop()
+			+from-width('mini')
+				width		:100%
+			+from-width('small')
+				width		:100%
+			+from-width('medium')
+				width		: 100%
+			+from-width('large')
+				width		: 40%
+			+from-width('extra')
+				width		: 40%

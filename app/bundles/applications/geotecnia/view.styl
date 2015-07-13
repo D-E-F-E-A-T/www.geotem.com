@@ -21,3 +21,28 @@
 	
 .sismicos-tag
 	color #559334
+	
+.box-icons
+	col(5/5)
+	position	: relative
+	padding-top : 1em
+	max-width : 1024px
+	text-align	: left
+	margin : 0 auto
+	.item
+		col(1/5)
+		
+		img
+			height			:auto
+			hover-pop()
+			+from-width('mini')
+				width		:100%
+			+from-width('small')
+				width		:100%
+			+from-width('medium')
+				width		: 100%
+			+from-width('large')
+				width		: 50%
+			+from-width('extra')
+				width		: 50%	
+		
