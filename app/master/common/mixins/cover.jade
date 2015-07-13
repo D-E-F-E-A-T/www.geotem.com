@@ -1,4 +1,4 @@
-mixin cover-aplications(img, cap, description)
+mixin cover-aplications(img, cap, description, cap1)
 	.cover
 		.cover-img
 			img(src='/static/img/#{img}')
@@ -9,6 +9,10 @@ mixin cover-aplications(img, cap, description)
 
 		.cover-caption-description
 			p #{description}
+
+		.cover-cd
+			.title
+				h2 #{cap1}
 
 
 mixin cover(img, title)
