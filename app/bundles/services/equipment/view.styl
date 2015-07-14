@@ -54,7 +54,7 @@ main
 	.equipment-content
 		col(4/4)
 		margin-top	: -3vw
-		padding 	: 1em 0 0 1em
+		padding 	: 1em 0 0 0
 
 		.company
 			col(1/4)
@@ -65,13 +65,16 @@ main
 			img
 				width : 75vw
 				margin: 0 auto
+				margin-bottom: 1.5vw
 				
 		.equipment-title
 			col(1/4)
 			
 			width : 78vw
 			line-height : 1.5em
-			margin-top: -15vw
+			margin-top: -13vw
+			h3
+				padding : 1rem 0 0 0
 		
 		.equipment-text
 			col(1/4)	
@@ -81,8 +84,11 @@ main
 				
 +from-width('m')
 	.equipment-content
+		.equipment-title
+			h3
+				padding: 0
 		.equipment-image 
-			padding 		: 5.2em 0rem 1rem 2rem
+			padding 		: 5.2em 0rem 1rem 0
 			
 +from-width('large')
 	.equipment-content
