@@ -1,27 +1,12 @@
-include /master/common/mixins/icons
-.accordian
-      ul
-        li 
-          .image_title.clr1
-            a(href='/metodos/electricos/sondeo-electrico-vertical') Sondeo Eléctrico Vertical (SEV)
-          a(href='/metodos/electricos/sondeo-electrico-vertical')
-            img(src="/static/img/metodos/electricos/SondeoElectricoVertical.png")
-        li
-          .image_title.clr2
-            a(href='/metodos/electricos/polarizacion-inducida') Polarización Inducida (PI)
-          a(href='/metodos/electricos/polarizacion-inducida')
-            img(src="/static/img/metodos/electricos/PolarizacionInducida.png")
-        li
-          .image_title.clr3
-            a(href='/metodos/electricos/polarizacion-inducida-espectral') Polarización Inducida Espectral (PIE)
-          a(href='/metodos/electricos/polarizacion-inducida-espectral')
-            img(src="/static/img/metodos/electricos/PolarizacionInducidaEspectral.png")
-
-        li
-          .image_title.clr4
-            a(href='/metodos/electricos/tomografia-de-resistividad-electrica') Tomografía de Resistividad Eléctrica (TRE)
-          a(href='/metodos/electricos/tomografia-de-resistividad-electrica')
-            img(src="/static/img/metodos/electricos/TomografiadeResistividadElectrica.png")
-
+include /master/common/mixins/administracion
 .content
-  +icons-metodos
+	.overlay-content
+		.overlay-box
+			+overlay('electricos/SondeoElectricoVertical', 'Texto descripción', 'Sondeo Eléctrico Vertical')
+		.overlay-box
+			+overlay('electricos/PolarizacionInducida', 'Texto descripción', 'Polarización Inducida')
+		.overlay-box
+			+overlay('electricos/PolarizacionInducidaEspectral', 'Texto descripción', 'Polarizacion Inducida Espectral')
+		.overlay-box
+			+overlay('electricos/TomografiadeResistividadElectrica', 'Texto descripción', 'Tomografía de Resistividad Eléctrica')
+

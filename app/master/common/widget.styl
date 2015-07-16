@@ -311,4 +311,53 @@ color3 = #79beea
 		+from-width('extra')
 			display : block
 		
+//---------- overlay ---------------
+
+.imagen
+	img
+		width : 390px
+		height : 180px
+.caja
+	background-color: white
+	width			: 80%
+	height			: 180px
+	position		: relative
+	overflow		: hidden
+	cursor			: pointer
+	background-size : 100% 100% 
+	padding         : 0 0.5em
+	margin-top      : 9%
+		
+.cintillo
+	position: relative
+	color: black
+	display: block
+	padding: 0px 10px 20px 10px
+	width: 85%
+	height: 20px
+	p
+		text-align: center
+		text-transform : uppercase
+		
+.description
+	position: absolute
+	width: 100%
+	height: 0
+	background-color: rgba(128, 0, 63, 0.8)
+	bottom: 0
+	color: #fff
+	transition: all .3s ease
+	z-index: 5
+
+	p
+		width: 90%;
+		position: relative
+
+.caja:hover .description
+	transition: all .3s ease
+	height: 100%
+	padding: 1em 1em 0 1em
+
+.footer 
+	margin-top : 5% !important
 

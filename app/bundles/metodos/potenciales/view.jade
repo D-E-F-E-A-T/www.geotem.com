@@ -1,19 +1,23 @@
-include /master/common/mixins/icons
-.accordian
-      ul
-        li 
-          .image_title.clr-1
-            a(href='/metodos/potenciales/gravimetria') Gravimetría (GRV)
-          a(href='/metodos/potenciales/gravimetria')
-            img(src="/static/img/metodos/potenciales/gravimetria/Gravimetria.png")
-
-        li 
-          .image_title.clr-2
-            a(href='/metodos/potenciales/magnetometria') Magnetometría (MAG)
-          a(href='/metodos/potenciales/magnetometria')
-            img(src="/static/img/metodos/potenciales/magnetometria/Magnetometria.png")
-
-
-
+include /master/common/mixins/administracion
 .content
-  +icons-metodos
+  .overlay-content
+    .overlay-box
+      +overlay('potenciales/gravimetria/Gravimetria', ' Gravimetría', 'GRV')
+    .overlay-box
+      +overlay('potenciales/magnetometria/Magnetometria', 'Magnetometría', 'MAG')
+        
+        //-   .image_title.clr-1
+        //-     a(href='/metodos/potenciales/gravimetria') Gravimetría (GRV)
+        //-   a(href='/metodos/potenciales/gravimetria')
+        //-     img(src="/static/img/metodos/potenciales/gravimetria/Gravimetria.png")
+
+        //- li 
+        //-   .image_title.clr-2
+        //-     a(href='/metodos/potenciales/magnetometria') Magnetometría (MAG)
+        //-   a(href='/metodos/potenciales/magnetometria')
+        //-     img(src="/static/img/metodos/potenciales/magnetometria/Magnetometria.png")
+
+
+
+//- .content
+//-   +icons-metodos

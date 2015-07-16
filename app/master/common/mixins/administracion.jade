@@ -3,3 +3,13 @@ mixin item(img, name, office)
 		img(src='/static/img/acerca/administracion/#{img}.png')
 		h3 #{name}
 		p #{office}
+
+
+mixin overlay(image, description, title)
+	.caja
+		.imagen
+			img(src="/static/img/metodos/#{image}.png")
+		.description
+			p #{description}
+	.cintillo
+		p #{title}

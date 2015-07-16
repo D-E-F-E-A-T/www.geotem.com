@@ -1,41 +1,57 @@
-include /master/common/mixins/icons
-.accordian
-      ul
-        li 
-          .image_title.clr-1
-            a(href='/metodos/sismicos/autocorrelacion-espacial') Autocorrelación Espacial  (SPAC)
-          a(href='/metodos/sismicos/autocorrelacion-espacial')
-            img(src="/static/img/metodos/sismicos/SimicadeAutocorrelacionEspacial.png")
-
-        li 
-          .image_title.clr-2
-            a(href='/metodos/sismicos/sismica-en-pozo-cross-up-dawn-hole') Sísmica en Pozo Cross-Up-Dawn Hole (CROSS-UP-DAWN HOLE)
-          a(href='/metodos/sismicos/sismica-en-pozo-cross-up-dawn-hole')
-            img(src="/static/img/metodos/sismicos/SismicaenPozo.png")
-
-        li 
-          .image_title.clr-3
-            a(href='/metodos/sismicos/sismica-de-ondas-superficiales') Sísmica de Ondas Superficiales (MASW)
-          a(href='/metodos/sismicos/sismica-de-ondas-superficiales')
-            img(src="/static/img/metodos/sismicos/ondas/SismicadeOndasSuperficiales.png")
-
-        li 
-          .image_title.clr-4
-            a(href='/metodos/sismicos/sismica-de-refraccion') Sísmica de Refracción (Refracción)
-          a(href='/metodos/sismicos/sismica-de-refraccion')
-            img(src="/static/img/metodos/sismicos/refraccion/SismicadeRefraccion.png")
-
-        li 
-          .image_title.clr-5
-            a(href='/metodos/sismicos/sismica-de-reflexion') Sísmica de Reflexión (Reflexión)
-          a(href='/metodos/sismicos/sismica-de-reflexion')
-            img(src="/static/img/metodos/sismicos/reflexion/SismicadeReflexion.png")
-
-        li 
-          .image_title.clr-6
-            a(href='/metodos/sismicos/sismica-de-cocientes-espectrales') Sísmica de Cocientes Espectrales (HVSR)
-          a(href='/metodos/sismicos/sismica-de-cocientes-espectrales')
-            img(src="/static/img/metodos/sismicos/HVSR.png")
-
+include /master/common/mixins/administracion
 .content
-  +icons-metodos
+  .overlay-content
+    .overlay-box
+      +overlay('sismicos/SimicadeAutocorrelacionEspacial', 'Autocorrelación Espacial', 'SPAC')
+    .overlay-box
+      +overlay('sismicos/SismicaenPozo', 'Sísmica en Pozo Cross-Up-Dawn Hole', 'CROSS-UP-DAWN HOLE')
+    .overlay-box
+      +overlay('sismicos/ondas/SismicadeOndasSuperficiales', 'Sísmica de Ondas Superficiales', 'MASW')
+    .overlay-box
+      +overlay('sismicos/refraccion/SismicadeRefraccion', 'Sísmica de Refracción', 'Refracción')
+    .overlay-box
+      +overlay('sismicos/reflexion/SismicadeReflexion', 'Sísmica de Reflexión', 'Reflexión')
+    .overlay-box
+      +overlay('sismicos/HVSR', 'Sísmica de Cocientes Espectrales', 'HVSR')
+
+//- include /master/common/mixins/icons
+//- .accordian
+//-       ul
+//-         li 
+//-           .image_title.clr-1
+//-             a(href='/metodos/sismicos/autocorrelacion-espacial') Autocorrelación Espacial  (SPAC)
+//-           a(href='/metodos/sismicos/autocorrelacion-espacial')
+//-             img(src="/static/img/metodos/sismicos/SimicadeAutocorrelacionEspacial.png")
+
+//-         li 
+//-           .image_title.clr-2
+//-             a(href='/metodos/sismicos/sismica-en-pozo-cross-up-dawn-hole') Sísmica en Pozo Cross-Up-Dawn Hole (CROSS-UP-DAWN HOLE)
+//-           a(href='/metodos/sismicos/sismica-en-pozo-cross-up-dawn-hole')
+//-             img(src="/static/img/metodos/sismicos/SismicaenPozo.png")
+
+//-         li 
+//-           .image_title.clr-3
+//-             a(href='/metodos/sismicos/sismica-de-ondas-superficiales') Sísmica de Ondas Superficiales (MASW)
+//-           a(href='/metodos/sismicos/sismica-de-ondas-superficiales')
+//-             img(src="/static/img/metodos/sismicos/ondas/SismicadeOndasSuperficiales.png")
+
+//-         li 
+//-           .image_title.clr-4
+//-             a(href='/metodos/sismicos/sismica-de-refraccion') Sísmica de Refracción (Refracción)
+//-           a(href='/metodos/sismicos/sismica-de-refraccion')
+//-             img(src="/static/img/metodos/sismicos/refraccion/SismicadeRefraccion.png")
+
+//-         li 
+//-           .image_title.clr-5
+//-             a(href='/metodos/sismicos/sismica-de-reflexion') Sísmica de Reflexión (Reflexión)
+//-           a(href='/metodos/sismicos/sismica-de-reflexion')
+//-             img(src="/static/img/metodos/sismicos/reflexion/SismicadeReflexion.png")
+
+//-         li 
+//-           .image_title.clr-6
+//-             a(href='/metodos/sismicos/sismica-de-cocientes-espectrales') Sísmica de Cocientes Espectrales (HVSR)
+//-           a(href='/metodos/sismicos/sismica-de-cocientes-espectrales')
+//-             img(src="/static/img/metodos/sismicos/HVSR.png")
+
+//- .content
+//-   +icons-metodos
