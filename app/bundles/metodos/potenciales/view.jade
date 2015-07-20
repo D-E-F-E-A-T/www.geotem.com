@@ -1,4 +1,5 @@
-include /master/common/mixins/administracion
+include /master/common/mixins/
+include /master/common/mixins/icons
 .content
   .overlay-content
     a(href='/metodos/potenciales/gravimetria')
@@ -7,6 +8,8 @@ include /master/common/mixins/administracion
     a(href='/metodos/potenciales/magnetometria')
       .overlay-box
         +overlay3('potenciales/MAG', 'Magnetometría', 'Natural','Caracterización Regional','MAG')
+        
++icons-metodos
 
 //-   .image_title.clr-1
 //-     a(href='/metodos/potenciales/gravimetria') Gravimetría (GRV)
