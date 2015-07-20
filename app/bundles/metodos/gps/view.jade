@@ -1,5 +1,6 @@
 include /master/common/mixins/administracion
 .content
-  .overlay-content
-    .overlay-box
-      +overlay('gps/GPS', 'Sistema de posicionamiento global', 'GPS')
+	.overlay-content
+		a(href='/metodos/gps/sistema-de-posicionamiento-global')
+			.overlay-box
+				+overlay2('gps/GPS', 'Sistema de posicionamiento', 'global', '+/- 5mm','Referencia Geográfica', 'GPS')

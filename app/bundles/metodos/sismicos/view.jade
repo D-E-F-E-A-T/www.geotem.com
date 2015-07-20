@@ -1,18 +1,31 @@
 include /master/common/mixins/administracion
 .content
   .overlay-content
-    .overlay-box
-      +overlay('sismicos/SPAC', 'Autocorrelación Espacial', 'SPAC')
-    .overlay-box
-      +overlay('sismicos/SismicaenPozo', 'Sísmica en Pozo Cross-Up-Dawn Hole', 'CROSS-UP-DAWN HOLE')
-    .overlay-box
-      +overlay('sismicos/MASW', 'Sísmica de Ondas Superficiales', 'MASW')
-    .overlay-box
-      +overlay('sismicos/Refracción', 'Sísmica de Refracción', 'Refracción')
-    .overlay-box
-      +overlay('sismicos/Reflexión', 'Sísmica de Reflexión', 'Reflexión')
-    .overlay-box
-      +overlay('sismicos/HVSR', 'Sísmica de Cocientes Espectrales', 'HVSR')
+
+    a(href='/metodos/sismicos/autocorrelacion-espacial')
+      .overlay-box
+        +overlay('sismicos/SPAC', 'Autocorrelación', 'Espacial','Natural',' 0- 100m', 'SPAC')
+    
+    a(href='/metodos/sismicos/sismica-en-pozo-cross-up-dawn-hole')
+      .overlay-box
+        +overlay('sismicos/SismicaenPozo', 'Sísmica en','Pozo', 'Controlada','0 - 100m', 'CROSS-UP-DAWN HOLE')
+   
+    a(href='/metodos/sismicos/sismica-de-ondas-superficiales')
+      .overlay-box
+        +overlay('sismicos/MASW', 'Análisis Multicanal de','Ondas Superficiales','Controlada','0 - 100m', 'MASW')
+   
+    a(href='/metodos/sismicos/sismica-de-refraccion')
+      .overlay-box
+        +overlay('sismicos/Refracción', 'Sísmica de', 'Refracción','Controlada', '0 -50m', 'Refracción')
+    
+    a(href='/metodos/sismicos/sismica-de-reflexion')
+      .overlay-box
+        +overlay('sismicos/Reflexión', 'Sísmica de', 'Reflexión','Controlada','0 - 50m', 'Reflexión')
+   
+    a(href='/metodos/sismicos/sismica-de-cocientes-espectrales')
+      .overlay-box
+        +overlay3('sismicos/HVSR', 'Cocientes Espectrales','Natural','Determinación del periodo Fundamental', 'ReMi')
+
 
 //- include /master/common/mixins/icons
 //- .accordian
