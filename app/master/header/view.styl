@@ -1,3 +1,5 @@
+
+
 &
 	display		: flex
 	padding		: 0.5rem
@@ -122,19 +124,20 @@
 				.submenu
 					background-color:	rgba(255,255,255,0.9)
 					box-shadow		:	10px 10px 5px 0px rgba(0,0,0,0.15)
-					display			:	none
-					opacity			:	0
 					padding			:	0
 					position		:	absolute
-					top				:	3rem
-					visibility		:	hidden
+					top				:	90% !important
 					width			:	17em
 					z-index			:	10
+					visibility 		: 	hidden
+					opacity 		: 	0
+					transition 		: 	visibility 0s linear 0.5s,opacity 0.5s linear
+					
 					li 
 						color			:	#fff
 						display			:	block
 						margin-left		:	0.5vw
-						padding			:	0.8rem
+						padding			:	0.5rem 0.8rem
 						text-align		: 	left
 				
 						
@@ -142,12 +145,18 @@
 	top: 1em
 
 .material-m
-	display : block
-	input
-		margin-left: 13px !important
-		width: 92% !important
+	+from-width('mini')
+		display : block 
+	+from-width('s')
+		display : block 
+	+from-width('m')
+		display : block 
+	+from-width('l')
+		display : none 
 	+from-width('xl')
 		display : none !important
+	
+	
 		
 .menu.m
 	+from-width('xl')
@@ -155,49 +164,31 @@
 			
 				
 .m1
-	left	:	9.5vw
-//-.m2
-//-	left	:	27vw
+	left	:	18%
+.m2
+	left	:	36%
 .m3
-	left	:	28.6vw
+	left	:	53.5%
 .m4
-	left	: 	37.3vw
+	left	: 	69%
 .m5
-	left	: 	46.5vw
-	height : 14vh
+	left	: 	86.5%
+	
 
-@media (min-width:800px)
-	.m2
-		left	:	36%
-@media (min-width:1366px)
-	.m2
-		left	:	36.5%
-//-+to-width(1280px)
-//-	.m2
-//-		left : 36%
-// +from-width(1300px)
-// 	.m2
-// 		left: 36.5%
+
 .header-master .header-menu .menu ul li:hover .submenu 
-		display		:	block
-		opacity		:	1
-		visibility	:	visible
-
+		visibility 			: 	visible
+		opacity 			: 	1
+		transition-delay 	: 	0s;
+    	
 .submenu li a:hover
 	color	:	red !important
+	 
 	
 .section
 	col(1/6)
 	text-align 	: center
 	display		: inline
-	
-// .search
-	
-// 	form
-// 		width: 15px
-// 		padding-left: 10px
-// 		color: transparent
-// 		cursor: pointer
-// 	input
-// 		outline:none
-// 		margin-left:80%
+
+
+
