@@ -10,15 +10,18 @@ mixin overlay(image, metodo,metodo1,fuente,number, title)
 		.imagen
 			img(src="/static/img/metodos/#{image}.png")
 		.description
-			p 	
-				|Método : #{metodo}
-				|#{metodo1}
-			p
-				|Fuente: #{fuente}
+			.metodo 
+				p
+					|Método : #{metodo}
+					|#{metodo1}
 
-			p
-				|Profundidad de
-				|Investigación: #{number}
+			.fuente
+				p
+					|Fuente: #{fuente}
+			.pro
+				p
+					|Profundidad de
+					|Investigación: #{number}
 
 	.cintillo
 		p #{title}
