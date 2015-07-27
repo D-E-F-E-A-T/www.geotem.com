@@ -10,18 +10,21 @@ mixin overlay(image, metodo,metodo1,fuente,number, title)
 		.imagen
 			img(src="/static/img/metodos/#{image}.png")
 		.description
-			.metodo 
-				p
-					|Método : #{metodo}
-					|#{metodo1}
 
-			.fuente
-				p
-					|Fuente: #{fuente}
-			.pro
-				p
-					|Profundidad de
-					|Investigación: #{number}
+			span
+				|Método : #{metodo}
+				br
+				|#{metodo1}				
+				br
+				br
+			span
+				|Fuente: #{fuente}
+				br
+				br
+			span
+				|Profundidad de
+				br
+				|Investigación: #{number}
 
 	.cintillo
 		p #{title}
@@ -32,13 +35,18 @@ mixin overlay2(image, metodo,metodo1,res,ref, title)
 		.imagen
 			img(src="/static/img/metodos/#{image}.png")
 		.description
-			p 	
+			span 	
 				|Método : #{metodo}
+				br
 				|#{metodo1}
-			p
+				br
+				br
+			span
 				|Resolución: #{res}
+				br
+				br
 
-			p #{ref}
+			span #{ref}
 
 	.cintillo
 		p #{title}
@@ -50,10 +58,36 @@ mixin overlay3(image, metodo,fuente,ref, title)
 		.description
 			p 	
 				|Método : #{metodo}
+				br
+				br
 			p
 				|Fuente: #{fuente}
-
+				br
+				br
 			p #{ref}
 
 	.cintillo
 		p #{title}
+
+mixin overlay4(image, title,description)
+
+	.caja
+		.imagen
+			img(src="/static/img/metodos/#{image}.png")
+		.description
+			p 	
+				|Método : #{metodo}
+				br
+				br
+			p
+				|Fuente: #{fuente}
+				br
+				br
+	.cintillo
+		p #{title}
+
+
+
+
+
+
