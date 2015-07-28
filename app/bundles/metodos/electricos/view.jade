@@ -4,7 +4,7 @@ include /master/common/mixins/icons
 	.overlay-content
 		a(href='/metodos/electricos/sondeo-electrico-vertical')
 			.overlay-box
-				+overlay('electricos/SEV', 'Sondeo ', 'Eléctrico Vertical','Controlada', '0.5km','SEV')
+				+overlay('electricos/SEV', 'Sondeo ', 'Eléctrico Vertical','Controlada', '0-5km','SEV')
 		a(href='/metodos/electricos/polarizacion-inducida')
 			.overlay-box
 				+overlay('electricos/IP', 'Polarización', 'Inducida','Controlada', '0 - 300m','IP')
@@ -14,4 +14,12 @@ include /master/common/mixins/icons
 		a(href='/metodos/electricos/tomografia-de-resistividad-electrica' )
 			.overlay-box
 				+overlay('electricos/TRE', 'Tomografía de', 'Resistividad Eléctrica','Controlada','0 -500m', 'TRE')
+				
+		+icons-metodos
+
+.measure
+	+overlay4('/electricos/SEV','SEV','Sondeo Eléctrico Vertical','Controlada', '0-5km')
+	+overlay4('/electricos/IP','IP','Polarización Inducida','Controlada', '0-300m')
+	+overlay4('/electricos/SIP','SIP','Polarizacion Inducida Espectral','Controlada', '0-300m')
+	+overlay4('/electricos/TRE','TRE','Tomografía de Resistividad Eléctrica','Controlada', '0-500m')
 	+icons-metodos

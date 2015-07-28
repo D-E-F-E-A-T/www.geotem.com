@@ -69,25 +69,54 @@ mixin overlay3(image, metodo,fuente,ref, title)
 	.cintillo
 		p #{title}
 
-mixin overlay4(image, title,description)
+.measure
+	mixin overlay4(image, title,metodo,fuente,number)
+		.content
+			.overlay-content-img
+				.overlay-image
+					img(src="/static/img/metodos/#{image}.png")
+			.overlay-content-text
+				.overlay-title
+					h3 #{title}
 
-	.caja
-		.imagen
-			img(src="/static/img/metodos/#{image}.png")
-		.description
-			p 	
-				|Método : #{metodo}
-				br
-				br
-			p
-				|Fuente: #{fuente}
-				br
-				br
-	.cintillo
-		p #{title}
+				.overlay-description
+					span Método : #{metodo}
+					br
+					span Fuente: #{fuente}
+					br
+					span Profundidad de Investigación: #{number}
+	
+.measure
+	mixin overlay5(image, title, metodo,fuente,ref)
+		.content
+			.overlay-content-img
+				.overlay-image
+					img(src="/static/img/metodos/#{image}.png")
+			.overlay-content-text
+				.overlay-title
+					h3 #{title}
+				.overlay-description
+					span Método : #{metodo}
+					br
+					span Fuente: #{fuente}
+					br
+					span #{ref}
 
+.measure
+	mixin overlay6(image,title, metodo,res,ref, )
+		.content
+			.overlay-content-img
+				.overlay-image
+					img(src="/static/img/metodos/#{image}.png")
+			.overlay-content-text
+				.overlay-title
+					h3 #{title}
+				.overlay-description
+					span
+						span Método : #{metodo}
+						br
+						span Resolución: #{res}
+						br
 
-
-
-
+					span #{ref}
 
