@@ -1,30 +1,17 @@
 include /master/common/mixins/administracion
 include /master/common/mixins/icons
 .content
-  .overlay-content
-    a(href='/metodos/potenciales/gravimetria')
-      .overlay-box
-        +overlay3('potenciales/GRV', ' Gravimetría','Natural', 'Caracterización Regional', 'GRV')
-    a(href='/metodos/potenciales/magnetometria')
-      .overlay-box
-        +overlay3('potenciales/MAG', 'Magnetometría', 'Natural','Caracterización Regional','MAG')
-  +icons-metodos
+	.overlay-content
+		a(href='/metodos/potenciales/gravimetria')
+			.overlay-box
+				+overlay3('potenciales/GRV', ' Gravimetría','Natural', 'Caracterización Regional', 'GRV')
+		a(href='/metodos/potenciales/magnetometria')
+			.overlay-box
+				+overlay3('potenciales/MAG', 'Magnetometría', 'Natural','Caracterización Regional','MAG')
+		+icons-metodos
 
 .measure
-	+overlay4('potenciales/GRV','GRV','Gravimetría','Controlada', '0.5km')
-	+overlay4('potenciales/MAG','MAG','Magnetometría','Controlada', '0.5km')
-//-   .image_title.clr-1
-//-     a(href='/metodos/potenciales/gravimetria') Gravimetría (GRV)
-//-   a(href='/metodos/potenciales/gravimetria')
-//-     img(src="/static/img/metodos/potenciales/gravimetria/Gravimetria.png")
+	+overlay6('potenciales/GRV','GRV','Gravimetría','Natural','Caracterización Regional')
+	+overlay6('potenciales/MAG','MAG','Magnetometría','Natural', 'Caracterización Regional')
+	+icons-metodos
 
-//- li 
-//-   .image_title.clr-2
-//-     a(href='/metodos/potenciales/magnetometria') Magnetometría (MAG)
-//-   a(href='/metodos/potenciales/magnetometria')
-//-     img(src="/static/img/metodos/potenciales/magnetometria/Magnetometria.png")
-
-
-
-//- .content
-//-   +icons-metodos

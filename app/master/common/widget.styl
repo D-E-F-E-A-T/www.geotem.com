@@ -150,7 +150,7 @@
 	col(7/7)
 	position	: relative
 	padding-top : 1em
-	text-align	: center
+	text-align	: center 
 	.item
 		col(1/7)
 		img
@@ -313,112 +313,6 @@ color3 = #79beea
 		+from-width('extra')
 			display : block
 		
-//---------- overlay ---------------
-
-
-.overlay-content
-	margin-top : 15% !important;
-
-.imagen
-	img
-		width : 100%
-		height : auto
-.caja
-	background-color: white
-	width			: 80%
-	height			: 180px
-	position		: relative
-	overflow		: hidden
-	cursor			: pointer
-	background-size : 100% 100% 
-	margin-top      : 9%
-		
-.cintillo
-	position : relative
-	color : black
-	display : block
-	padding : 0px 10px 20px 10px
-	width : 80%
-	height : 20px
-	p
-		text-align: center
-		text-transform : uppercase
-		
-.description
-	position: absolute
-	width: 100%
-	height: 0
-	bottom: 0
-	color: #fff
-	transition: all .3s ease
-	z-index: 5
-	
-
-	p
-		width: 90%;
-		position: relative
-		line-height : 2.2vw
-		top : 4%
-
-.caja:hover .description
-	transition: all .3s ease
-	height: 100%
-	padding: 1em 1em 0 1em
-	
-
-.footer 
-	margin-top : 5% !important
-	
-+from-width('medium')
-
-	.imagen
-		img
-			width : 100%
-			height : 180px
-			
-+to-width('small')
-
-	.caja
-		width			: 90%
-		height			: 177px
-		
-	.caja:hover .description
-		width			: 90%
-		height			: 180px
-			
-	.description
-		width: 90%
-		bottom : -4px
-		span
-			padding : 0 
-			line-height: 1.5vw
-	.imagen
-		img
-			width : 90%
-			height : 180px
-	
-	.overlay-content-img
-		.overlay-image
-			img
-				margin: 8%
-				width: 85%
-	.overlay-content-text
-		text-align : left
-		margin: 8%
-		width: 85%
-		.overlay-title
-			h3
-				margin-bottom: 1em
-				text-align :  center
-				margin-top : -9vw
-		.overlay-description
-			span
-				line-height : 1em
-				
-	.overlay-content
-		display : none
-	.measure
-		display : block
 
 //-------------- caption--------------
 .cover
@@ -484,4 +378,110 @@ color3 = #79beea
 
 .cover-img:hover .cover-content
 	display : block
+	
+//---------- overlay ---------------
+
+.overlay-content
+	margin-top : 15% !important;
+
+.imagen
+	img
+		width : 100%
+		height : auto
+.caja
+	background-color: white
+	width			: 80%
+	height			: 180px
+	position		: relative
+	overflow		: hidden
+	cursor			: pointer
+	background-size : 100% 100% 
+	margin-top      : 9%
+		
+.cintillo
+	position : relative
+	color : black
+	display : block
+	padding : 0px 10px 20px 10px
+	width : 80%
+	height : 20px
+	p
+		text-align: center
+		text-transform : uppercase
+		
+.description
+	position: absolute
+	width: 100%
+	height: 0
+	bottom: 0
+	color: #fff
+	transition: all .3s ease
+	z-index: 5
+	
+
+	p
+		width: 90%;
+		position: relative
+		line-height : 2.2vw
+		top : 4%
+
+.caja:hover .description
+	transition: all .3s ease
+	height: 100%
+	padding: 1em 1em 0 1em
+	
+
+.footer 
+	margin-top : 5% !important
+	
++from-width('medium')
+
+	.imagen
+		img
+			width : 100%
+			height : 180px
+				
++to-width('small')
+
+	.caja
+		width			: 90%
+		height			: 177px
+		
+	.caja:hover .description
+		width			: 90%
+		height			: 180px
+			
+	.description
+		width: 90%
+		bottom : -4px
+		span
+			padding : 0 
+			line-height: 1.5vw
+	.imagen
+		img
+			width : 90%
+			height : 180px
+	
+	.overlay-content-img
+		.overlay-image
+			img
+				margin: 8%
+				width: 85%
+	.overlay-content-text
+		text-align : left
+		margin: 8%
+		width: 85%
+		.overlay-title
+			h3
+				margin-bottom: 1em
+				text-align :  center
+				margin-top : -9vw
+		.overlay-description
+			span
+				line-height : 1em
+				
+	.overlay-content
+		display : none
+	.measure
+		display : block
 				
