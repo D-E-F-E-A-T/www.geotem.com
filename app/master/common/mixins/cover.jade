@@ -15,21 +15,17 @@ mixin cover-aplications(img, cap1, description, cap)
 				h2 #{cap1}
 
 
-mixin cover-aplications2(img, cap1, description, cap)
+mixin cover-aplications2(img, title, description, seccion)
 	.cover
 		.cover-img
-			img(src='/static/img/#{img}')
-
-		.cover-caption
-			.title
-				h1 #{cap}
-
-		.cover-caption-description
-			p #{description}
-
-		.cover-cd
-			.title
-				h2 #{cap1}
+			img(src='/static/img/#{img}.png')
+			.cover-content
+				.cover-caption-text-seccion
+					h1 #{seccion}
+				.cover-caption-text-title
+					h3 #{title}
+				.cover-caption-text-description
+					p #{description}
 
 
 
