@@ -322,19 +322,39 @@ color3 = #79beea
 	background-color : rgba(0, 0, 0, 0.5)
 	position : absolute
 	bottom : 5px
-	max-width : 35%
+	
 	max-height : 40%
 	color : white
 	overflow-y : auto
 	padding : 5px 10px
+	+from-width('small')
+		width : 100%
+	+from-width('medium')
+		width : 100%
+	+from-width('large')
+		max-width : 35%
+	+from-width('extra')
+		max-width : 35%
 
-.cover-caption-text-description
-	h2
-		text-transform : none !important
-		text-align : none	!important
+// .cover-caption-text-description
+// 	h2
+// 		text-transform : none !important
+// 		text-align : none	!important
 
 .cover-caption-text-description
 	position : relative
+	+from-width('small')
+		display : none
+	+from-width('medium')
+		display : none 
+	+from-width('large')
+		display : block
+		padding : 0.5em
+	+from-width('extra')
+		display : block
+	
+
+	
 	
 //-------------scroll-----------------
 
@@ -375,6 +395,15 @@ color3 = #79beea
 
 .cover-content
 	display : none
+	+from-width('small')
+		display : block
+	+from-width('medium')
+		display : block 
+	+from-width('large')
+		display : none
+		padding : 0.5em
+	+from-width('extra')
+		display : none
 
 .cover-img:hover .cover-content
 	display : block
