@@ -15,11 +15,10 @@ include /master/common/mixins/icons
 			.overlay-box
 				+overlay('electricos/TRE', 'Tomografía de', 'Resistividad Eléctrica','Controlada','0 -500m', 'TRE')
 				
-		+icons-metodos
-
-.measure
-	+overlay4('/electricos/SEV','SEV','Sondeo Eléctrico Vertical','Controlada', '0-5km')
-	+overlay4('/electricos/IP','IP','Polarización Inducida','Controlada', '0-300m')
-	+overlay4('/electricos/SIP','SIP','Polarizacion Inducida Espectral','Controlada', '0-300m')
-	+overlay4('/electricos/TRE','TRE','Tomografía de Resistividad Eléctrica','Controlada', '0-500m')
+.content
+	.measure
+		+overlay4('/electricos/SEV','SEV','Sondeo Eléctrico Vertical','Controlada', '0-5km')
+		+overlay4('/electricos/IP','IP','Polarización Inducida','Controlada', '0-300m')
+		+overlay4('/electricos/SIP','SIP','Polarizacion Inducida Espectral','Controlada', '0-300m')
+		+overlay4('/electricos/TRE','TRE','Tomografía de Resistividad Eléctrica','Controlada', '0-500m')
 	+icons-metodos

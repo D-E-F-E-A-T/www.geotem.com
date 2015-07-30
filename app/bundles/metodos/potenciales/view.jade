@@ -1,17 +1,16 @@
 include /master/common/mixins/administracion
 include /master/common/mixins/icons
 .content
-	.overlay-content
+	.overlay-content.box-center
 		a(href='/metodos/potenciales/gravimetria')
 			.overlay-box
 				+overlay3('potenciales/GRV', ' Gravimetría','Natural', 'Caracterización Regional', 'GRV')
 		a(href='/metodos/potenciales/magnetometria')
 			.overlay-box
 				+overlay3('potenciales/MAG', 'Magnetometría', 'Natural','Caracterización Regional','MAG')
-		+icons-metodos
-
-.measure
-	+overlay6('potenciales/GRV','GRV','Gravimetría','Natural','Caracterización Regional')
-	+overlay6('potenciales/MAG','MAG','Magnetometría','Natural', 'Caracterización Regional')
+		
+	.measure
+		+overlay6('potenciales/GRV','GRV','Gravimetría','Natural','Caracterización Regional')
+		+overlay6('potenciales/MAG','MAG','Magnetometría','Natural', 'Caracterización Regional')
 	+icons-metodos
 
