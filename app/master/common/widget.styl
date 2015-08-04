@@ -8,12 +8,12 @@
 	position: relative
 	.cover-img
 		position : relative
-		
+
 	.cover-img	img
 		height		: auto
 		position	: relative
 		width		: 100%
-		
+
 	.cover-cd
 		background		: rgba(34, 34, 34, 0)
 		color			: white
@@ -34,10 +34,10 @@
 		width		: 100%
 		margin 		: 0.30em 0 !important
 
-		
+
 		.title
 			+to-width('small')
-				
+
 				position	: absolute
 				color       : white
 				text-align	: left
@@ -50,8 +50,8 @@
 					font-size	: 4vw
 					margin-top: 7vw
 					padding-left : 1vw
-					
-			+from-width('medium')	
+
+			+from-width('medium')
 				h1
 					position	: absolute
 					top  : -14vw
@@ -80,7 +80,7 @@
 				bottom : 3vw
 				line-height : 3vw
 				right : 3vw
-			background-color : rgba(0,0,0,0.30)	
+			background-color : rgba(0,0,0,0.30)
 			+from-width('medium')
 				font-size 		: 2.5vw
 				line-height		: 3vw
@@ -95,7 +95,7 @@
 				margin-left	: 28vw
 				line-height : 1.125em
 				text-align	: justify
-				
+
 			+from-width('large')
 				font-size	: 2vw
 				line-height : 1.125em
@@ -108,7 +108,7 @@
 			+from-width('extra')
 				font-size	: 1.5vw
 				rigth : 3vw
-				
+
 +to-width('small')
 	.cover-cd
 		h2
@@ -120,9 +120,9 @@
 // 	.cover-cd
 // 		h2
 // 			margin: -0.33em -5.5em !important
-// 			bottom : 1.5vw !important	
+// 			bottom : 1.5vw !important
 
-		
+
 
 //-#########################-seccion aplicaciones-##########
 .country
@@ -150,7 +150,7 @@
 	col(7/7)
 	position	: relative
 	padding-top : 1em
-	text-align	: center 
+	text-align	: center
 	.item
 		col(1/7)
 		img
@@ -170,7 +170,7 @@
 .cover-img:hover ~ .cover-caption-description
 	margin-right: 5%;
 	margin-bottom: auto
-//Sección equipo				
+//Sección equipo
 
 
 .box-icons-eq
@@ -178,7 +178,7 @@
 	position	: relative
 	padding-top : 1em
 	text-align	: center
-	
+
 	.item
 		margin-top : 2em
 		col(1/6)
@@ -195,27 +195,27 @@
 				width		: 80%
 			+from-width('extra')
 				width		: 80%
-				
+
 +to-width('small')
 	.box-icons-eq .item
 		margin-top: -1em !important
-						
+
 +from-width('medium')
 	.box-icons-eq .item
 		margin-top: 1em
-		
+
 +from-width('normal')
 	.box-icons-eq .item
-		margin-top: 5em	
-		 	
+		margin-top: 5em
+
 +from-width('large')
 	.box-icons-eq
 		margin-top: -2em
-		
+
 +from-width('extra')
 	.box-icons-eq
-		margin-top: 0em		
-		
+		margin-top: 0em
+
 .categoriax3
 	col(3/3)
 	span
@@ -238,7 +238,7 @@ span
 			font-size		: 2vw
 		+from-width('extra')
 			font-size		: 2vw
-			
+
 //-#########################################################
 
 //edit()()
@@ -250,30 +250,30 @@ color3 = #79beea
 .cover
 	width : 100%
 	height : auto
-	
+
 //----------  ajuste de contenido
 
 .content
 	+from-width('mini')
 		max-width : 480px !important
-		margin : 0 auto 
+		margin : 0 auto
 		padding: 0 1.3em
 		h1
 			line-height : 3vw
 			font-size : 1.5em
 	+from-width('small')
 		max-width : 480px !important
-		margin : 0 auto 
+		margin : 0 auto
 		padding: 0 1em
 	+from-width('medium')
 		max-width : 768px !important
-		margin : 0 auto 
+		margin : 0 auto
 	+from-width('large')
 		max-width : 1024px !important
-		margin : 0 auto 
+		margin : 0 auto
 	+from-width('extra')
 		max-width : 1024px !important
-		margin : 0 auto 
+		margin : 0 auto
 
 
 .cover-caption-description
@@ -294,25 +294,25 @@ color3 = #79beea
 	+from-width('small')
 		display : none
 	+from-width('medium')
-		display : none 
+		display : none
 	+from-width('large')
 		display : none
 		padding : 0.5em
 	+from-width('extra')
 		display : none
-		
+
 .cover-img
 	&:hover ~ .cover-caption-description
 		+from-width('small')
 			display : none
 		+from-width('medium')
-			display : none 
+			display : none
 		+from-width('large')
 			display : block
 			padding : 0.5em
 		+from-width('extra')
 			display : block
-		
+
 
 //-------------- caption--------------
 .cover
@@ -322,7 +322,7 @@ color3 = #79beea
 	background-color : rgba(0, 0, 0, 0.5)
 	position : absolute
 	bottom : 5px
-	
+
 	max-height : 40%
 	color : white
 	overflow-y : auto
@@ -343,16 +343,16 @@ color3 = #79beea
 	+from-width('small')
 		display : none
 	+from-width('medium')
-		display : none 
+		display : none
 	+from-width('large')
 		display : block
 		padding : 0.5em
 	+from-width('extra')
 		display : block
-	
 
-	
-	
+
+
+
 //-------------scroll-----------------
 
 ::-webkit-scrollbar{
@@ -375,7 +375,7 @@ color3 = #79beea
   -webkit-box-shadow:   inset 0 1px 0 rgba(255,255,225,.5),
                 inset 1px 0 0 rgba(255,255,255,.4),
                 inset 0 1px 2px rgba(255,255,255,.3);
- 
+
   border:thin solid transparent;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -395,7 +395,7 @@ color3 = #79beea
 	+from-width('small')
 		display : block
 	+from-width('medium')
-		display : block 
+		display : block
 	+from-width('large')
 		display : none
 		padding : 0.5em
@@ -404,7 +404,7 @@ color3 = #79beea
 
 .cover-img:hover .cover-content
 	display : block
-	
+
 //---------- overlay ---------------
 
 .overlay-content
@@ -412,7 +412,7 @@ color3 = #79beea
 	display : block
 
 +from-width('medium')
-	.overlay-content 
+	.overlay-content
 		margin-top: 8% !important
 
 .imagen
@@ -426,9 +426,9 @@ color3 = #79beea
 	position		: relative
 	overflow		: hidden
 	cursor			: pointer
-	background-size : 100% 100% 
+	background-size : 100% 100%
 	margin-top      : 9%
-		
+
 .cintillo
 	position : relative
 	color : black
@@ -439,7 +439,7 @@ color3 = #79beea
 	p
 		text-align: center
 		text-transform : uppercase
-		
+
 .description
 	position: absolute
 	width: 100%
@@ -454,47 +454,47 @@ color3 = #79beea
 		position: relative
 		line-height : 2.2vw
 		top : 4%
-		
+
 
 .caja:hover .description
 	transition: all .3s ease
 	height: 100%
 	padding: 1em 1em 0 1em
 	text-align: left
-	
+
 .measure
 	display : none
-.footer 
+.footer
 	margin-top : 5% !important
-	
+
 +from-width('medium')
 
 	.imagen
 		img
 			width : 100%
 			height : 180px
-				
+
 +to-width('small')
 
 	.caja
 		width			: 90%
 		height			: 177px
-		
+
 	.caja:hover .description
 		width			: 90%
 		height			: 180px
-			
+
 	.description
 		width: 90%
 		bottom : -4px
 		span
-			padding : 0 
+			padding : 0
 			line-height: 1.5vw
 	.imagen
 		img
 			width : 90%
 			height : 180px
-	
+
 	.overlay-content-img
 		.overlay-image
 			img
@@ -513,13 +513,13 @@ color3 = #79beea
 		.overlay-description
 			span
 				line-height : 1em
-				
+
 	.overlay-content
 		display : none
 	.measure
 		display : block
-		
-		
+
+
 //----nuevos mosaicos-----------////
 
 
@@ -532,55 +532,58 @@ color3 = #79beea
 			max-width:256px;
 	.mc2
 		span(5/12)
-		img 
+		img
 			width:100%;
 			max-width:427px;
 	.mc3
-		span(4/12)		
-		img 
+		span(4/12)
+		img
 			width:100%;
 			max-width:341px;
 
 
 .ms2c
 	span(12/12)
+	position : relative
 	.mc1
 		span(5/12)
 		img
 			width:100%;
 			max-width:427px;
-		
+
 	.mc2
 		span(3/12)
 		img
 			width:100%;
 			max-width:256px;
-		
+
 	.mc3
 		span(4/12)
 		img
 			width:100%;
 			max-width:341px;
-		
+
 
 .ms3c
 	span(12/12)
+	position : relative
 	.mc1
 		span(8/12)
 		img
 			width:100%;
 			max-width:683px;
-		
+
 	.mc2
 		span(4/12)
 		img
 			width:100%;
 			max-width:341px;
-		
-	
+
+
 
 .ms4c
 	span(12/12)
+	position : relative
 	.mc1
 		span(5/12)
 		.mc1-1
@@ -589,7 +592,7 @@ color3 = #79beea
 				width:100%;
 				max-width:427px;
 		.mc1-1-1
-			span(12/12)	
+			span(12/12)
 			img
 				width:100%;
 				max-width:427px;
@@ -606,7 +609,23 @@ color3 = #79beea
 				width:100%;
 				max-width:597px;
 
-		
+
+
+
+.ms3c-r
+	span(12/12)
+	position : relative
+	.mc1
+		span(4/12)
+		img
+			width:100%;
+			max-width:341px;
+
+	.mc2
+		span(8/12)
+		img
+			width:100%;
+			max-width:683px;
 
 
 
@@ -618,7 +637,3 @@ color3 = #79beea
 
 
 
-
-
-
-				
