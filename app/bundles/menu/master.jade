@@ -1,0 +1,32 @@
+//- doctype html
+//- <!--[if lt IE 9]><html class="fallback" lang="es"><![endif]-->
+//- <!--[if !IE]><!-->
+//- html(lang="es")
+//- 	<!--<![endif]-->
+//- 	head
+//- 		meta(charset=ﬁ.conf.charset)
+//- 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+//- 		block ﬁ.meta
+
+//- 		title= locals.TITLE? TITLE : ''
+
+//- 		link(rel='shortcut icon' href='/static/img/favicon.ico')
+
+//- 		link(rel='stylesheet'    href='/static/assets/css/menu.css')
+
+//- 		each link in locals.LINK
+//- 			link(rel=link.rel href=link.href)
+
+//- 		block link
+
+//- 	body
+
+//- 		main#main
+//- 			block main
+
+//- 		script(src='/static/assets/js/menu.js')
+
+//- 		each script in locals.SCRIPT
+//- 			script(src=script.src)
+
+//- 		block script

@@ -61,6 +61,7 @@
 ﬁ.routes.get '/metodos/sismicos/sismica-de-refraccion'                    		 				, 'metodos/sismicos/sismrefra'
 
 
+ﬁ.routes.get '/menu' 																	, 'menu'
 ﬁ.routes.get '/aplicaciones' 																	, 'applications'
 ﬁ.routes.get '/aplicaciones/ambiental' 															, 'applications/ambiental' 
 ﬁ.routes.get '/aplicaciones/arqueologia'               		 									, 'applications/arqueologia'

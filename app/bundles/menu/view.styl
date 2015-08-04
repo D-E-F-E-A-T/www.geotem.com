@@ -1,0 +1,39 @@
+$item-active()
+	background: green
+	font-size: 2rem
+
+html, body
+	margin  :0
+	padding :0
+
+nav
+
+	ul, li
+		display  : block
+		position : relative
+		padding  : 0
+		margin   : 0
+
+
+	ul.item-1st // primarios
+		background: chocolate
+
+		& > li
+			display    : inline-block
+			background : olive
+
+			&:hover
+				$item-active()
+
+				& ul > li
+					display: block
+
+	ul.item-2nd // secundarios
+		background: peru
+		position: absolute
+
+		& > li
+			display:none
+
+	li.item-active
+		$item-active()
