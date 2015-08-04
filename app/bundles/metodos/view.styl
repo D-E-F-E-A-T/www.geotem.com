@@ -62,17 +62,17 @@
 			+from-width('xl')
 				width 		: 80%
 
-.cover-caption
-	h1 
-		text-shadow : 4px 2px 10px rgba(0, 0, 0, 0.8) !important;
-		+from-width('s')
-			font-size : 3vw
-		+from-width('m')
-			font-size : 3vw
-		+from-width('l')
-			font-size : 2vw
-		+from-width('xl')
-			font-size : 2vw
+// .cover-caption
+// 	h1 
+// 		// text-shadow : 4px 2px 10px rgba(0, 0, 0, 0.8) !important;
+// 		+from-width('s')
+// 			font-size : 3vw
+// 		+from-width('m')
+// 			font-size : 3vw
+// 		+from-width('l')
+// 			font-size : 2vw
+// 		+from-width('xl')
+// 			font-size : 2vw
 			
 +to-width('xl')
 	.box-icons
@@ -89,4 +89,39 @@
 		margin-top : 0
 
 
+.cover
+	position : relative !important 
+	img
+		width : 100% !important
+		height : auto !important
 
+	.cover-caption
+		position : absolute !important
+		bottom : 0 !important
+		background-color : rgba(0, 0,0 , 0.6) !important
+		+to-width('xl')
+			max-width : 35% !important
+		+to-width('l')
+			max-width : 35% !important
+		+to-width('m')
+			max-width : 45% !important
+		+to-width('s')
+			max-width : 45% !important
+		
+		
+		
+		h1 
+			color : white !important
+			line-height : 1
+			+to-width('xl')
+				font-size : 2vw !important
+			+to-width('l')
+				font-size : 2vw !important
+			+to-width('m')
+				font-size : 3vw !important
+			+to-width('s')
+				font-size : 3vw !important
+				margin : 0 !important
+			
+			
+			

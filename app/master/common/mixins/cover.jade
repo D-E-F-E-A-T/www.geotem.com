@@ -39,12 +39,10 @@ mixin cover(img, title)
 
 mixin cover-sc(img, cap)
 	.cover
-		.cover-img
-			img(src='/static/img/#{img}')
+		img(src='/static/img/#{img}')
 
 		.cover-caption
-			.title
-				h1 #{cap}
+			h1 #{cap}
 
 
 mixin cover-full(img, title, desc1, desc2)
