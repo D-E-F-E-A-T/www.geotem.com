@@ -1,55 +1,55 @@
 
-mixin mosaico1
+mixin mosaico1(med, img, med2, color, color2)
 	.ms1c
 		.mc1
-			img(src="http://dummyimage.com/256/000/fff.jpg", alt="")
+			img(src="http://dummyimage.com/#{med}/#{color}/fff.jpg", alt="")
 		.mc2
-			img(src="http://lorempixel.com/output/abstract-q-g-427-256-2.jpg", alt="")
+			img(src="static/img/#{img}.png", alt="")
 		.mc3
-			img(src="http://dummyimage.com/341x256/000/fff.jpg", alt="")
+			img(src="http://dummyimage.com/#{med2}/#{color2}/fff.jpg", alt="")
 
 
 
-mixin mosaico2
+mixin mosaico2(img, med, img2, color)
 	.ms2c
 		.mc1
-			img(src="http://lorempixel.com/output/city-q-g-427-256-6.jpg", alt="")
+			img(src="/static/img/#{img}.png", alt="")
 		.mc2
-			img(src="http://dummyimage.com/256/000/fff.jpg", alt="")
+			img(src="http://dummyimage.com/#{med}/#{color}/fff.jpg", alt="")
 		.mc3
-			img(src="http://lorempixel.com/output/sports-q-g-341-256-4.jpg", alt="")
+			img(src="/static/img/#{img2}.png", alt="")
 
 
-mixin mosaico3
+mixin mosaico3(img, med, med2, img2, color, color2)
 	.ms4c
 		.mc1
 			.mc1-1
-				img(src="http://lorempixel.com/output/fashion-q-g-427-279-1.jpg", alt="")
+				img(src="/static/img/#{img}.png", alt="")
 			.mc1-1-1
-				img(src="http://dummyimage.com/427x171/000/fff.png", alt="")
+				img(src="http://dummyimage.com/#{med}/#{color}/fff.png", alt="")
 		.mc2
 			.mc2-2
-				img(src="http://dummyimage.com/527x171/000/fff.png", alt="")
+				img(src="http://dummyimage.com/#{med2}/#{color2}/fff.png", alt="")
 			.mc2-2-2
-				img(src="http://lorempixel.com/output/fashion-q-g-597-256-5.jpg", alt="")
+				img(src="/static/img/#{img2}.png", alt="")
 
-mixin mosaico4
+mixin mosaico4(img, med, color)
 
 	.ms3c
 		.mc1
-			img(src="http://lorempixel.com/output/abstract-q-g-683-256-1.jpg", alt="")
+			img(src="/static/img/#{img}.png", alt="")
 		.mc2
-			img(src="http://dummyimage.com/341x256/000/fff.jpg", alt="")
+			img(src="http://dummyimage.com/#{med}/#{color}/fff.jpg", alt="")
 
 
-mixin mosaico4-r
+mixin mosaico4-r(med, img, color)
 
 	.ms3c-r
 		.mc1
-			img(src="http://dummyimage.com/341x256/000/fff.jpg", alt="")
+			img(src="http://dummyimage.com/#{med}/#{color}/fff.jpg", alt="")
 
 		.mc2
-			img(src="http://lorempixel.com/output/abstract-q-g-683-256-1.jpg", alt="")
+			img(src="/static/img/#{img}.png", alt="")
 
 
 //- mixin mosaico-x3-2-1(txt1, img, txt2)
