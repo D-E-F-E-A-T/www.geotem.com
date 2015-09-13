@@ -6,8 +6,9 @@
   "author": "GiK <gik@gik.mx>",
   "license": "All rights reserved",
   "dependencies": {
-    "fai": "^0.2.11",
-    "fullpage.js": "^2.6.5"
+    "fai": "^0.2.13-a",
+    "fullpage.js": "^2.6.5",
+    "mongodb": "^2.0.42"
   },
   "devDependencies": {
     "coffee-script": "^1.9.3",
