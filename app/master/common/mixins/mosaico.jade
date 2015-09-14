@@ -19,6 +19,15 @@ mixin mosaico2(img, med, img2, color)
 		.mc3
 			img(src="/static/img/#{img2}.png", alt="")
 
+mixin mosaico2-r(img, med, img2, color)
+	.ms2c-r
+		.mc1
+			img(src="/static/img/#{img}.png", alt="")
+		.mc2
+			img(src="http://dummyimage.com/#{med}/#{color}/fff.jpg", alt="")
+		.mc3
+			img(src="/static/img/#{img2}.png", alt="")
+
 
 mixin mosaico3(img, med, med2, img2, color, color2)
 	.ms4c
