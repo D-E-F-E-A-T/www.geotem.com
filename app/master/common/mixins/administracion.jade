@@ -70,11 +70,12 @@ mixin overlay3(image, metodo,fuente,ref, title)
 		p #{title}
 
 .measure
-	mixin overlay4(image, title,metodo,fuente,number)
+	mixin overlay4(image, title,metodo,fuente,number, url)
 		.content
 			.overlay-content-img
 				.overlay-image
-					img(src="/static/img/metodos/#{image}.png")
+					a(href= '#{url}')
+						img(src="/static/img/metodos/#{image}.png")
 			.overlay-content-text
 				.overlay-title
 					h3 #{title}
@@ -87,11 +88,12 @@ mixin overlay3(image, metodo,fuente,ref, title)
 					span Profundidad de Investigación: #{number}
 	
 .measure
-	mixin overlay5(image, title, metodo,fuente,ref)
+	mixin overlay5(image, title, metodo,fuente,ref, url)
 		.content
 			.overlay-content-img
 				.overlay-image
-					img(src="/static/img/metodos/#{image}.png")
+					a(href= '#{url}')
+						img(src="/static/img/metodos/#{image}.png")
 			.overlay-content-text
 				.overlay-title
 					h3 #{title}
@@ -103,11 +105,12 @@ mixin overlay3(image, metodo,fuente,ref, title)
 					span #{ref}
 
 .measure
-	mixin overlay6(image,title, metodo,fuente,ref)
+	mixin overlay6(image,title, metodo,fuente,ref, url)
 		.content
 			.overlay-content-img
 				.overlay-image
-					img(src="/static/img/metodos/#{image}.png")
+					a(href= '#{url}')
+						img(src="/static/img/metodos/#{image}.png")
 			.overlay-content-text
 				.overlay-title
 					h3 #{title}

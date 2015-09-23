@@ -32,11 +32,19 @@ include /master/common/mixins/icons
         +overlay('electromagneticos/GPR', 'Georadar de Penetración', 'Terrestre','Controlada','0 - 15m', 'GPR')
 
   .measure
-    +overlay4('electromagneticos/AMT-MT','AMT/MT','Audio-Magnetotelúrico Magnetotelúrico','Natural', '1 -250km')
-    +overlay4('electromagneticos/CSAMTv','CSAMT','Audio Magnetotelúrico Tensorial','Controlada', '0.5 - 2.5km')
-    +overlay4('electromagneticos/CSAMTe','CSAMT','Audio Magnetotelúrico Escalar','Controlada', '0.5 - 2.5km')
-    +overlay4('electromagneticos/TEM','TEM','Transitorio Electromagnético en el Dominio del Tiempo','Controlada', '0.1 - 1.5km')
-    +overlay4('electromagneticos/RMT','RMT','Radio-Magnetotelúrico','Natural','10 - 250m')
-    +overlay4('electromagneticos/CMD','CMD','Conductividad Electromagnética','Controlada', '0 - 60m')
-    +overlay4('electromagneticos/GPR','GPR','Georadar de Penetración Terrestre','Controlada', '0 - 15m')
+    +overlay4('electromagneticos/AMT-MT','AMT/MT','Audio-Magnetotelúrico Magnetotelúrico','Natural', '1 -250km', '/metodos/electromagneticos/magnetotelurico-audio-magnetotelurico')
+
+    +overlay4('electromagneticos/CSAMTv','CSAMT','Audio Magnetotelúrico Tensorial','Controlada', '0.5 - 2.5km', '/metodos/electromagneticos/audio-magnetotelurico-de-fuente-controlada-vectorial')
+
+    +overlay4('electromagneticos/CSAMTe','CSAMT','Audio Magnetotelúrico Escalar','Controlada', '0.5 - 2.5km', '/metodos/electromagneticos/audio-magnetotelurico-de-fuente-controlada-escalar')
+
+    +overlay4('electromagneticos/TEM','TEM','Transitorio Electromagnético en el Dominio del Tiempo','Controlada', '0.1 - 1.5km', '/metodos/electromagneticos/transitorio-electromagnetico-en-el-dominio-del-tiempo')
+
+    +overlay4('electromagneticos/RMT','RMT','Radio-Magnetotelúrico','Natural','10 - 250m', '/metodos/electromagneticos/radio-magnetotelurico')
+
+    +overlay4('electromagneticos/CMD','CMD','Conductividad Electromagnética','Controlada', '0 - 60m', '/metodos/electromagneticos/conductividad-electromagnetica')
+
+    +overlay4('electromagneticos/GPR','GPR','Georadar de Penetración Terrestre','Controlada', '0 - 15m', '/metodos/electromagneticos/georadar-de-penetracion-terrestre')
+
+
   +icons-metodos

@@ -29,10 +29,16 @@ include /master/common/mixins/icons
 
 
   .measure
-    +overlay4('sismicos/SPAC','SPAC','Sísmica en Pozo','Natural', '0- 100m')
-    +overlay4('sismicos/SismicaenPozo','CROSS-UP-DAWN HOLE','Autocorrelación Espacial','Controlada', '0- 100m')
-    +overlay4('sismicos/MASW','MASW','Análisis Multicanal de Ondas Superficiales','Controlada', '0- 100m')
-    +overlay4('sismicos/Refracción','Refracción','Sísmica de Refracción','Controlada', '0 -50m')
-    +overlay4('sismicos/Reflexión','Reflexión','Sísmica de Reflexión','Controlada', '0 -50m')
-    +overlay5('sismicos/HVSR','ReMi','Cocientes Espectrales','Natural', 'Determinación del periodo Fundamental')
+    +overlay4('sismicos/SPAC','SPAC','Sísmica en Pozo','Natural', '0- 100m', '/metodos/sismicos/autocorrelacion-espacial')
+
+    +overlay4('sismicos/SismicaenPozo','CROSS-UP-DAWN HOLE','Autocorrelación Espacial','Controlada', '0- 100m', '/metodos/sismicos/sismica-en-pozo-cross-up-dawn-hole')
+
+    +overlay4('sismicos/MASW','MASW','Análisis Multicanal de Ondas Superficiales','Controlada', '0- 100m', '/metodos/sismicos/sismica-de-ondas-superficiales')
+
+    +overlay4('sismicos/Refracción','Refracción','Sísmica de Refracción','Controlada', '0 -50m', '/metodos/sismicos/sismica-de-refraccion')
+
+    +overlay4('sismicos/Reflexión','Reflexión','Sísmica de Reflexión','Controlada', '0 -50m', '/metodos/sismicos/sismica-de-reflexion')
+
+    +overlay5('sismicos/HVSR','ReMi','Cocientes Espectrales','Natural', 'Determinación del periodo Fundamental', '/metodos/sismicos/sismica-de-cocientes-espectrales')
+
   +icons-metodos
