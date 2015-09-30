@@ -1,44 +1,11 @@
+span  
+	text-shadow : 5px 5px 5px black;
+
 main
 	+to-width('s')
 		margin-top : 5%
 
 
-@keyframes slidy
-		0%
-			left 0%
-		12.5%
-			left 0%
-		25%
-			left -100%
-		37.5%
-			left -200%
-		50%
-			left -300%
-		62.5%
-			left -400%	
-		75%
-			left -500%
-		87.5%
-			left -600%	
-		100%
-			left -700%
-
-
-#slider
-	overflow 	   : 	hidden
-	.slider-box-home
-		position   : 	relative
-		width      : 	800%
-		margin     : 	0
-		left       : 	0
-		font-size  : 	0
-		animation  : 	40s slidy infinite
-		
-		.slider-content
-			width   : 	12.5%
-			display : 	inline-block
-			img
-				width :100%
 				
 
 .noticias
@@ -55,6 +22,7 @@ main
 	background-image : url("/static/img/slider/Slide6.png")
 	background-size  : cover
 	color 	 		 : white
+		
 	h3
 		padding-top    : 1.5rem
 		padding-left   : 1rem
@@ -76,8 +44,9 @@ main
 		transform   : translate(-50%, -50%)
 		color       : white
 		font-weight : bold
-		box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.75);
-		font-size: 1rem
+		box-shadow  : 0 0.25rem 0.5rem 0 rgba(0,0,0,0.75);
+		font-size   : 1rem
+		text-align 	: center
 
 	+from-width('m')
 		col(1/2)

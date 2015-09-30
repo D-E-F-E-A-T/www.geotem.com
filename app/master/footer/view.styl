@@ -1,50 +1,33 @@
 .footer
-	border-top   	 : solid black 1px
-	border-bottom    : solid black 1px
-	max-width	: 	100%
+	span(12/12)
+	border-top  : solid 1px black;
+	padding     : 10px;
+	color 	    : black
+	font-weight : bold
+	.f-block1
+		span(12/12)
+		+from-width('medium')
+			span(8/12)
+			text-align : center !important;
+		.fb1-1
+			span(6/12)
+			text-align : center !important;
+		.fb1-2
+			span(6/12)
+			text-align : center !important;
+	.f-block2
+		span(12/12)
+		+from-width('medium')
+			span(4/12)
+			text-align : center !important;
+		.fb2-1
+			span(6/12)
+			text-align : center !important;
+		.fb2-2
+			span(6/12)
+			text-align : center !important;
 
-	.text
-		max-width : 1024px
-		margin          : 0 auto
+.fb1-1, .fb1-2, .fb2-1, .fb2-2
+	margin : auto 0
 
-		a
-			color           : $color-1st
-			text-decoration : none
-		p
-			display : inline-block
-			
-+from-width('mini')
-	.text
-		max-width : 480px !important
-		margin : 0 auto 0 auto  !important
-		a
-			font-size: 0.6rem
-+from-width('small')
-	.text
-		max-width : 480px !important
-		margin : 0 auto 0 auto  !important
-		a
-			font-size: 0.6rem
-+from-width('medium')
-	.text
-		max-width : 768px !important
-		margin : 0 auto 0 auto  !important
-		a
-			font-size: 1rem
-+from-width('normal')
-	.text
-		max-width : 768px !important
-		margin : 0 auto 0 auto  !important
-+from-width('large')
-	.footer
-		border-top   	 : solid black 1px
-		border-bottom    : solid black 1px
-		max-width	: 	100%
-		
-	.text
-		max-width : 1024px !important
-		margin : 0 auto 0 auto  !important
-+from-width('extra')
-	.text
-		max-width : 1024px !important
-		margin : 0 auto 0 auto  !important
+

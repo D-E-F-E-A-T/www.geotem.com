@@ -154,12 +154,12 @@
 
 @media screen and (max-width: 1400px){
 
-  .logo-geo{
+/*  .logo-geo{
   width: 15%;
   position: absolute;
   margin: 8px 5px 5px 5px;
   top: 0
-}
+}*/
 
 .inicio{
     font-size: 1.2em;
@@ -168,53 +168,60 @@
 
 }
 
+.logo-geo{
+
+    float: left;
+    top: 0;
+    position: absolute;
+    width: 165px;
+    height: 55px;
+    padding: 8px;
+}
+
 @media screen and (max-width: 1100px){
 
-  .logo-geo{
+/*  .logo-geo{
   width: 20%;
   position: absolute;
   margin: 8px 5px 5px 5px;
   top: 0
+}*/
 }
-
 @media screen and (max-width: 800px){
 
-  .logo-geo{
+/*  .logo-geo{
   width: 25%;
   position: absolute;
   margin: 8px 5px 5px 5px;
   top: 0
-}
+}*/
 
 }
-
-}
-
 @media screen and (max-width: 600px){
 
-  .logo-geo{
+/*  .logo-geo{
   width: 35%;
   position: absolute;
   margin: 8px 5px 5px 5px;
   top: 0
-}
+}*/
 
 .search-2{
   
   width: 90vw;
 }
 
-
+}
   
 
 @media screen and (max-width: 500px){
 
-  .logo-geo{
+/*  .logo-geo{
   width: 45%;
   position: absolute;
   margin: 8px 5px 5px 5px;
   top: 0
-}
+}*/
 .search-2{
   
   width: 85vw;
@@ -224,12 +231,12 @@
 
 @media screen and (max-width: 400px){
 
-  .logo-geo{
+/*  .logo-geo{
   width: 45%;
   position: absolute;
   margin: 8px 5px 5px 5px;
   top: 0
-}
+}*/
 
 .search-2{
   
