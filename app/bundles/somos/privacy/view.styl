@@ -1,6 +1,32 @@
-main 
+main
 	position : relative !important
-	
 
-.content
-	margin-top : 10% !important
+
+	.content-contrato
+		position  : relative
+		margin    : 0 auto
+		max-width : 768px !important
+		+from-width('s')
+			max-width : 768px !important
+		+from-width('m')
+			max-width : 768px !important
+		+from-width('n')
+			max-width : 768px !important
+		+from-width('l')
+			max-width : 768px !important
+		+from-width('xl')
+			max-width : 1024px !important
+
+		.contrato
+			position   : relative
+			margin-top : 1%
+			+from-width('s')
+				margin-top : 1%
+			+from-width('m')
+				margin-top : 1%
+			+from-width('n')
+				margin-top : 1%
+			+from-width('l')
+				margin-top : 23%
+			+from-width('xl')
+				margin-top : 18%

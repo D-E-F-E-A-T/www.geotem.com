@@ -1,23 +1,24 @@
-main 
+main
 	position : relative !important
 
-.content
-	margin-top : 9% !important
-	
+
 .content
 	+from-width('s')
 		max-width : 480px !important
-		margin : 0 auto 
+		margin : 0 auto 0 auto
 	+from-width('m')
 		max-width : 768px !important
-		margin : 0 auto 
+		margin : 0 auto 0 auto
+	+from-width('normal')
+		max-width : 768px !important
+		margin : 0 auto 0 auto
 	+from-width('l')
 		max-width : 768px !important
-		margin : 0 auto 
+		margin : 20% auto 0 auto
 	+from-width('xl')
 		max-width : 1024px !important
-		margin : 0 auto 
-		
+		margin : 10% auto 0 auto
+
 	.cust-box-1
 		img
 			text-align: center !important
@@ -25,22 +26,22 @@ main
 .contenedor
 	+from-width('s')
 		max-width : 480px !important
-		margin : 0 auto 
+		margin : 0 auto
 	+from-width('m')
 		max-width : 768px !important
-		margin : 0 auto 
+		margin : 0 auto
 	+from-width('l')
 		max-width : 768px !important
-		margin : 0 auto 
+		margin : 0 auto
 	+from-width('xl')
 		max-width : 1024px !important
-		margin : 0 auto 
-		
+		margin : 0 auto
+
 	.cust-box-1
 		img
-			text-align: center !important			
+			text-align: center !important
 
-+to-width('s')			
++to-width('s')
 	.content
 		display : none
 +from-width('m')
