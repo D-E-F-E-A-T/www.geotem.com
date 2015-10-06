@@ -29,6 +29,32 @@ mixin overlay(image, metodo,metodo1,fuente,number, title)
 	.cintillo
 		p #{title}
 
+mixin overlay7(image, metodo,metodo1,metodo2,fuente,number, title)
+	.caja
+		.imagen
+			img(src="/static/img/metodos/#{image}.png")
+		.description
+
+			span
+				|Método: #{metodo}
+				br
+				|#{metodo1}				
+				br
+				|#{metodo2}	
+				br
+				br
+			span
+				|Fuente: #{fuente}
+				br
+				br
+			span
+				|Profundidad de
+				br
+				|Investigación: #{number}
+
+	.cintillo
+		p #{title}
+
 
 mixin overlay2(image, metodo,metodo1,res,ref, title)
 	.caja
