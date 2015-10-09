@@ -1,174 +1,75 @@
 
-mixin mosaico1(med, img, med2, color, color2)
+mixin mosaico1(texto1, img, texto2)
 	.ms1c
 		.mc1
-			img(src="http://dummyimage.com/#{med}/#{color}/fff.jpg", alt="")
+			img(src="/static/img/#{texto1}.png", alt="")
 		.mc2
 			img(src="/static/img/#{img}.png", alt="")
 		.mc3
-			img(src="http://dummyimage.com/#{med2}/#{color2}/fff.jpg", alt="")
+			img(src="/static/img/#{texto2}.png", alt="imgen")
 
 
 
-mixin mosaico2(img, med, img2, color)
+mixin mosaico2(img, texto1, img2)
 	.ms2c
 		.mc1
 			img(src="/static/img/#{img}.png", alt="")
 		.mc2
-			img(src="http://dummyimage.com/#{med}/#{color}/fff.jpg", alt="")
+			img(src="/static/img/#{texto1}.png", alt="")
 		.mc3
 			img(src="/static/img/#{img2}.png", alt="")
 
-mixin mosaico2-r(img, med, img2, color)
+
+mixin mosaico2-r(img, texto1, img2)
 	.ms2c-r
 		.mc1
 			img(src="/static/img/#{img}.png", alt="")
 		.mc2
-			img(src="http://dummyimage.com/#{med}/#{color}/fff.jpg", alt="")
+			img(src="/static/img/#{texto1}.png", alt="")
 		.mc3
 			img(src="/static/img/#{img2}.png", alt="")
 
 
-mixin mosaico3(img, med, med2, img2, color, color2)
+mixin mosaico3(img, texto1, texto2 ,img2)
 	.ms4c
 		.mc1
 			.mc1-1
 				img(src="/static/img/#{img}.png", alt="")
 			.mc1-1-1
-				img(src="http://dummyimage.com/#{med}/#{color}/fff.png", alt="")
+				img(src="/static/img/#{texto1}.png", alt="")
 		.mc2
 			.mc2-2
-				img(src="http://dummyimage.com/#{med2}/#{color2}/fff.png", alt="")
+				img(src="/static/img/#{texto2}.png", alt="")
 			.mc2-2-2
 				img(src="/static/img/#{img2}.png", alt="")
 
-mixin mosaico4(img, med, color)
+mixin mosaico4(img, texto1)
 
 	.ms3c
 		.mc1
 			img(src="/static/img/#{img}.png", alt="")
 		.mc2
-			img(src="http://dummyimage.com/#{med}/#{color}/fff.jpg", alt="")
+			img(src="/static/img/#{texto1}.png", alt="")
 
 
-mixin mosaico4-r(med, img, color)
+mixin mosaico4-r(texto1, img)
 
 	.ms3c-r
 		.mc1
-			img(src="http://dummyimage.com/#{med}/#{color}/fff.jpg", alt="")
+			img(src="/static/img/#{texto1}.png", alt="")
 
 		.mc2
 			img(src="/static/img/#{img}.png", alt="")
 
 
-mixin mosaico4-re(img, med, color)
+mixin mosaico4-re(img, texto1)
 
 	.ms3c-re
 		.mc1
 			img(src="/static/img/#{img}.png", alt="")
 		.mc2
-			img(src="http://dummyimage.com/#{med}/#{color}/fff.jpg", alt="")
-//- mixin mosaico-x3-2-1(txt1, img, txt2)
+			img(src="/static/img/#{texto1}.png", alt="")
 
-//- 	.block1
-//- 		p #{txt1}
-
-//- 	.block2
-//- 		if block
-//- 			block
-//- 		else
-//- 			img(src='/static/img/#{img}')
-
-//- 	.block3
-//- 		p #{txt2}
-
-//- //-#####################################################
-
-//- mixin mosaico-x3-1-2(img, txt1, img2)
-
-//- 	.block4
-//- 		img(src='/static/img/#{img}')
-
-//- 	.block5
-//- 		p  #{txt1}
-
-//- 	.block6
-//- 		img(src='/static/img/#{img2}')
-
-
-//- //-#####################################################
-
-
-
-
-//- mixin mosaico-x4-2-2(img, txt1, txt2, img2)
-
-//- 	.block7
-//- 		.sub7
-//- 			if block
-//- 				block
-//- 			else
-//- 				img(src='/static/img/#{img}')
-
-//- 		.sub7-1
-//- 			p #{txt1}
-
-//- 	.block8
-//- 		.sub8
-//- 			p #{txt2}
-
-//- 		.sub8-1
-//- 			if block
-//- 				block
-//- 			else
-//- 				img(src='/static/img/#{img2}')
-
-//- mixin mosaico-x4-2-1(txt1, img, img2, txt2)
-
-//- 	.block13
-//- 		.sub13
-//- 			p #{txt1}
-
-//- 		.sub13-1
-//- 			img(src='/static/img/#{img}')
-
-//- 	.block14
-//- 		.sub14
-//- 			img(src='/static/img/#{img2}')
-
-//- 		.sub14-1
-//- 			p #{txt2}
-
-
-//- //-#####################################################
-
-
-
-
-//- mixin mosaico-x2-1-1(img, txt1)
-
-//- 	.block9
-//- 		img(src='/static/img/#{img}')
-
-//- 	.block10
-//- 		p #{txt1}
-
-
-//- //-#####################################################
-
-
-
-
-//- mixin mosaico-x2-1-2(txt1, img)
-
-//- 	.block11
-//- 		p #{txt1}
-
-//- 	.block12
-//- 		img(src='/static/img/#{img}')
-
-
-//- //-#####################################################
 
 mixin country
 
