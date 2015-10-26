@@ -3,31 +3,43 @@
 	border-top  : solid 1px black;
 	padding     : 10px;
 	color 	    : black
-	font-weight : bold
+	font-weight : 300
+	margin-top  : 0 !important;
+	font-size   : 13px
+
 	.f-block1
 		span(12/12)
 		+from-width('medium')
 			span(8/12)
-			text-align : center !important;
+			text-align : left !important;
 		.fb1-1
-			span(6/12)
+			span(12/12)
 			text-align : center !important;
-		.fb1-2
-			span(6/12)
-			text-align : center !important;
+			+from-width('medium')
+				text-align : left !important;
+
 	.f-block2
 		span(12/12)
 		+from-width('medium')
 			span(4/12)
-			text-align : center !important;
+
 		.fb2-1
 			span(6/12)
 			text-align : center !important;
+			+from-width('medium')
+				span(8/12)
+				text-align : right !important;
+
 		.fb2-2
 			span(6/12)
 			text-align : center !important;
+			+from-width('medium')
+				span(4/12)
+				text-align : right !important;
 
-.fb1-1, .fb1-2, .fb2-1, .fb2-2
+
+.fb1-1, .fb2-1, .fb2-2
 	margin : auto 0
 
-
+a:hover
+	color : red;
