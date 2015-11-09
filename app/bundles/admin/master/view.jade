@@ -1,0 +1,42 @@
+doctype html
+<!--[if lt IE 9]><html class="fallback" lang="es"><![endif]-->
+<!--[if !IE]><!-->
+html(lang="es",class=rootClasses)
+	<!--<![endif]-->
+	head
+		meta(charset=ﬁ.conf.charset)
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		block ﬁ.meta
+
+		title= (locals.title? locals.title + ' | ' : '') + ADMIN.title
+
+		//- All Link files (CSS)
+		block ﬁ.link
+		for link in ADMIN.links
+			link&attributes(link)
+		if locals.bundle
+			link(rel='stylesheet' href="#{STATIC.assets.css}/#{bundle}.css")
+
+		//- Scripts marked with attribute _top
+		for script in ADMIN.scripts
+			- if (!script._top)  continue
+			- delete script._top
+			script&attributes(script)
+
+	body
+		header#admin-header
+			include header/view
+
+		section#admin-content
+			block ﬁ.content
+
+		footer#admin-footer
+			include footer/view
+
+		//- Scripts
+		for script in ADMIN.scripts
+			- if (script._top)  continue
+			script&attributes(script)
+		if locals.bundle
+			link(src="#{STATIC.assets.js}/#{bundle}.js")
+		block ﬁ.scripts

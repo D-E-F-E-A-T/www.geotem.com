@@ -1,0 +1,70 @@
+$font-face-common =
+	font-style    : normal
+	unicode-range : U+0000-00FF,\
+					U+0131,\
+					U+0152-0153,\
+					U+02C6,\
+					U+02DA,\
+					U+02DC,\
+					U+2000-206F,\
+					U+2074,\
+					U+20AC,\
+					U+2212,\
+					U+2215,\
+					U+E0FF,\
+					U+EFFD,\
+					U+F000
+
+@font-face
+	{$font-face-common}
+	font-family : 'Roboto'
+	font-weight : 300
+	src         : local('Roboto Light'),\
+				  local('Roboto-Light'),\
+				  url('https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2')\
+				  format('woff2')
+
+@font-face
+	{$font-face-common}
+	font-family : 'Ubuntu'
+	font-weight : 700
+	src         : local('Ubuntu Bold'),\
+				  local('Ubuntu-Bold'),\
+				  url('https://fonts.gstatic.com/s/ubuntu/v8/0ihfXUL2emPh0ROJezvraJBw1xU1rKptJj_0jans920.woff2')\
+				  format('woff2')
+
+@font-face
+	font-family : 'FontAwesome'
+	src         : url('../fonts/fontawesome-webfont.eot?v=4.4.0')
+	src         : url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg')
+	font-weight : normal
+	font-style  : normal
+
+$font-content =
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+
+$font-header =
+	font-family: 'Ubuntu', sans-serif
+	font-weight: 400
+
+$font-icon =
+	display                 : inline-block
+	font                    : normal normal normal 14px/1 FontAwesome
+	font-size               : inherit
+	text-rendering          : auto
+	-webkit-font-smoothing  : antialiased
+	-moz-osx-font-smoothing : grayscale
+	transform               : translate(0, 0)
+
+$font-body =
+	font-size        : 100%
+	line-height      : 1.125em
+	font-smoothing   : antialiased
+	font-size-adjust : auto
+	text-size-adjust : 100%
+	{$font-content}
+
+$font(face)
+	mixin = lookup('$font-' + face)
+	{mixin}
