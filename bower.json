@@ -17,7 +17,7 @@
     "node_modules"
   ],
   "dependencies": {
-    "Font-Awesome-Stylus": "font-awesome-stylus#~4.4.0",
+    "font-awesome": "~4.4.0",
     "jquery": "*",
     "vue": "~0.12.14"
   }
